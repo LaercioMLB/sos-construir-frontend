@@ -4,15 +4,34 @@
 @theme static {
   --font-sans: 'Public Sans', sans-serif;
 
-  --color-green-50: #EFFDF5;
-  --color-green-100: #D9FBE8;
-  --color-green-200: #B3F5D1;
-  --color-green-300: #75EDAE;
-  --color-green-400: #00DC82;
-  --color-green-500: #00C16A;
-  --color-green-600: #00A155;
-  --color-green-700: #007F45;
-  --color-green-800: #016538;
-  --color-green-900: #0A5331;
-  --color-green-950: #052E16;
+  /* Principais */
+  --color-blue-50: #EFF6FF;
+  --color-blue-100: #DBEAFE;
+  --color-blue-200: #BFDBFE;
+  --color-blue-300: #93C5FD;
+  --color-blue-400: #1E3A8A;
+  --color-blue-500: #0B2258;
+  --color-blue-600: #0F1724;
+  --color-blue-700: #0A1420;
+  --color-blue-800: #070F18;
+  --color-blue-900: #050A12;
+  --color-blue-950: #020508;
+
+  --color-orange-50: #FFF7ED;
+  --color-orange-100: #FFEDD5;
+  --color-orange-200: #FED7AA;
+  --color-orange-300: #FDBA74;
+  --color-orange-400: #FEA533;
+  --color-orange-500: #FD8D03;
+  --color-orange-600: #E67F03;
+  --color-orange-700: #CC7103;
+  --color-orange-800: #A85B02;
+  --color-orange-900: #7A4202;
+  --color-orange-950: #4D2901;
+
+
+  --color-section-bg-1: #F8FAFC;
+  --color-section-bg-2: #FFFFFF;
+
+  --color-section-subtitle: #4B5563;  
 }

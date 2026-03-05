@@ -41,6 +41,10 @@ export interface Partner {
   name: string
   logo: string
 }
+export interface Tag {
+  icon: string
+  text: string
+}
 
 /**
  * Partner section
@@ -49,12 +53,13 @@ export interface PartnerSection {
   partnerName: string
   logo: string
   subtitle: string
-  tags: string[]
+  tags: Tag[]
   cta: string
   footerInfo: {
     usage: string
     guarantee: string
   }
+  coverImage: string
 }
 
 /**

@@ -4,14 +4,14 @@
       "title": "Pintor Profissional em Foz do Iguaçu | SOS Construir",
       "description": "Pintores experientes em Foz do Iguaçu. Pintura interna, externa, comercial. Profissionais certificados com garantia integral.",
       "keywords": "pintor foz do iguaçu, pintura profissional, pintura interna, pintura externa",
-      "ogImage": "/images/hero/servico-pintor.jpg",
+      "ogImage": "/images/services/pintor/hero.png",
       "breadcrumbLabel": "Pintor"
     },
     "sections": {
       "hero": {
         "title": "Pintura Profissional Sem Dor de Cabeça",
         "subtitle": "Escolha seu pintor entre os melhores profissionais da região. Qualidade garantida, com prazos cumpridos e preço justo.",
-        "image": "/images/hero/servico-pintor.jpg"
+        "image": "/images/services/pintor/hero.png"
       },
       "whatWeDo": {
         "differentials": [
@@ -59,13 +59,27 @@
       },
       "partner": {
         "partnerName": "FozTintas",
-        "logo": "/images/logos/foztintas.png",
+        "logo": "/images/services/pintor/foztintas/logo.png",
+        "coverImage": "/images/services/pintor/foztintas/cover.png",
         "subtitle": "Trabalhamos com a FozTintas, referência em qualidade desde 1985. Tintas premium, cores personalizadas e o melhor preço direto do fabricante para seu projeto.",
         "tags": [
-          "Tintas premium com durabilidade garantida",
-          "Entrega rápida e rastreada",
-          "Preço direto da fábrica, sem intermediários",
-          "Consultoria de cores gratuita para o seu projeto"
+                    {
+            "icon": "format-paint",
+            "text": "Tintas premium com durabilidade garantida"
+
+          }, 
+          {
+            "icon": "package-variant-closed",
+            "text":  "Entrega rápida e rastreada"
+          },
+          {
+            "icon": "currency-usd",
+            "text": "Preço direto da fábrica, sem intermediários"
+          },
+          {
+            "icon": "check",
+            "text": "Consultoria de cores gratuita para o seu projeto"
+          }
         ],
         "cta": "Conhecer Tintas FozTintas",
         "footerInfo": {
@@ -140,14 +154,14 @@
       "title": "Metalúrgica Profissional em Foz do Iguaçu | SOS Construir",
       "description": "Serviços metalúrgicos de excelência em Foz do Iguaçu. Estruturas metálicas, portões, soldas e projetos sob medida com profissionais certificados.",
       "keywords": "metalúrgica foz do iguaçu, serralheria, solda, estruturas metálicas, portões",
-      "ogImage": "/images/hero/metalworker.jpg",
+      "ogImage": "/images/services/metalurgico/hero.png",
       "breadcrumbLabel": "Metalúrgica"
     },
     "sections": {
       "hero": {
         "title": "Metalúrgica Profissional Sem Dor de Cabeça",
         "subtitle": "Escolha um metalúrgico entre os melhores profissionais da região. Qualidade garantida, com prazos cumpridos e preço justo.",
-        "image": "/images/hero/metalworker.jpg"
+        "image": "/images/services/metalurgico/hero.png"
       },
       "whatWeDo": {
         "differentials": [
@@ -198,16 +212,29 @@
         "logo": "/images/logos/acofoz.png",
         "subtitle": "Trabalhamos em parceria com as melhores distribuidoras de aço da região. Matéria-prima certificada, garantindo resistência estrutural máxima para sua obra.",
         "tags": [
-          "Aço com certificação de qualidade",
-          "Tubos e perfis de alta resistência",
-          "Opções de material galvanizado",
-          "Melhor custo-benefício em metais"
+          {
+            "icon": "check",
+            "text": "Aço de alta qualidade com certificação"
+          },
+          {
+            "icon": "check",
+            "text": "Tubos e perfis de alta resistência"
+          },
+                    {
+            "icon": "check",
+            "text": "Opções de material galvanizado"
+          },
+          {
+            "icon": "check",
+            "text": "Melhor custo-benefício em metais"
+          }
         ],
         "cta": "Conhecer Materiais",
         "footerInfo": {
           "usage": "Mais de 300 toneladas de aço instaladas",
           "guarantee": "Garantia de procedência do material"
-        }
+        },
+        "coverImage": "/images/services/metalurgico/acofoz/cover.png"
       },
       "workGallery": {
         "filters": [

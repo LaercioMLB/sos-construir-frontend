@@ -26,7 +26,15 @@
         :subtitle="service.sections.hero.subtitle"
         :image="service.sections.hero.image"
       />
-      <service-partner-showcase-section />
+      <service-partner-showcase-section
+        :partner-name="service.sections.partner.partnerName"
+        :logo="service.sections.partner.logo"
+        :subtitle="service.sections.partner.subtitle"
+        :tags="service.sections.partner.tags"
+        :cta="service.sections.partner.cta"
+        :footer-info="service.sections.partner.footerInfo"
+        :cover-image="service.sections.partner.coverImage"
+      />
       <WorksGallerySection />
       <OurProcessSection />
       <ProfessionalsShowcase />
