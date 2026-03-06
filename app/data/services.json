@@ -100,25 +100,25 @@
             "step": 1,
             "title": "Contato e Orçamento",
             "description": "Você nos conta o que precisa e nós cuidamos de todo o planejamento e orçamento.",
-            "icon": "📞"
+            "icon": "phone-in-talk-outline"
           },
           {
             "step": 2,
             "title": "Cuidado e Proteção",
             "description": "Nossa equipe protege seus móveis e prepara as paredes com perfeição.",
-            "icon": "🛡️"
+            "icon": "shield-alert"
           },
           {
             "step": 3,
             "title": "Execução Premium",
             "description": "Profissionais verificados aplicam as melhores tintas do mercado.",
-            "icon": "🔧"
+            "icon": "format-paint"
           },
           {
             "step": 4,
             "title": "Satisfação Garantida",
             "description": "Entregamos tudo limpo e no lugar. Zero estresse para você!",
-            "icon": "✨"
+            "icon": "creation"
           }
         ]
       },

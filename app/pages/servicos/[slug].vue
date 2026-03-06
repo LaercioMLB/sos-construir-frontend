@@ -28,6 +28,24 @@ const { data: service } = await useAsyncData<Service | null>(
 if (!service.value) {
   throw createError({ statusCode: 404 })
 }
+if (!service.value) {
+  throw createError({ statusCode: 404 })
+}
+
+useSeoMeta({
+  title: service.value.meta.title,
+  description: service.value.meta.description,
+  keywords: service.value.meta.keywords,
+
+  ogTitle: service.value.meta.title,
+  ogDescription: service.value.meta.description,
+  ogImage: service.value.meta.ogImage,
+
+  twitterTitle: service.value.meta.title,
+  twitterDescription: service.value.meta.description,
+  twitterImage: service.value.meta.ogImage,
+  twitterCard: 'summary_large_image'
+})
 
 const sectionComponents: Record<SectionKey, Component> = {
   hero: SectionServiceHero,

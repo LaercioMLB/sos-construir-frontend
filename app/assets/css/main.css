@@ -1,6 +1,7 @@
 @import "tailwindcss";
 @import "@nuxt/ui";
 
+
 @theme static {
   --font-sans: 'Public Sans', sans-serif;
 
@@ -34,4 +35,16 @@
   --color-section-bg-2: #FFFFFF;
 
   --color-section-subtitle: #4B5563;  
+}
+@layer components {
+
+
+  .title-section {
+    @apply text-4xl md:text-4xl lg:text-[44px] font-bold text-blue-500 mb-4 tracking-tight;
+  }
+
+  .subtitle-section {
+    @apply text-lg text-[var(--color-section-subtitle)];
+  }
+
 }

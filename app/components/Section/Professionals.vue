@@ -74,7 +74,7 @@ onMounted(() => {
     <div class="container mx-auto px-4 max-w-7xl">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
         <div class="lg:col-span-4 flex flex-col">
-          <h2 class="text-4xl md:text-4xl lg:text-5xl font-bold text-blue-500 leading-tight mb-4">
+          <h2 class="title-section">
             {{ props.section.title }}
           </h2>
           <p class="text-section-subtitle mb-8 leading-relaxed">
@@ -91,7 +91,7 @@ onMounted(() => {
               </li>
               <li class="flex items-center gap-3">
                 <div class="bg-orange-500 p-1 w-6 h-6 rounded-full text-white flex items-center justify-center">
-                  <Icon name="mdi:shield-check-outline"  />
+                  <Icon name="mdi:shield-check-outline" />
                 </div>
                 <span class="font-medium text-blue-700 text-sm">Garantia Integral de Qualidade</span>
               </li>
@@ -108,24 +108,34 @@ onMounted(() => {
             color="primary"
             variant="outline"
             size="lg"
-            class="w-full flex justify-center text-orange-500 border-orange-200 hover:bg-orange-50 py-3 rounded-lg font-bold transition-colors"
+            class="w-full flex justify-center py-3 rounded-lg font-bold transition-colors"
           >
             Explorar todos os profissionais
             <template #trailing>
-              <Icon name="mdi:arrow-right" class="text-xl" />
+              <Icon
+                name="mdi:arrow-right"
+                class="text-xl"
+              />
             </template>
           </UButton>
         </div>
 
         <div class="lg:col-span-8 flex flex-col gap-6">
-          <div v-if="loading" class="space-y-6">
-            <div v-for="i in 2" :key="i" class="bg-white border border-gray-100 rounded-2xl p-6 h-48 animate-pulse flex">
-              <div class="w-16 h-16 bg-gray-200 rounded-full mr-4"></div>
+          <div
+            v-if="loading"
+            class="space-y-6"
+          >
+            <div
+              v-for="i in 2"
+              :key="i"
+              class="bg-white border border-gray-100 rounded-2xl p-6 h-48 animate-pulse flex"
+            >
+              <div class="w-16 h-16 bg-gray-200 rounded-full mr-4" />
               <div class="flex-1 space-y-4 py-1">
-                <div class="h-4 bg-gray-200 rounded w-3/4"></div>
+                <div class="h-4 bg-gray-200 rounded w-3/4" />
                 <div class="space-y-2">
-                  <div class="h-4 bg-gray-200 rounded"></div>
-                  <div class="h-4 bg-gray-200 rounded w-5/6"></div>
+                  <div class="h-4 bg-gray-200 rounded" />
+                  <div class="h-4 bg-gray-200 rounded w-5/6" />
                 </div>
               </div>
             </div>

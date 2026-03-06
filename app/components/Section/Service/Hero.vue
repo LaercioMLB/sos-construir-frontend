@@ -23,26 +23,32 @@ const formattedTitle = computed(() => {
         :src="props.section.image"
         alt="Profissional trabalhando"
         class="w-full md:w-3/4 lg:w-2/3 h-full object-cover object-right"
-      />
-      <div class="absolute inset-0 bg-gradient-to-r from-white via-white/90 to-transparent"></div>
+      >
+      <div class="absolute inset-0 bg-gradient-to-r from-white via-white/90 to-transparent" />
     </div>
 
     <div class="container max-w-7xl mx-auto px-4 py-6 relative z-10">
       <div class="max-w-3xl">
         <div class="inline-flex items-center gap-2 bg-orange-50 border border-orange-100 rounded-full px-1 py-1 mb-4 shadow-sm">
           <div class="flex -space-x-2">
-            <img src="https://i.pravatar.cc/100?img=1" class="w-6 h-6 rounded-full border-2 border-white" />
-            <img src="https://i.pravatar.cc/100?img=2" class="w-6 h-6 rounded-full border-2 border-white" />
+            <img
+              src="https://i.pravatar.cc/100?img=1"
+              class="w-6 h-6 rounded-full border-2 border-white"
+            >
+            <img
+              src="https://i.pravatar.cc/100?img=2"
+              class="w-6 h-6 rounded-full border-2 border-white"
+            >
           </div>
           <span class="text-xs font-semibold text-orange-600">Escolhido por 1000+ clientes</span>
         </div>
 
-        <div class="w-8 h-1 bg-orange-500 rounded-full mb-6"></div>
+        <div class="w-8 h-1 bg-orange-500 rounded-full mb-6" />
 
         <h1
           class="text-4xl md:text-5xl lg:text-6xl font-bold text-blue-500 leading-tight mb-4"
           v-html="formattedTitle"
-        ></h1>
+        />
 
         <p class="text-section-subtitle text-lg mb-8 max-w-lg">
           {{ props.section.subtitle }}
@@ -50,15 +56,24 @@ const formattedTitle = computed(() => {
 
         <ul class="space-y-3 mb-10">
           <li class="flex items-center gap-3 text-section-subtitle font-medium">
-            <Icon name="mdi:lightning-bolt" class="text-orange-500 text-xl" />
+            <Icon
+              name="mdi:lightning-bolt"
+              class="text-orange-500 text-xl"
+            />
             Profissionais certificados
           </li>
           <li class="flex items-center gap-3 text-section-subtitle font-medium">
-            <Icon name="mdi:shield-check-outline" class="text-orange-500 text-xl" />
+            <Icon
+              name="mdi:shield-check-outline"
+              class="text-orange-500 text-xl"
+            />
             Garantia integral
           </li>
           <li class="flex items-center gap-3 text-section-subtitle font-medium">
-            <Icon name="mdi:check" class="text-orange-500 text-xl" />
+            <Icon
+              name="mdi:check"
+              class="text-orange-500 text-xl"
+            />
             Sem taxa escondida
           </li>
         </ul>
@@ -72,7 +87,10 @@ const formattedTitle = computed(() => {
           >
             Solicitar Orçamento
             <template #trailing>
-              <Icon name="mdi:arrow-right" class="text-xl" />
+              <Icon
+                name="mdi:arrow-right"
+                class="text-xl"
+              />
             </template>
           </UButton>
           <UButton
@@ -83,7 +101,10 @@ const formattedTitle = computed(() => {
           >
             Ver profissionais disponíveis
             <template #trailing>
-              <Icon name="mdi:arrow-right" class="text-xl" />
+              <Icon
+                name="mdi:arrow-right"
+                class="text-xl"
+              />
             </template>
           </UButton>
         </div>

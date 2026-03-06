@@ -23,7 +23,7 @@ defineProps<{
               :src="professional.avatar"
               :alt="professional.name"
               class="w-18 h-18 rounded-full object-cover border-3 border-white"
-            />
+            >
           </div>
           <div>
             <h3 class="font-bold text-blue-700 text-lg">
@@ -34,8 +34,16 @@ defineProps<{
             </p>
             <div class="flex items-center gap-1 text-sm">
               <div class="flex text-orange-400">
-                <Icon name="mdi:star" v-for="i in 4" :key="i" class="text-base" />
-                <Icon name="mdi:star-half-full" class="text-base" />
+                <Icon
+                  v-for="i in 4"
+                  :key="i"
+                  name="mdi:star"
+                  class="text-base"
+                />
+                <Icon
+                  name="mdi:star-half-full"
+                  class="text-base"
+                />
               </div>
               <span class="font-medium text-blue-700 ml-1">{{ professional.rating }}</span>
               <span class="text-gray-500 text-xs">({{ professional.reviews }})</span>
@@ -45,11 +53,17 @@ defineProps<{
 
         <div class="space-y-2 text-sm text-section-subtitle font-medium">
           <div class="flex items-center gap-2">
-            <Icon name="mdi:tools" class="text-orange-500 text-lg" />
+            <Icon
+              name="mdi:tools"
+              class="text-orange-500 text-lg"
+            />
             {{ professional.jobsCompleted }} obras realizadas
           </div>
           <div class="flex items-center gap-2">
-            <Icon name="mdi:emoticon-happy-outline" class="text-orange-500 text-lg" />
+            <Icon
+              name="mdi:emoticon-happy-outline"
+              class="text-orange-500 text-lg"
+            />
             {{ professional.satisfaction }} de satisfação
           </div>
         </div>
@@ -61,7 +75,11 @@ defineProps<{
             Verificações
           </p>
           <ul class="space-y-2 text-sm font-medium text-blue-700">
-            <li v-for="(verif, idx) in professional.verifications" :key="idx" class="flex items-center gap-2">
+            <li
+              v-for="(verif, idx) in professional.verifications"
+              :key="idx"
+              class="flex items-center gap-2"
+            >
               <div>
                 <Icon
                   :name="verif.type === 'success' ? 'mdi:check-circle' : 'mdi:shield-check'"
@@ -102,14 +120,14 @@ defineProps<{
               :src="img"
               class="w-16 h-16 rounded-lg object-cover border border-gray-200"
               alt="Projeto recente"
-            />
+            >
           </div>
         </div>
 
         <UButton
           color="primary"
           variant="solid"
-          class="w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-2.5 flex justify-center rounded-lg transition-colors"
+          class="w-full text-white font-bold py-2.5 flex justify-center rounded-lg transition-colors"
         >
           Solicitar Orçamento
         </UButton>

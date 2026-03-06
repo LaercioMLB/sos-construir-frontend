@@ -15,15 +15,15 @@ const props = defineProps<{
             :src="props.section.coverImage"
             :alt="`Fachada do parceiro ${props.section.partnerName}`"
             class="w-full h-full object-cover"
-          />
+          >
         </div>
 
         <div class="flex flex-col justify-center">
           <span class="text-orange-500 font-bold text-xs tracking-widest uppercase mb-3">
             Parceria Oficial
           </span>
-          <h2 class="text-4xl md:text-4xl lg:text-5xl font-bold text-blue-500 leading-tight mb-6">
-            Os Melhores Materiais <br class="hidden lg:block" />
+          <h2 class="title-section mb-6">
+            Os Melhores Materiais <br class="hidden lg:block">
             <span class="text-orange-500">Direto da Fábrica</span>
           </h2>
 
@@ -56,14 +56,20 @@ const props = defineProps<{
             >
               {{ props.section.cta }}
               <template #trailing>
-                <Icon name="mdi:arrow-right" class="text-xl" />
+                <Icon
+                  name="mdi:arrow-right"
+                  class="text-xl"
+                />
               </template>
             </UButton>
           </div>
 
           <div class="mt-8 flex flex-col sm:flex-row items-start sm:items-center gap-4 text-sm text-section-subtitle">
             <div class="flex items-center gap-2">
-              <Icon name="mdi:home-outline" class="text-orange-500 text-xl" />
+              <Icon
+                name="mdi:home-outline"
+                class="text-orange-500 text-xl"
+              />
               <span>{{ props.section.footerInfo.usage }}</span>
             </div>
             <div class="border border-gray-200 rounded-full px-4 py-1.5 text-xs font-semibold bg-gray-50 flex items-center gap-2">
@@ -76,7 +82,7 @@ const props = defineProps<{
               :src="props.section.logo"
               :alt="`Logo ${props.section.partnerName}`"
               class="h-12 w-auto object-contain"
-            />
+            >
             <div>
               <p class="font-bold text-blue-500 text-lg">
                 {{ props.section.partnerName }}
