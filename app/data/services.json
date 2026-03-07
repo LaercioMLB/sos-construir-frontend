@@ -45,9 +45,10 @@
       },
       "workGallery": {
         "filters": [
-          "Pintura Interna",
-          "Pintura Externa",
-          "Pintura Comercial"
+          { "label": "Todos os Projetos", "slug": "todos", "count": 360 },
+          { "label": "Trabalho Interno", "slug": "interno", "count": 180 },
+          { "label": "Trabalho externo", "slug": "externo", "count": 120 },
+          { "label": "Ampla diversidade", "slug": "diversidade", "count": 60 }
         ]
       },
       "process": {
@@ -150,10 +151,26 @@
       },
       "workGallery": {
         "filters": [
-          "Portões e Grades",
-          "Estruturas Metálicas",
-          "Coberturas",
-          "Projetos Especiais"
+          {
+            "label": "Portões e Grades",
+            "slug": "portoes-e-grades",
+            "count": 0
+          },
+          {
+            "label": "Estruturas Metálicas",
+            "slug": "estruturas-metalicas",
+            "count": 0
+          },
+          {
+            "label": "Coberturas",
+            "slug": "coberturas",
+            "count": 0
+          },
+          {
+            "label": "Projetos Especiais",
+            "slug": "projetos-especiais",
+            "count": 0
+          }
         ]
       },
       "process": {

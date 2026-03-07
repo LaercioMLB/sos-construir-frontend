@@ -7,7 +7,10 @@ const props = defineProps<{
 </script>
 
 <template>
-  <section class="py-16 bg-white w-full">
+  <section
+    class="py-16 w-full"
+    :class="section?.bgSection"
+  >
     <div class="container mx-auto px-4 max-w-7xl">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div class="w-full h-[500px] lg:h-[600px] rounded-2xl overflow-hidden shadow-lg">

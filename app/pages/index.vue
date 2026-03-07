@@ -40,12 +40,17 @@ const process: ProcessSection = {
     <section-hero />
     <section-validation />
     <section-services-categories />
-    <section-why-choose-us />
+    <section-why-choose-us
+      :section="{
+        bgSection: 'bg-section-bg-2'
+      }"
+    />
     <section-our-process
       :section="process"
+      :bg-section="'bg-section-bg-1'"
     />
-    <section-works-gallery />
-    <section-clients-feedback />
+    <!-- <section-works-gallery /> -->
+    <section-testimonials />
     <section-blog-posts />
     <section-final-cta />
   </div>

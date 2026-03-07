@@ -58,7 +58,10 @@ onMounted(() => {
 </script>
 
 <template>
-  <section class="py-16 md:py-24 bg-section-bg-2 w-full overflow-hidden">
+  <section
+    class="py-16 md:py-10 w-full overflow-hidden"
+    :class="section?.bgSection || 'white'"
+  >
     <div class="container mx-auto px-4 mb-12">
       <h2 class="title-section text-center">
         {{ section?.title || 'O Que Dizem Nossos Clientes' }}

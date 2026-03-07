@@ -16,7 +16,10 @@ const toggle = (index: number) => {
 </script>
 
 <template>
-  <section class="py-16 bg-section-bg-2 w-full">
+  <section
+    class="py-16 w-full"
+    :class="section?.bgSection"
+  >
     <div class="container mx-auto px-4 max-w-3xl">
       <h2 class="title-section text-center mb-10">
         {{ section.title }}
@@ -26,7 +29,7 @@ const toggle = (index: number) => {
         <div
           v-for="(faq, index) in section.questions"
           :key="index"
-          class="border border-gray-200 rounded-xl bg-section-bg-1 overflow-hidden transition-all duration-200"
+          class="border border-gray-200 rounded-xl bg-section-bg-2 overflow-hidden transition-all duration-200"
           :class="{ 'shadow-sm border-gray-300': openIndex === index }"
         >
           <button

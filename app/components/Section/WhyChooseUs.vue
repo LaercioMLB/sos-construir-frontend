@@ -1,32 +1,12 @@
 <script setup lang="ts">
-// Interfaces para a estrutura de dados da seção
-interface StatBadge {
-  icon: string
-  text: string
-}
+import type { WhyChooseUsSection } from '~/types/sections'
 
-interface ReasonCard {
-  icon: string
-  title: string
-  description: string
-}
-
-interface WhyChooseUsSection {
-  title?: string
-  subtitle?: string
-  stats?: StatBadge[]
-  reasons?: ReasonCard[]
-  ctaText?: string
-  ctaLink?: string
-}
-
-// Props com os valores padrão do Figma (perfeito para a Home)
 const _props = withDefaults(defineProps<{
   section?: WhyChooseUsSection
 }>(), {
   section: () => ({
     title: 'Por Que Escolher a SOS Construir',
-    subtitle: 'Mais de 10 anos transformando casas em Foz do Iguaçu com qualidade, confiança e zero dor de cabeça.',
+    description: 'Mais de 10 anos transformando casas em Foz do Iguaçu com qualidade, confiança e zero dor de cabeça.',
     stats: [
       { icon: 'mdi:calendar-blank-outline', text: '10+ anos' },
       { icon: 'mdi:home-outline', text: '1000+ obras' },
@@ -61,14 +41,17 @@ const _props = withDefaults(defineProps<{
 </script>
 
 <template>
-  <section class="py-16 md:py-24 bg-[#F8FAFC] w-full">
+  <section
+    class="py-16 md:py-10 w-full"
+    :class="section.bgSection"
+  >
     <div class="container mx-auto px-4 max-w-7xl">
       <div class="text-center mb-16 flex flex-col items-center">
         <h2 class="title-section">
           {{ section.title }}
         </h2>
         <p class="text-section-subtitle text-base md:text-lg max-w-2xl mb-6">
-          {{ section.subtitle }}
+          {{ section.description }}
         </p>
 
         <div

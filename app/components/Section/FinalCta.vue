@@ -1,16 +1,9 @@
 <script setup lang="ts">
-// Definimos a interface das Props (todas opcionais, indicadas pelo "?")
-interface Props {
-  title?: string
-  subtitle?: string
-  buttonText?: string
-  buttonIcon?: string
-  buttonLink?: string
-}
+import type { FinalCtaSection } from '~/types/sections'
 
-withDefaults(defineProps<Props>(), {
+withDefaults(defineProps<FinalCtaSection>(), {
   title: 'Se ficar com alguma dúvida',
-  subtitle: 'Entre em contato com nossa equipe',
+  description: 'Entre em contato com nossa equipe',
   buttonText: 'Fale com a SOS (WhatsApp)',
   buttonIcon: 'mdi:chat-outline',
   buttonLink: 'https://wa.me/554599976544?text=Ol%C3%A1%21%20Vim%20pelo%20site%20sosconstuir.com.br%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es'
@@ -24,7 +17,7 @@ withDefaults(defineProps<Props>(), {
         {{ title }}
       </h2>
       <p class="text-white/80 text-base md:text-lg mb-8">
-        {{ subtitle }}
+        {{ description }}
       </p>
       <UButton
         :to="buttonLink"

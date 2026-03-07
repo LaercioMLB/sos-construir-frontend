@@ -1,16 +1,5 @@
 <script setup lang="ts">
-interface ProcessStep {
-  step: number
-  title: string
-  description: string
-  icon: string
-}
-
-interface ProcessSection {
-  title?: string
-  subtitle?: string
-  steps: ProcessStep[]
-}
+import type { ProcessSection } from '@/types/sections'
 
 defineProps<{
   section: ProcessSection
@@ -18,14 +7,17 @@ defineProps<{
 </script>
 
 <template>
-  <section class="py-16 md:py-24 bg-white w-full">
+  <section
+    class="py-16 md:py-10"
+    :class="section.bgSection"
+  >
     <div class="container mx-auto px-4 max-w-6xl">
       <div class="text-center mb-16 md:mb-20">
         <h2 class="title-section">
           {{ section.title || 'Como funciona nosso processo' }}
         </h2>
         <p class="text-section-subtitle text-base md:text-lg max-w-2xl mx-auto">
-          {{ section.subtitle || 'Do primeiro contato até a entrega, nós gerenciamos cada detalhe para que você não precise se preocupar com nada.' }}
+          {{ section.description || 'Do primeiro contato até a entrega, nós gerenciamos cada detalhe para que você não precise se preocupar com nada.' }}
         </p>
       </div>
 
@@ -50,7 +42,7 @@ defineProps<{
             />
           </div>
 
-          <div class="relative z-10 bg-white py-2 px-2 w-full">
+          <div class="relative z-10 py-2 px-2 w-full">
             <h3 class="text-lg font-bold text-blue-500 mb-3">
               {{ step.title }}
             </h3>

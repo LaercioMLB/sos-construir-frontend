@@ -1,6 +1,7 @@
 export interface BaseSection {
   title?: string
   description?: string
+  bgSection?: string
 }
 
 export interface FAQQuestion {
@@ -28,7 +29,7 @@ export interface ReasonCard {
 }
 export interface WhyChooseUsSection extends BaseSection {
   stats?: { icon: string, text: string }[]
-  reasons: ReasonCard[]
+  reasons?: ReasonCard[]
   ctaText?: string
   ctaLink?: string
 }
@@ -38,9 +39,13 @@ export interface CtaSection extends BaseSection {
   buttonIcon?: string
   buttonLink?: string
 }
-
+export interface WorkGalleryFilter {
+  label: string
+  slug: string
+  count: number
+}
 export interface WorkGallerySection extends BaseSection {
-  filters: string[]
+  filters: WorkGalleryFilter[]
 }
 
 export interface FinalCtaSection extends BaseSection {

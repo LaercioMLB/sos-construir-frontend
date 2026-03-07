@@ -75,11 +75,22 @@ const sectionComponents: Record<SectionKey, Component> = {
 const sections = computed(() => {
   if (!service.value) return []
 
-  return layoutOrder.map((sectionKey) => {
+  return layoutOrder.map((sectionKey, index) => {
+    const data = service.value?.sections[sectionKey]
+
     return {
       type: sectionKey,
-      // Se a chave existir no JSON, passa os dados. Se não existir, passa undefined (ativando o withDefaults!)
-      data: service.value?.sections[sectionKey]
+      data: data
+        ? {
+            ...data,
+            bgSection:
+              index === 0
+                ? undefined
+                : index % 2 === 0
+                  ? 'bg-section-bg-1'
+                  : 'bg-section-bg-2'
+          }
+        : undefined
     }
   })
 })

@@ -70,7 +70,10 @@ onMounted(() => {
 </script>
 
 <template>
-  <section class="py-16 bg-section-bg-2">
+  <section
+    class="py-16 w-full"
+    :class="props.section?.bgSection"
+  >
     <div class="container mx-auto px-4 max-w-7xl">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
         <div class="lg:col-span-4 flex flex-col">
