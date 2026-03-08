@@ -72,3 +72,21 @@ export interface PartnersSection extends BaseSection {
   tags: Tag[]
   partners: Partner[]
 }
+
+export interface SolutionCard {
+  id: number | string
+  type: 'image' | 'standard'
+  colSpan?: number
+  title: string
+  description: string
+  icon: string
+  image?: string
+  link?: string
+}
+
+export interface SolutionsSection extends BaseSection {
+  kicker?: string
+  ctaText?: string
+  ctaLink?: string
+  cards?: SolutionCard[]
+}
