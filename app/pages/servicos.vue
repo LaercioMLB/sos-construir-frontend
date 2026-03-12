@@ -2,15 +2,18 @@
 import { ref, computed } from 'vue'
 import { useIntersectionObserver, useWindowScroll } from '@vueuse/core'
 import type { FinalCtaSection, SolutionCard } from '@/types/sections'
-import type { Service } from '@/types/service'
+import type { Category, Service } from '@/types/service'
 
 import data from '@/data/services.json'
 import type { BreadcrumbItem } from '@nuxt/ui'
+import categoriesData from '@/data/servicesCategories.json'
+import type { ServiceMeta } from '~/types/servicePage'
 
 const services = data.services as Service[]
+const categories = [{ name: 'Todos', slug: 'todos' }, ...categoriesData.categories] as Category[]
 
 const allServices = ref<Service[]>(services)
-const selectedCategory = ref('Todos')
+const selectedCategory = ref('todos')
 const searchQuery = ref('')
 const visibleCount = ref(12)
 const loadMoreTrigger = ref<HTMLElement | null>(null)
@@ -22,16 +25,34 @@ const showBackToTop = computed(() => y.value > 400)
 const scrollToTop = () => {
   window.scrollTo({ top: 0, behavior: 'smooth' })
 }
-
-// TODO: MUDAR ESSAS CATEGORIAS
-const categories = [...new Set(services.map((s) => s.category))]
-
 const finalCtaSection: FinalCtaSection = {
   title: 'Não Encontrou o Serviço que Procura?',
   description:
     'Temos ainda mais soluções customizadas! Entre em contato para conhecer todas as nossas opções disponíveis.',
 }
+const meta: ServiceMeta = {
+  title: 'Serviços de Construção e Reforma em Foz do Iguaçu | SOS Construir',
+  description:
+    'Eletricista, encanador, pintor, pedreiro, energia solar e muito mais. A SOS Construir conecta você aos melhores especialistas de Foz do Iguaçu com garantia, sem dor de cabeça. Peça seu orçamento.',
+  keywords:
+    'serviços de construção Foz do Iguaçu, reforma residencial Foz do Iguaçu, eletricista Foz do Iguaçu, encanador Foz do Iguaçu, pintor Foz do Iguaçu, pedreiro Foz do Iguaçu, empresa de reforma, construção civil, mão de obra qualificada, orçamento de obra, empresa de construção Foz do Iguaçu, SOS Construir',
+  ogImage: '/og-image.jpg',
+  breadcrumbLabel: 'Serviços',
+}
+useSeoMeta({
+  title: meta.title,
+  description: meta.description,
+  keywords: meta.keywords,
 
+  ogTitle: meta.title,
+  ogDescription: meta.description,
+  ogImage: meta.ogImage,
+
+  twitterTitle: meta.title,
+  twitterDescription: meta.description,
+  twitterImage: meta.ogImage,
+  twitterCard: 'summary_large_image',
+})
 const items = ref<BreadcrumbItem[]>([{ label: 'Home', to: '/' }, { label: 'Serviços' }])
 
 // Lógica de Filtro (Agora incluindo a Pesquisa)
@@ -39,7 +60,7 @@ const filteredServices = computed(() => {
   let result = allServices.value
 
   // 1. Filtra pela Categoria
-  if (selectedCategory.value !== 'Todos') {
+  if (selectedCategory.value !== 'todos') {
     result = result.filter(
       (service) => service.category.toLowerCase() === selectedCategory.value.toLowerCase()
     )
@@ -102,6 +123,10 @@ useIntersectionObserver(
   },
   { threshold: 0.5 }
 )
+const clearFilters = () => {
+  searchQuery.value = ''
+  selectedCategory.value = 'Todos'
+}
 </script>
 
 <template>
@@ -117,7 +142,7 @@ useIntersectionObserver(
           <p class="text-gray-600 text-lg">Tudo o que sua casa precisa, em um único lugar.</p>
         </div>
 
-        <div class="w-full md:max-w-xs">
+        <div class="w-full h-full md:max-w-md flex items-end">
           <UInput
             v-model="searchQuery"
             icon="i-heroicons-magnifying-glass-20-solid"
@@ -125,6 +150,7 @@ useIntersectionObserver(
             size="lg"
             color="primary"
             variant="outline"
+            class="grow bg-transparent border-none outline-none text-sm shadow-md"
           >
             <template v-if="searchQuery?.length" #trailing>
               <UButton
@@ -148,13 +174,13 @@ useIntersectionObserver(
         <button
           class="px-5 py-2.5 rounded-full text-sm font-medium whitespace-nowrap transition-all duration-300 mx-2"
           :class="[
-            selectedCategory === item
+            selectedCategory === item.slug
               ? 'bg-orange-500 text-white shadow-md shadow-orange-500/20'
               : 'bg-white text-gray-600 border border-gray-200 hover:border-orange-500 hover:text-orange-500',
           ]"
-          @click="setCategory(item)"
+          @click="setCategory(item.slug)"
         >
-          {{ item }}
+          {{ item.name }}
         </button>
       </UScrollArea>
 
@@ -165,15 +191,7 @@ useIntersectionObserver(
         <UIcon name="i-heroicons-magnifying-glass" class="text-gray-300 text-6xl mb-4" />
         <h3 class="text-xl font-medium text-gray-900 mb-2">Nenhum serviço encontrado</h3>
         <p class="text-gray-500">Não encontramos nenhum resultado para "{{ searchQuery }}".</p>
-        <UButton
-          class="mt-4"
-          color="primary"
-          variant="soft"
-          @click="
-            searchQuery = ''
-            selectedCategory = 'Todos'
-          "
-        >
+        <UButton class="mt-4" color="primary" variant="soft" @click="clearFilters">
           Limpar filtros
         </UButton>
       </div>

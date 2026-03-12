@@ -1,5 +1,5 @@
-@import "tailwindcss";
-@import "@nuxt/ui";
+@import 'tailwindcss';
+@import '@nuxt/ui';
 @plugin 'tailwind-scrollbar';
 
 @theme static {
@@ -8,39 +8,36 @@
   --bg-default: white;
   --ui-bg: blue;
   /* Principais */
-  --color-blue-50: #EFF6FF;
-  --color-blue-100: #DBEAFE;
-  --color-blue-200: #BFDBFE;
-  --color-blue-300: #93C5FD;
-  --color-blue-400: #1E3A8A;
-  --color-blue-500: #0B2258;
-  --color-blue-600: #0F1724;
-  --color-blue-700: #0A1420;
-  --color-blue-800: #070F18;
-  --color-blue-900: #050A12;
+  --color-blue-50: #eff6ff;
+  --color-blue-100: #dbeafe;
+  --color-blue-200: #bfdbfe;
+  --color-blue-300: #93c5fd;
+  --color-blue-400: #1e3a8a;
+  --color-blue-500: #0b2258;
+  --color-blue-600: #0f1724;
+  --color-blue-700: #0a1420;
+  --color-blue-800: #070f18;
+  --color-blue-900: #050a12;
   --color-blue-950: #020508;
 
-  --color-orange-50: #FFF7ED;
-  --color-orange-100: #FFEDD5;
-  --color-orange-200: #FED7AA;
-  --color-orange-300: #FDBA74;
-  --color-orange-400: #FEA533;
-  --color-orange-500: #FD8D03;
-  --color-orange-600: #E67F03;
-  --color-orange-700: #CC7103;
-  --color-orange-800: #A85B02;
-  --color-orange-900: #7A4202;
-  --color-orange-950: #4D2901;
+  --color-orange-50: #fff7ed;
+  --color-orange-100: #ffedd5;
+  --color-orange-200: #fed7aa;
+  --color-orange-300: #fdba74;
+  --color-orange-400: #fea533;
+  --color-orange-500: #fd8d03;
+  --color-orange-600: #e67f03;
+  --color-orange-700: #cc7103;
+  --color-orange-800: #a85b02;
+  --color-orange-900: #7a4202;
+  --color-orange-950: #4d2901;
 
+  --color-section-bg-1: #f8fafc;
+  --color-section-bg-2: #ffffff;
 
-  --color-section-bg-1: #F8FAFC;
-  --color-section-bg-2: #FFFFFF;
-
-  --color-section-subtitle: #4B5563;  
+  --color-section-subtitle: #4b5563;
 }
 @layer components {
-
-
   .title-section {
     @apply text-4xl md:text-4xl lg:text-[44px] font-bold text-blue-500 mb-4 tracking-tight;
   }
@@ -48,5 +45,4 @@
   .subtitle-section {
     @apply text-lg text-[var(--color-section-subtitle)];
   }
-
 }

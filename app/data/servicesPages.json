@@ -19,14 +19,13 @@
         "coverImage": "/images/services/pintor/foztintas/cover.png",
         "description": "Trabalhamos com a FozTintas, referência em qualidade desde 1985. Tintas premium, cores personalizadas e o melhor preço direto do fabricante para seu projeto.",
         "tags": [
-                    {
+          {
             "icon": "format-paint",
             "text": "Tintas premium com durabilidade garantida"
-
-          }, 
+          },
           {
             "icon": "package-variant-closed",
-            "text":  "Entrega rápida e rastreada"
+            "text": "Entrega rápida e rastreada"
           },
           {
             "icon": "currency-usd",
@@ -133,7 +132,7 @@
             "icon": "check",
             "text": "Tubos e perfis de alta resistência"
           },
-                    {
+          {
             "icon": "check",
             "text": "Opções de material galvanizado"
           },

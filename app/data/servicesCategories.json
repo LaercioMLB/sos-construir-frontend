@@ -1,0 +1,32 @@
+{
+  "categories": [
+    {
+      "name": "Acabamento",
+      "slug": "acabamento"
+    },
+    {
+      "name": "Construção",
+      "slug": "construcao"
+    },
+    {
+      "name": "Instalações",
+      "slug": "instalacoes"
+    },
+    {
+      "name": "Externo",
+      "slug": "externo"
+    },
+    {
+      "name": "Estrutura",
+      "slug": "estrutura"
+    },
+    {
+      "name": "Reformas",
+      "slug": "reformas"
+    },
+    {
+      "name": "Móveis",
+      "slug": "moveis"
+    }
+  ]
+}

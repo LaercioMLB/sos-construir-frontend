@@ -1,3 +1,7 @@
+export interface Category {
+  name: string
+  slug: string
+}
 export interface Service {
   id: number | string
   name: string
