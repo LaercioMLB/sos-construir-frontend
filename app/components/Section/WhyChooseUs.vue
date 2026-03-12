@@ -35,8 +35,8 @@ const defaultSection: WhyChooseUsSection = {
         'Nossa responsabilidade não acaba na entrega. Estaremos à disposição para qualquer ajuste futuro.',
     },
   ],
-  ctaText: 'Solicitar Orçamento Sem Compromisso',
-  ctaLink: '#',
+  ctaText: 'Conheça Nossa História',
+  ctaLink: '/sobre',
   bgSection: 'bg-section-bg-2',
 }
 const props = defineProps<{

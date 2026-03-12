@@ -7,14 +7,7 @@ import type {
   WhyChooseUsSection,
   Tag,
 } from './sections'
-
-export interface ServiceMeta {
-  title: string
-  description: string
-  keywords: string
-  ogImage: string
-  breadcrumbLabel: string
-}
+import type Meta from './meta'
 
 export interface ServiceHeroSection extends BaseSection {
   image: string
@@ -54,7 +47,7 @@ export interface ServiceSections {
 }
 
 export interface Service {
-  meta: ServiceMeta
+  meta: Meta
   sections: ServiceSections
 }
 

@@ -4,9 +4,9 @@ import type { FinalCtaSection } from '~/types/sections'
 const defaultSection: FinalCtaSection = {
   title: 'Se ficar com alguma dúvida',
   description: 'Entre em contato com nossa equipe',
-  buttonText: 'Fale com a SOS (WhatsApp)',
-  buttonIcon: 'mdi:chat-outline',
-  buttonLink:
+  ctaText: 'Fale com a SOS (WhatsApp)',
+  ctaIcon: 'mdi:chat-outline',
+  ctaLink:
     'https://wa.me/554599976544?text=Ol%C3%A1%21%20Vim%20pelo%20site%20sosconstuir.com.br%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es',
 }
 const props = defineProps<{
@@ -29,7 +29,7 @@ const section = computed(() => ({
         {{ section.description }}
       </p>
       <UButton
-        :to="section.buttonLink"
+        :to="section.ctaLink"
         target="_blank"
         color="primary"
         variant="solid"
@@ -37,9 +37,9 @@ const section = computed(() => ({
         class="text-white font-bold px-8 py-3 rounded-lg transition-colors flex items-center gap-2"
       >
         <template #leading>
-          <Icon :name="section.buttonIcon || 'mdi:chat-outline'" class="text-2xl" />
+          <Icon :name="section.ctaIcon || 'mdi:chat-outline'" class="text-2xl" />
         </template>
-        {{ section.buttonText }}
+        {{ section.ctaText }}
       </UButton>
     </div>
   </section>

@@ -7,7 +7,7 @@ import type { Category, Service } from '@/types/service'
 import data from '@/data/services.json'
 import type { BreadcrumbItem } from '@nuxt/ui'
 import categoriesData from '@/data/servicesCategories.json'
-import type { ServiceMeta } from '~/types/servicePage'
+import type Meta from '~/types/meta'
 
 const services = data.services as Service[]
 const categories = [{ name: 'Todos', slug: 'todos' }, ...categoriesData.categories] as Category[]
@@ -30,7 +30,7 @@ const finalCtaSection: FinalCtaSection = {
   description:
     'Temos ainda mais soluções customizadas! Entre em contato para conhecer todas as nossas opções disponíveis.',
 }
-const meta: ServiceMeta = {
+const meta: Meta = {
   title: 'Serviços de Construção e Reforma em Foz do Iguaçu | SOS Construir',
   description:
     'Eletricista, encanador, pintor, pedreiro, energia solar e muito mais. A SOS Construir conecta você aos melhores especialistas de Foz do Iguaçu com garantia, sem dor de cabeça. Peça seu orçamento.',
@@ -95,7 +95,7 @@ const mappedCards = computed<SolutionCard[]>(() => {
     description: service.description,
     icon: service.icon,
     image: service.image,
-    link: `/servico/${service.slug}`,
+    link: `/servicos/${service.slug}`,
   }))
 })
 

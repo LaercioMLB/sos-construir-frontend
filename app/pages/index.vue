@@ -1,5 +1,30 @@
 <script setup lang="ts">
 import type { ProcessSection, WorkGallerySection } from '@/types/sections'
+import type Meta from '~/types/meta'
+
+const meta: Meta = {
+  title: 'SOS Construir | Construção e Reforma em Foz do Iguaçu',
+  description:
+    'Mais de 10 anos resolvendo obras e reformas em Foz do Iguaçu. Eletricista, encanador, pedreiro, energia solar e mais de 20 serviços com garantia, materiais de qualidade e zero dor de cabeça.',
+  keywords:
+    'construção Foz do Iguaçu, reforma Foz do Iguaçu, empresa de reforma, empresa de construção, eletricista, encanador, pedreiro, pintor, energia solar, serviços residenciais, mão de obra, orçamento de obra, reforma com garantia, SOS Construir',
+  ogImage: 'https://images.pexels.com/photos/534220/pexels-photo-534220.jpeg',
+  breadcrumbLabel: 'Início',
+}
+useSeoMeta({
+  title: meta.title,
+  description: meta.description,
+  keywords: meta.keywords,
+
+  ogTitle: meta.title,
+  ogDescription: meta.description,
+  ogImage: meta.ogImage,
+
+  twitterTitle: meta.title,
+  twitterDescription: meta.description,
+  twitterImage: meta.ogImage,
+  twitterCard: 'summary_large_image',
+})
 
 const process: ProcessSection = {
   steps: [
@@ -61,37 +86,12 @@ const worksGallery: WorkGallerySection = {
 
 <template>
   <div>
-    <section-hero
-      :section="{
-        bgSection: 'bg-section-bg-1',
-      }"
-    />
-    <section-validation
-      :section="{
-        bgSection: 'bg-section-bg-2',
-      }"
-    />
-    <section-services-categories
-      :section="{
-        bgSection: 'bg-section-bg-1',
-      }"
-    />
-    <section-partners
-      :section="{
-        bgSection: 'bg-section-bg-2',
-      }"
-    />
-    <section-why-choose-us
-      :section="{
-        bgSection: 'bg-section-bg-1',
-      }"
-    />
-    <section-our-process
-      :section="{
-        ...process,
-        bgSection: 'bg-section-bg-2',
-      }"
-    />
+    <section-hero :section="{ bgSection: 'bg-section-bg-1' }" />
+    <section-validation :section="{ bgSection: 'bg-section-bg-2' }" />
+    <section-services-categories :section="{ bgSection: 'bg-section-bg-1' }" />
+    <section-partners :section="{ bgSection: 'bg-section-bg-2' }" />
+    <section-why-choose-us :section="{ bgSection: 'bg-section-bg-1' }" />
+    <section-our-process :section="{ ...process, bgSection: 'bg-section-bg-2' }" />
     <section-professionals
       :section="{
         title: 'Nossos Profissionais Especializados',

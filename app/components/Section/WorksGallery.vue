@@ -9,6 +9,8 @@ const defaultSection: WorkGallerySection = {
   description:
     'Centenas de projetos transformados em Foz do Iguaçu. Qualidade, dedicação e resultado que fala por si.',
   filters: [],
+  ctaText: 'Ver nosso Portfolio',
+  ctaLink: '/portfolio',
 }
 const props = defineProps<{
   section: Partial<WorkGallerySection>
@@ -177,9 +179,10 @@ const reversedFilteredProjects = computed(() => {
           <UButton
             variant="outline"
             size="lg"
+            :to="section.ctaLink"
             class="hidden lg:flex w-full justify-center text-orange-500 border-orange-200 hover:bg-orange-50 py-3 rounded-lg font-bold"
           >
-            Visualizar todos
+            {{ section.ctaText }}
             <template #trailing>
               <Icon name="mdi:arrow-right" class="text-xl" />
             </template>
@@ -230,9 +233,10 @@ const reversedFilteredProjects = computed(() => {
           <UButton
             variant="outline"
             size="lg"
+            :to="section.ctaLink"
             class="w-full flex justify-center text-orange-500 border-orange-200 hover:bg-orange-50 py-3 rounded-lg font-bold"
           >
-            Visualizar todos
+            {{ section.ctaText }}
             <template #trailing>
               <Icon name="mdi:arrow-right" class="text-xl" />
             </template>

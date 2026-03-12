@@ -3,9 +3,20 @@ import { ref, onMounted } from 'vue'
 import type Professional from '~/types/profissional'
 import type { BaseSection } from '~/types/sections'
 
+const defaultSection: BaseSection = {
+  title: 'Nossos Profissionais Especializados',
+  description: 'Escolha entre mais de 100 profissionais certificados.',
+  ctaText: 'Explorar todos os profissionais',
+  ctaLink: '/profissionais',
+}
 const props = defineProps<{
-  section: BaseSection
+  section?: Partial<BaseSection>
 }>()
+
+const section = computed(() => ({
+  ...defaultSection,
+  ...props.section,
+}))
 
 const professionals = ref<Professional[]>([])
 const loading = ref(true)
@@ -75,10 +86,10 @@ onMounted(() => {
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
         <div class="lg:col-span-4 flex flex-col">
           <h2 class="title-section">
-            {{ props.section.title }}
+            {{ section.title }}
           </h2>
           <p class="text-section-subtitle mb-8 leading-relaxed">
-            {{ props.section.description }}
+            {{ section.description }}
           </p>
           <div class="hidden lg:block">
             <div class="rounded-xl p-6 mb-8 border border-gray-100">
@@ -120,9 +131,10 @@ onMounted(() => {
               color="primary"
               variant="outline"
               size="lg"
+              :to="section.ctaLink"
               class="w-full flex justify-center py-3 rounded-lg font-bold transition-colors"
             >
-              Explorar todos os profissionais
+              {{ section.ctaText }}
               <template #trailing>
                 <Icon name="mdi:arrow-right" class="text-xl" />
               </template>
@@ -190,9 +202,10 @@ onMounted(() => {
             color="primary"
             variant="outline"
             size="lg"
+            :to="section.ctaLink"
             class="w-full flex justify-center py-3 rounded-lg font-bold transition-colors"
           >
-            Explorar todos os profissionais
+            {{ section.ctaText }}
             <template #trailing>
               <Icon name="mdi:arrow-right" class="text-xl" />
             </template>
