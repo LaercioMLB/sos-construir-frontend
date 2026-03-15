@@ -1,5 +1,5 @@
 {
-  "Pintor": {
+  "pintor": {
     "meta": {
       "title": "Pintor Profissional em Foz do Iguaçu | SOS Construir",
       "description": "Pintores experientes em Foz do Iguaçu. Pintura interna, externa, comercial. Profissionais certificados com garantia integral.",
@@ -121,48 +121,19 @@
       }
     }
   },
-  "Metalurgico": {
+  "metalurgica": {
     "meta": {
-      "title": "Metalúrgica Profissional em Foz do Iguaçu | SOS Construir",
-      "description": "Serviços metalúrgicos de excelência em Foz do Iguaçu. Estruturas metálicas, portões, soldas e projetos sob medida com profissionais certificados.",
-      "keywords": "metalúrgica foz do iguaçu, serralheria, solda, estruturas metálicas, portões",
-      "ogImage": "/images/services/metalurgico/hero.jpg",
-      "breadcrumbLabel": "Metalúrgica"
+      "title": "Pintor Profissional em Foz do Iguaçu | SOS Construir",
+      "description": "Pintores experientes em Foz do Iguaçu. Pintura interna, externa, comercial. Profissionais certificados com garantia integral.",
+      "keywords": "pintor foz do iguaçu, pintura profissional, pintura interna, pintura externa",
+      "ogImage": "/images/services/pintor/hero.jpg",
+      "breadcrumbLabel": "Pintor"
     },
     "sections": {
       "hero": {
         "title": "Metalúrgica Profissional Sem Dor de Cabeça",
         "description": "Escolha um metalúrgico entre os melhores profissionais da região. Qualidade garantida, com prazos cumpridos e preço justo.",
         "image": "/images/services/metalurgico/hero.jpg"
-      },
-      "partner": {
-        "partnerName": "AçoFoz Fornecedores",
-        "logo": "/images/logos/acofoz.png",
-        "description": "Trabalhamos em parceria com as melhores distribuidoras de aço da região. Matéria-prima certificada, garantindo resistência estrutural máxima para sua obra.",
-        "tags": [
-          {
-            "icon": "check",
-            "text": "Aço de alta qualidade com certificação"
-          },
-          {
-            "icon": "check",
-            "text": "Tubos e perfis de alta resistência"
-          },
-          {
-            "icon": "check",
-            "text": "Opções de material galvanizado"
-          },
-          {
-            "icon": "check",
-            "text": "Melhor custo-benefício em metais"
-          }
-        ],
-        "cta": "Conhecer Materiais",
-        "footerInfo": {
-          "usage": "Mais de 300 toneladas de aço instaladas",
-          "guarantee": "Garantia de procedência do material"
-        },
-        "coverImage": "/images/services/metalurgico/acofoz/cover.png"
       },
       "workGallery": {
         "filters": [
@@ -240,6 +211,625 @@
             "answer": "Sim, nossa equipe realiza manutenção preventiva e corretiva, como troca de roldanas, reforço de soldas quebradas e alinhamento de trilhos."
           }
         ]
+      }
+    }
+  },
+  "paver": {
+    "meta": {
+      "title": "Instalação de Paver em Foz do Iguaçu | SOS Construir",
+      "description": "Especialistas em pavimentação com paver em Foz do Iguaçu. Calçadas, pátios e áreas externas com drenagem eficiente e alta durabilidade. +4.000 projetos.",
+      "keywords": "paver foz do iguaçu, piso intertravado, calçada de paver, pavimentação sustentável, colocação de paver",
+      "ogImage": "/images/services/paver/hero.jpg",
+      "breadcrumbLabel": "Paver"
+    },
+    "sections": {
+      "hero": {
+        "title": "Pavimentação Inteligente e Sustentável",
+        "description": "Transforme sua área externa com a beleza e resistência do paver. Instalação rápida, drenagem eficiente e zero manutenção complicada.",
+        "image": "/images/services/paver/hero.jpg"
+      },
+      "workGallery": {
+        "filters": [
+          {
+            "label": "Todos",
+            "slug": "todos",
+            "count": 4000
+          },
+          {
+            "label": "Residencial",
+            "slug": "residencial",
+            "count": 2500
+          },
+          {
+            "label": "Comercial/Industrial",
+            "slug": "comercial",
+            "count": 1200
+          },
+          {
+            "label": "Público/Praças",
+            "slug": "publico",
+            "count": 300
+          }
+        ]
+      },
+      "process": {
+        "steps": [
+          {
+            "step": 1,
+            "title": "Visita e Nivelamento",
+            "description": "Analisamos o terreno e preparamos a base para garantir que o paver nunca afunde.",
+            "icon": "ruler-square"
+          },
+          {
+            "step": 2,
+            "title": "Compactação de Base",
+            "description": "Aplicação de camada de areia ou pó de brita com compactação mecanizada profissional.",
+            "icon": "hard-hat"
+          },
+          {
+            "step": 3,
+            "title": "Assentamento Técnico",
+            "description": "Colocação peça por peça com encaixe intertravado perfeito para máxima estabilidade.",
+            "icon": "grid-large"
+          },
+          {
+            "step": 4,
+            "title": "Acabamento e Limpeza",
+            "description": "Preenchimento das juntas e limpeza final. Sua calçada pronta para uso imediato!",
+            "icon": "sparkles"
+          }
+        ]
+      },
+      "professionals": {
+        "title": "Mestres em Pavimentação",
+        "description": "Nossa equipe é especialista em pisos intertravados. Diferente de pedreiros comuns, nossos profissionais dominam a técnica de drenagem e travamento que evita manutenções futuras."
+      },
+      "whyChooseUs": {
+        "title": "Por que escolher nosso Paver?",
+        "items": [
+          {
+            "title": "Conforto Térmico",
+            "description": "Retém menos calor que o asfalto ou concreto maciço.",
+            "icon": "thermometer-minus"
+          },
+          {
+            "title": "Acesso Fácil",
+            "description": "Precisa consertar um cano? Basta remover as peças e colocar de volta. Sem quebra-quebra.",
+            "icon": "hammer-wrench"
+          },
+          {
+            "title": "Segurança",
+            "description": "Superfície naturalmente antiderrapante, ideal para rampas e calçadas.",
+            "icon": "walk"
+          }
+        ]
+      },
+      "faq": {
+        "title": "Dúvidas sobre Paver",
+        "questions": [
+          {
+            "question": "O paver pode ser usado em garagens com carros pesados?",
+            "answer": "Sim! O paver é extremamente resistente e suporta tráfego de veículos leves e pesados, desde que a base seja preparada corretamente pela nossa equipe."
+          },
+          {
+            "question": "O que acontece se uma peça quebrar?",
+            "answer": "Essa é a grande vantagem! Você pode substituir apenas a peça danificada individualmente, mantendo a estética do piso sem remendos aparentes."
+          },
+          {
+            "question": "Quanto tempo demora a instalação?",
+            "answer": "A instalação é muito mais rápida que o concreto convencional, pois não exige tempo de cura. Uma vez assentado, você já pode pisar ou passar com o carro."
+          },
+          {
+            "question": "O mato cresce entre as peças?",
+            "answer": "Se a instalação for feita com o selamento correto das juntas (areia fina ou pó de pedra) e a manutenção básica for mantida, o crescimento de vegetação é minimizado."
+          }
+        ]
+      },
+      "finalCta": {
+        "title": "Pronto para valorizar seu imóvel?",
+        "description": "Junte-se aos mais de 4.000 clientes satisfeitos em Foz do Iguaçu. Peça seu orçamento gratuito hoje!",
+        "ctaText": "Falar com Especialista"
+      }
+    }
+  },
+  "instalacao-de-portas": {
+    "meta": {
+      "title": "Instalação de Portas em Foz do Iguaçu | SOS Construir",
+      "description": "Instalação profissional de portas em Foz do Iguaçu. Especialistas em Kit Porta Pronta Rohden. Acabamento premium, isolamento acústico e agilidade na obra.",
+      "keywords": "instalação de portas foz do iguaçu, portas rohden, kit porta pronta, instalador de portas, portas de madeira",
+      "ogImage": "/images/services/instalacao-de-portas/hero.jpg",
+      "breadcrumbLabel": "Instalação de Portas"
+    },
+    "sections": {
+      "hero": {
+        "title": "Instalação de Portas com Acabamento de Alto Padrão",
+        "description": "Transforme seus ambientes com a sofisticação das portas Rohden e a instalação impecável da SOS Construir. Rapidez, limpeza e precisão técnica.",
+        "image": "/images/services/instalacao-de-portas/hero.jpg"
+      },
+      "partner": {
+        "partnerName": "Rohden Portas",
+        "logo": "/images/services/instalacao-de-portas/rohden/logo.png",
+        "coverImage": "/images/services/instalacao-de-portas/rohden/cover.jpg",
+        "description": "Como representantes oficiais da Rohden em Foz do Iguaçu, oferecemos o Kit Porta Pronta: a solução líder de mercado que une tecnologia, beleza e durabilidade com certificação internacional.",
+        "tags": [
+          {
+            "icon": "shield-check",
+            "text": "5 camadas de pintura UV (não amarela)"
+          },
+          {
+            "icon": "volume-off",
+            "text": "Isolamento acústico com borracha de vedação"
+          },
+          {
+            "icon": "door",
+            "text": "Kit Porta Pronta: Agilidade 3x maior na obra"
+          },
+          {
+            "icon": "certificate",
+            "text": "Produto com certificação de qualidade exportação"
+          }
+        ],
+        "cta": "Conhecer Linhas Rohden",
+        "footerInfo": {
+          "usage": "Líder nacional com +20 milhões de portas produzidas",
+          "guarantee": "Garantia de fábrica e suporte exclusivo SOS"
+        }
+      },
+      "workGallery": {
+        "filters": [
+          {
+            "label": "Todos",
+            "slug": "todos",
+            "count": 150
+          },
+          {
+            "label": "Linha Elegance",
+            "slug": "elegance",
+            "count": 60
+          },
+          {
+            "label": "Portas Pivotantes",
+            "slug": "pivotantes",
+            "count": 25
+          },
+          {
+            "label": "Portas de Correr",
+            "slug": "correr",
+            "count": 40
+          }
+        ]
+      },
+      "process": {
+        "steps": [
+          {
+            "step": 1,
+            "title": "Consultoria e Medição",
+            "description": "Realizamos a medição técnica dos vãos para garantir que cada porta se ajuste perfeitamente.",
+            "icon": "ruler"
+          },
+          {
+            "step": 2,
+            "title": "Escolha do Modelo",
+            "description": "Apresentamos as linhas Elegance, Deluxe e opções de acabamento (frisos e cores).",
+            "icon": "palette-outline"
+          },
+          {
+            "step": 3,
+            "title": "Instalação Técnica",
+            "description": "Instalação do Kit Porta Pronta (porta, batente e guarnições) com ferragens pré-instaladas.",
+            "icon": "hammer-wrench"
+          },
+          {
+            "step": 4,
+            "title": "Ajuste Final",
+            "description": "Regulagem fina das dobradiças e fechaduras para um fechamento suave e silencioso.",
+            "icon": "check-decagram"
+          }
+        ]
+      },
+      "professionals": {
+        "title": "Especialistas em Kit Porta Pronta",
+        "description": "Instalar uma porta de alto padrão exige ferramentas específicas e precisão. Nossa equipe é treinada para realizar a montagem sem sujeira e com o alinhamento perfeito que seu projeto exige."
+      },
+      "whyChooseUs": {
+        "title": "Por que investir em nossas portas?",
+        "items": [
+          {
+            "title": "Sem Retrabalho",
+            "description": "O Kit Porta Pronta elimina a necessidade de lixamento ou pintura no local.",
+            "icon": "clock-fast"
+          },
+          {
+            "title": "Resistência",
+            "description": "Tratamento contra umidade e cupins, garantindo anos de durabilidade.",
+            "icon": "shield-lock"
+          },
+          {
+            "title": "Estética Premium",
+            "description": "Acabamento uniforme que valoriza o imóvel e encanta arquitetos.",
+            "icon": "home-modern"
+          }
+        ]
+      },
+      "faq": {
+        "title": "Dúvidas sobre Portas e Instalação",
+        "questions": [
+          {
+            "question": "O que é o Kit Porta Pronta?",
+            "answer": "É a solução completa: a porta já vem montada com batente e guarnições, com ferragens pré-instaladas, pronta para ser fixada no vão com espuma expansiva."
+          },
+          {
+            "question": "As portas brancas amarelam com o tempo?",
+            "answer": "Não! As portas Rohden possuem 5 camadas de pintura UV de alta resistência, que protegem a cor e evitam o amarelamento causado pela luz."
+          },
+          {
+            "question": "É possível corrigir riscos ou amassados?",
+            "answer": "Sim, as linhas permitem correções e até repintura com facilidade, mantendo a qualidade original do acabamento."
+          },
+          {
+            "question": "Vocês instalam portas pivotantes de entrada?",
+            "answer": "Sim, instalamos toda a linha Deluxe da Rohden, incluindo portas pivotantes de grandes dimensões que trazem imponência à fachada."
+          }
+        ]
+      },
+      "finalCta": {
+        "title": "Sua casa merece portas de alto padrão",
+        "description": "Agende uma consultoria técnica e veja como as portas Rohden podem transformar seu projeto.",
+        "ctaText": "Solicitar Orçamento de Portas"
+      }
+    }
+  },
+  "energia-solar": {
+    "meta": {
+      "title": "Energia Solar em Foz do Iguaçu | Economize até 90% | SOS Construir",
+      "description": "Instalação de energia solar em Foz do Iguaçu. Reduza sua conta de luz em até 90%. Projetos completos, homologação na Copel e financiamento facilitado.",
+      "keywords": "energia solar foz do iguaçu, painel solar, energia fotovoltaica, kit energia solar, instalador energia solar",
+      "ogImage": "/images/services/energia-solar/hero.jpg",
+      "breadcrumbLabel": "Energia Solar"
+    },
+    "sections": {
+      "hero": {
+        "title": "Transforme o Sol de Foz em Economia no seu Bolso",
+        "description": "Reduza sua conta de energia em até 90% com um sistema solar de alta performance. Pagamento facilitado onde a parcela cabe na sua economia.",
+        "image": "/images/services/energia-solar/hero.jpg"
+      },
+      "workGallery": {
+        "filters": [
+          {
+            "label": "Todos",
+            "slug": "todos",
+            "count": 120
+          },
+          {
+            "label": "Residencial",
+            "slug": "residencial",
+            "count": 85
+          },
+          {
+            "label": "Comercial",
+            "slug": "comercial",
+            "count": 25
+          },
+          {
+            "label": "Industrial/Rural",
+            "slug": "rural",
+            "count": 10
+          }
+        ]
+      },
+      "process": {
+        "steps": [
+          {
+            "step": 1,
+            "title": "Análise de Consumo",
+            "description": "Analisamos seu histórico de energia para projetar o sistema ideal para sua necessidade real.",
+            "icon": "chart-line"
+          },
+          {
+            "step": 2,
+            "title": "Projeto e Engenharia",
+            "description": "Nossos engenheiros eletricistas criam o projeto técnico e cuidam de toda a burocracia com a Copel.",
+            "icon": "file-document-edit"
+          },
+          {
+            "step": 3,
+            "title": "Instalação Segura",
+            "description": "Equipe especializada instala os painéis e o inversor com máxima segurança e rapidez.",
+            "icon": "solar-panel"
+          },
+          {
+            "step": 4,
+            "title": "Ativação e Monitoramento",
+            "description": "Troca do medidor pela Copel e ativação do sistema. Você acompanha a geração pelo celular!",
+            "icon": "cellphone-check"
+          }
+        ]
+      },
+      "professionals": {
+        "title": "Engenharia Solar Especializada",
+        "description": "Diferente de instalações amadoras, a SOS Construir conta com engenheiros eletricistas responsáveis. Isso garante que seu telhado não terá infiltrações e seu sistema elétrico estará 100% seguro contra sobrecargas."
+      },
+      "whyChooseUs": {
+        "title": "Vantagens da Energia Solar SOS",
+        "items": [
+          {
+            "title": "Valorização Imediata",
+            "description": "Um imóvel com energia solar é vendido até 10% mais rápido e por um valor maior.",
+            "icon": "trending-up"
+          },
+          {
+            "title": "Manutenção Mínima",
+            "description": "O sistema exige apenas limpezas periódicas simples para manter a eficiência.",
+            "icon": "mop"
+          },
+          {
+            "title": "Independência",
+            "description": "Proteja-se contra os constantes aumentos e bandeiras tarifárias da conta de luz.",
+            "icon": "leaf"
+          }
+        ]
+      },
+      "faq": {
+        "title": "Dúvidas sobre Energia Solar",
+        "questions": [
+          {
+            "question": "Os painéis funcionam em dias nublados ou com chuva?",
+            "answer": "Sim, eles continuam gerando energia através da radiação difusa, embora em menor quantidade do que em um dia de sol pleno."
+          },
+          {
+            "question": "Quanto tempo demora para o sistema 'se pagar'?",
+            "answer": "O Retorno sobre o Investimento (Payback) geralmente ocorre entre 3 a 5 anos. Depois disso, a energia é praticamente de graça."
+          },
+          {
+            "question": "O que acontece com o excesso de energia que eu não usar?",
+            "answer": "O excesso é enviado para a rede da Copel e vira créditos que você pode usar à noite ou em meses com menos sol. Os créditos valem por 60 meses."
+          },
+          {
+            "question": "Preciso furar meu telhado?",
+            "answer": "A instalação utiliza estruturas de fixação específicas para cada tipo de telha, garantindo a vedação total e evitando vazamentos."
+          }
+        ]
+      },
+      "finalCta": {
+        "title": "Pare de pagar caro na conta de luz",
+        "description": "Peça seu orçamento e veja como a parcela do financiamento pode ser menor do que você paga hoje para a Copel.",
+        "ctaText": "Solicitar Estudo Gratuito"
+      }
+    }
+  },
+  "terraplanagem-e-locacao": {
+    "meta": {
+      "title": "Terraplanagem e Locação de Máquinas em Foz do Iguaçu | SOS Construir",
+      "description": "Serviços de terraplanagem, limpeza de terreno e locação de máquinas em Foz do Iguaçu. Retroescavadeira, Bobcat e caminhão caçamba. Base sólida para sua obra.",
+      "keywords": "terraplanagem foz do iguaçu, aluguel de retroescavadeira, locação de bobcat, limpeza de terreno, escavação foz",
+      "ogImage": "/images/services/terraplanagem-e-locacao/hero.jpg",
+      "breadcrumbLabel": "Terraplanagem e Locação"
+    },
+    "sections": {
+      "hero": {
+        "title": "A Base Sólida que Sua Obra Precisa Começa Aqui",
+        "description": "Preparação de terreno com precisão técnica e agilidade. Locação de equipamentos modernos com operadores experientes para garantir o nível perfeito do seu projeto.",
+        "image": "/images/services/terraplanagem-e-locacao/hero.jpg"
+      },
+      "workGallery": {
+        "filters": [
+          {
+            "label": "Todos",
+            "slug": "todos",
+            "count": 200
+          },
+          {
+            "label": "Terraplanagem",
+            "slug": "terraplanagem",
+            "count": 120
+          },
+          {
+            "label": "Limpeza de Terreno",
+            "slug": "limpeza",
+            "count": 50
+          },
+          {
+            "label": "Demolição",
+            "slug": "demolicao",
+            "count": 30
+          }
+        ]
+      },
+      "process": {
+        "steps": [
+          {
+            "step": 1,
+            "title": "Vistoria e Topografia",
+            "description": "Analisamos as cotas do terreno e o tipo de solo para planejar o volume de terra a ser movido.",
+            "icon": "miter-saw"
+          },
+          {
+            "step": 2,
+            "title": "Limpeza e Supressão",
+            "description": "Remoção de vegetação, entulhos ou estruturas antigas para liberar a área de trabalho.",
+            "icon": "shovels"
+          },
+          {
+            "step": 3,
+            "title": "Corte e Aterro",
+            "description": "Movimentação técnica de terra para atingir o nivelamento exato projetado pela engenharia.",
+            "icon": "truck-flatbed"
+          },
+          {
+            "step": 4,
+            "title": "Compactação Final",
+            "description": "Solo firme e pronto para receber a fundação ou o pavimento, sem riscos de recalque.",
+            "icon": "image-filter-hdr"
+          }
+        ]
+      },
+      "professionals": {
+        "title": "Operadores de Elite",
+        "description": "Mais do que dirigir máquinas, nossos operadores entendem de níveis, drenagem e segurança. Um trabalho mal feito na terraplanagem pode custar caro no futuro; na SOS, garantimos a precisão desde o primeiro metro cúbico."
+      },
+      "whyChooseUs": {
+        "title": "Por que preparar seu solo conosco?",
+        "items": [
+          {
+            "title": "Precisão Técnica",
+            "description": "Trabalhamos com foco no nivelamento perfeito, facilitando as próximas etapas da obra.",
+            "icon": "target"
+          },
+          {
+            "title": "Economia de Tempo",
+            "description": "Máquinas rápidas e operadores focados em cumprir o cronograma rigorosamente.",
+            "icon": "timer-sand"
+          },
+          {
+            "title": "Solução Completa",
+            "description": "Da escavação ao transporte de resíduos, resolvemos tudo em um só lugar.",
+            "icon": "vibrate"
+          }
+        ]
+      },
+      "faq": {
+        "title": "Dúvidas sobre Terraplanagem e Máquinas",
+        "questions": [
+          {
+            "question": "Vocês alugam a máquina com ou sem operador?",
+            "answer": "Trabalhamos preferencialmente com locação acompanhada de nossos operadores qualificados, garantindo a segurança do equipamento e a qualidade do serviço executado."
+          },
+          {
+            "question": "O que está incluso no serviço de limpeza de terreno?",
+            "answer": "Inclui a remoção de mato, retirada de árvores (conforme autorização ambiental), remoção de entulhos e nivelamento superficial."
+          },
+          {
+            "question": "Vocês fazem apenas pequenos aterros residenciais?",
+            "answer": "Atendemos desde pequenos jardins e calçadas residenciais até grandes platôs para barracões industriais e loteamentos."
+          },
+          {
+            "question": "Como é cobrado o serviço de locação?",
+            "answer": "Pode ser cobrado por hora de máquina trabalhada ou por valor fechado (empreitada) do projeto, dependendo da complexidade do terreno."
+          }
+        ]
+      },
+      "finalCta": {
+        "title": "Comece sua obra do jeito certo",
+        "description": "Evite problemas estruturais no futuro com uma terraplanagem bem executada. Peça seu orçamento agora!",
+        "ctaText": "Solicitar Orçamento de Terraplanagem"
+      }
+    }
+  },
+  "reforma-de-telhado": {
+    "meta": {
+      "title": "Reforma de Telhado em Foz do Iguaçu | SOS Construir",
+      "description": "Especialistas em reforma de telhados em Foz do Iguaçu. Reparos de vazamentos, troca de telhas e reforço estrutural com garantia integral e inspeção detalhada.",
+      "keywords": "reforma de telhado foz do iguaçu, conserto de telhado, troca de telhas, vazamento telhado, calhas e rufos",
+      "ogImage": "/images/services/reforma-de-telhado/hero.jpg",
+      "breadcrumbLabel": "Reforma de Telhado"
+    },
+    "sections": {
+      "hero": {
+        "title": "Proteção Máxima para sua Família e seu Imóvel",
+        "description": "Não espere a próxima chuva para agir. Reformamos seu telhado com agilidade, materiais de primeira e a garantia de quem entende de construção há mais de 10 anos.",
+        "image": "/images/services/reforma-de-telhado/hero.jpg"
+      },
+      "workGallery": {
+        "filters": [
+          {
+            "label": "Todos",
+            "slug": "todos",
+            "count": 5000
+          },
+          {
+            "label": "Residencial",
+            "slug": "residencial",
+            "count": 3200
+          },
+          {
+            "label": "Industrial/Galpões",
+            "slug": "industrial",
+            "count": 1200
+          },
+          {
+            "label": "Telhados Shingle/Elegance",
+            "slug": "premium",
+            "count": 600
+          }
+        ]
+      },
+      "process": {
+        "steps": [
+          {
+            "step": 1,
+            "title": "Inspeção Detalhada",
+            "description": "Subimos no telhado para identificar fissuras, telhas porosas e falhas em rufos ou calhas.",
+            "icon": "magnify-scan"
+          },
+          {
+            "step": 2,
+            "title": "Análise Estrutural",
+            "description": "Verificamos se o madeiramento ou estrutura metálica suporta o peso e se há sinais de cupim ou ferrugem.",
+            "icon": "format-paint"
+          },
+          {
+            "step": 3,
+            "title": "Execução Limpa",
+            "description": "Substituição e reparos realizados por equipe treinada em altura, com foco em segurança e vedação.",
+            "icon": "stairs-up"
+          },
+          {
+            "step": 4,
+            "title": "Teste de Estanqueidade",
+            "description": "Validamos a reforma para garantir que seu imóvel esteja 100% protegido contra qualquer tempestade.",
+            "icon": "water-check"
+          }
+        ]
+      },
+      "professionals": {
+        "title": "Telhadistas Especializados",
+        "description": "Nossa equipe não faz 'remendos'. Nossos profissionais são treinados para entender a dinâmica de escoamento de água, evitando que um conserto hoje vire um novo vazamento amanhã."
+      },
+      "whyChooseUs": {
+        "title": "Por que reformar com a SOS?",
+        "items": [
+          {
+            "title": "Avaliação Gratuita",
+            "description": "Diagnosticamos o problema real antes de você gastar um centavo.",
+            "icon": "clipboard-check-outline"
+          },
+          {
+            "title": "Conforto Térmico",
+            "description": "Aproveite a reforma para reduzir o calor interno em até 5°C com telhas e mantas térmicas.",
+            "icon": "thermometer-chevron-down"
+          },
+          {
+            "title": "Prazos Cumpridos",
+            "description": "Sabemos que sua casa não pode ficar descoberta. Rapidez máxima na execução.",
+            "icon": "calendar-check"
+          }
+        ]
+      },
+      "faq": {
+        "title": "Dúvidas sobre Reforma de Telhado",
+        "questions": [
+          {
+            "question": "É melhor consertar ou trocar todo o telhado?",
+            "answer": "Depende da porosidade das telhas e do estado da estrutura. Se mais de 30% do telhado estiver comprometido, a substituição costuma ser mais econômica a longo prazo."
+          },
+          {
+            "question": "Quanto tempo dura uma reforma comum?",
+            "answer": "Reparos pontuais podem levar 1 ou 2 dias. Reformas completas variam de 5 a 15 dias, dependendo da metragem e complexidade."
+          },
+          {
+            "question": "A SOS cuida também das calhas e rufos?",
+            "answer": "Sim! A reforma completa inclui a revisão de todo o sistema de escoamento, garantindo que a água saia do telhado sem causar infiltrações nas paredes."
+          },
+          {
+            "question": "Posso trocar meu telhado de cerâmica por aluzinco?",
+            "answer": "Sim. Analisamos a estrutura atual e fazemos as adaptações necessárias para que você tenha um telhado mais leve e extremamente durável."
+          }
+        ]
+      },
+      "finalCta": {
+        "title": "Proteja seu patrimônio hoje mesmo",
+        "description": "Um pequeno vazamento pode destruir móveis, gesso e fiação elétrica. Agende sua inspeção gratuita com a SOS.",
+        "ctaText": "Agendar Avaliação de Telhado"
       }
     }
   }

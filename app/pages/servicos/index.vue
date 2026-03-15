@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue'
-import { useIntersectionObserver, useWindowScroll } from '@vueuse/core'
+import { useIntersectionObserver } from '@vueuse/core'
 import type { FinalCtaSection, ServiceCard } from '@/types/sections'
 import type { Category, Service } from '@/types/service'
 
@@ -18,13 +18,6 @@ const searchQuery = ref('')
 const visibleCount = ref(12)
 const loadMoreTrigger = ref<HTMLElement | null>(null)
 
-// Captura a posição do scroll da página para o botão "Voltar ao topo"
-const { y } = useWindowScroll()
-const showBackToTop = computed(() => y.value > 400)
-
-const scrollToTop = () => {
-  window.scrollTo({ top: 0, behavior: 'smooth' })
-}
 const finalCtaSection: FinalCtaSection = {
   title: 'Não Encontrou o Serviço que Procura?',
   description:
@@ -186,14 +179,6 @@ const clearFilters = () => {
     </UContainer>
 
     <section-final-cta :section="finalCtaSection" />
-
-    <Transition name="fade">
-      <button v-if="showBackToTop"
-        class="fixed bottom-8 right-8 z-50 p-3 bg-orange-500 hover:bg-orange-600 text-white rounded-full shadow-lg transition-all duration-300 hover:-translate-y-1 focus:outline-none focus:ring-4 focus:ring-orange-500/50"
-        aria-label="Voltar ao topo" @click="scrollToTop">
-        <UIcon name="i-heroicons-arrow-up-20-solid" class="text-2xl block" />
-      </button>
-    </Transition>
   </div>
 </template>
 
@@ -206,19 +191,5 @@ const clearFilters = () => {
 .no-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;
-}
-
-/* Transição do botão flutuante */
-.fade-enter-active,
-.fade-leave-active {
-  transition:
-    opacity 0.3s ease,
-    transform 0.3s ease;
-}
-
-.fade-enter-from,
-.fade-leave-to {
-  opacity: 0;
-  transform: translateY(20px);
 }
 </style>

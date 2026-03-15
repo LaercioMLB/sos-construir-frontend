@@ -9,8 +9,20 @@ import type {
 } from './sections'
 import type Meta from './meta'
 
+interface Cta {
+  link: string
+  text: string
+  icon: string
+}
+interface Feature {
+  text: string
+  icon: string
+}
 export interface ServiceHeroSection extends BaseSection {
   image: string
+  primaryCta?: Cta
+  secondaryCta?: Cta
+  features?: Feature[]
 }
 
 export interface PartnerSection extends BaseSection {
@@ -36,7 +48,7 @@ export interface ServicePartnerSection extends BaseSection {
 
 export interface ServiceSections {
   hero: ServiceHeroSection
-  partner: PartnerSection
+  partner?: PartnerSection
   workGallery: WorkGallerySection
   process: ProcessSection
   professionals: BaseSection

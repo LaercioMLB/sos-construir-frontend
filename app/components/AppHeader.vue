@@ -10,7 +10,7 @@ const route = useRoute()
 // Definição dos links de navegação solicitados
 const items = computed<NavigationMenuItem[]>(() => [
   {
-    label: 'Sobre',
+    label: 'Sobre Nós',
     to: '/sobre',
     active: route.path.startsWith('/sobre')
   },

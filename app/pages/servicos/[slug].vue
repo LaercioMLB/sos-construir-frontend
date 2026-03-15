@@ -13,27 +13,49 @@ import {
   SectionWhyChooseUs,
 } from '#components'
 
-import servicesData from '~/data/servicesPages.json'
-
 const route = useRoute()
+
+const sectionComponents: Record<SectionKey, Component> = {
+  hero: SectionServiceHero,
+  partner: SectionServicePartnerShowcase,
+  workGallery: SectionWorksGallery,
+  process: SectionOurProcess,
+  professionals: SectionProfessionals,
+  whyChooseUs: SectionWhyChooseUs,
+  faq: SectionFaq,
+  finalCta: SectionFinalCta,
+  testimonials: SectionTestimonials,
+}
+
+const layoutOrder: SectionKey[] = [
+  'hero',
+  'partner',
+  'process',
+  'professionals',
+  'testimonials',
+  'workGallery',
+  'whyChooseUs',
+  'faq',
+  'finalCta',
+]
 
 const { data: service } = await useAsyncData<Service | null>(
   `service-${route.params.slug}`,
   async () => {
     const slug = route.params.slug as string
-    const key = slug.charAt(0).toUpperCase() + slug.slice(1)
 
-    return (servicesData as Record<string, Service>)[key] ?? null
+    const { default: servicesData } = await import('~/data/servicesPages.json')
+
+    return (servicesData as Record<string, Service>)[slug] ?? null
   }
 )
 
+// Dispara 404 se o serviço não existir no JSON
 if (!service.value) {
-  throw createError({ statusCode: 404 })
-}
-if (!service.value) {
-  throw createError({ statusCode: 404 })
+  throw createError({ statusCode: 404, fatal: true })
 }
 
+// Configuração de SEO
 useSeoMeta({
   title: service.value.meta.title,
   description: service.value.meta.description,
@@ -47,52 +69,32 @@ useSeoMeta({
   twitterCard: 'summary_large_image',
 })
 
-const layoutOrder: SectionKey[] = [
-  'hero',
-  'partner',
-  'process',
-  'professionals',
-  'testimonials',
-  'workGallery',
-  'whyChooseUs',
-  'faq',
-  'finalCta',
-]
-const sectionComponents: Record<SectionKey, Component> = {
-  hero: SectionServiceHero,
-  partner: SectionServicePartnerShowcase,
-  workGallery: SectionWorksGallery,
-  process: SectionOurProcess,
-  professionals: SectionProfessionals,
-  whyChooseUs: SectionWhyChooseUs,
-  faq: SectionFaq,
-  finalCta: SectionFinalCta,
-  testimonials: SectionTestimonials,
-}
-
+// Preparação das seções para renderização
 const sections = computed(() => {
   if (!service.value) return []
 
-  return layoutOrder.map((sectionKey, index) => {
-    const data = service.value?.sections[sectionKey]
+  return layoutOrder
+    .map((sectionKey, index) => {
+      const data = service.value?.sections[sectionKey]
+      if (!data) return null // Ignora seção se não houver dados no JSON
 
-    return {
-      type: sectionKey,
-      data: data
-        ? {
+      return {
+        type: sectionKey,
+        component: sectionComponents[sectionKey],
+        data: {
           ...data,
-          bgSection:
-            index === 0 ? undefined : index % 2 === 0 ? 'bg-section-bg-1' : 'bg-section-bg-2',
-        }
-        : undefined,
-    }
-  })
+          bgSection: index === 0 ? undefined : index % 2 === 0 ? 'bg-section-bg-1' : 'bg-section-bg-2',
+        },
+      }
+    })
+    .filter(Boolean) // Remove itens nulos do array
 })
 </script>
 
 <template>
   <div>
-    <component :is="sectionComponents[section.type] || 'div'" v-for="section in sections" :key="section.type"
-      :section="section.data" />
+    <template v-for="section in sections" :key="section!.type">
+      <component :is="section!.component" v-if="section!.component" :section="section!.data" />
+    </template>
   </div>
 </template>

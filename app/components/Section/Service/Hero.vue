@@ -1,97 +1,119 @@
 <script setup lang="ts">
 import { computed } from 'vue'
+import { useRoute } from 'vue-router'
 import type { ServiceHeroSection } from '~/types/servicePage'
+import type { BreadcrumbItem } from '@nuxt/ui'
 
+// TODO: AJEITAR PROPS E OS 2 CTA DIANMICO
+const PHONENUMBER = '5545999976544'
+const whatsappMessage = encodeURIComponent('Olá! Gostaria de solicitar um orçamento para minha obra.')
+const primaryLink = formatWhatsappLink(PHONENUMBER, whatsappMessage)
+const defaultSection: ServiceHeroSection = {
+  title: 'Se ficar com alguma dúvida',
+  description: 'Entre em contato com nossa equipe',
+  primaryCta: {
+    text: 'Solicitar Orçamento',
+    link: primaryLink,
+    icon: 'mdi:chat-outline',
+  },
+  secondaryCta: {
+    text: 'Ver profissionais disponíveis',
+    link: '/profissionais',
+    icon: 'mdi:arrow-right',
+  },
+  features: [
+    {
+      text: 'Profissionais certificados',
+      icon: 'mdi:lightning-bolt'
+    },
+    {
+      text: 'Garantia integral',
+      icon: 'mdi:shield-check-outline'
+    },
+    {
+      text: 'Sem taxa escondida',
+      icon: 'mdi:check'
+    }
+  ],
+  image: ''
+}
 const props = defineProps<{
-  section: ServiceHeroSection
+  section?: Partial<ServiceHeroSection>
 }>()
 
-const users = [
-  {
-    id: 2,
-    name: 'Rodrigo Goes',
-    avatar: 'https://i.pravatar.cc/100?img=1',
-  },
-  {
-    id: 1,
-    name: 'Ronaldo Silva',
-    avatar: 'https://i.pravatar.cc/100?img=2',
-  },
-  {
-    id: 3,
-    name: 'Roger Guedes',
-    avatar: 'https://i.pravatar.cc/100?img=3',
-  },
-]
+const section = computed(() => ({
+  ...defaultSection,
+  ...props.section,
+}))
+const route = useRoute()
+
+// Lógica para montar o Breadcrumb baseado na URL
+const breadcrumbItems = computed<BreadcrumbItem[]>(() => {
+  const paths = route.path.split('/').filter(Boolean)
+
+  const items: BreadcrumbItem[] = [
+    { label: 'Home', to: '/' }
+  ]
+
+  let currentPath = ''
+
+  paths.forEach((path, index) => {
+    currentPath += `/${path}`
+    const isLast = index === paths.length - 1
+    const label = path.charAt(0).toUpperCase() + path.slice(1).replace(/-/g, ' ')
+
+    items.push({
+      label,
+      to: isLast ? undefined : currentPath
+    })
+  })
+
+  return items
+})
+
 const formattedTitle = computed(() => {
-  if (!props.section.title) return ''
-  return props.section.title.replace(/(Dor de Cabeça)/gi, '<span class="text-orange-500">$1</span>')
+  const title = section.value?.title ?? ''
+  return title.replace(/(Dor de Cabeça)/gi, '<span class="text-orange-500">$1</span>')
 })
 </script>
 
 <template>
   <section class="relative w-full min-h-[600px] flex items-center bg-white overflow-hidden">
     <div class="absolute inset-0 z-0 flex justify-end">
-      <img
-        :src="props.section.image"
-        alt="Profissional trabalhando"
-        class="w-full md:w-3/4 lg:w-2/3 h-full object-cover object-right"
-      />
-      <div class="absolute inset-0 bg-gradient-to-r from-white via-white/90 to-transparent" />
+      <img v-if="props.section" :src="props.section.image" alt="Profissional trabalhando"
+        class="w-full md:w-3/4 lg:w-2/3 h-full object-cover object-right" />
+      <div class="absolute inset-0 bg-gradient-to-r from-white via-white/30 to-transparent" />
     </div>
 
     <div class="container max-w-7xl mx-auto px-4 py-6 relative z-10">
       <div class="max-w-3xl">
-        <HeroChip :users="users" />
 
-        <div class="w-8 h-1 bg-orange-500 rounded-full mb-6" />
+        <UBreadcrumb :items="breadcrumbItems" class="mb-4" />
 
-        <h1
-          class="text-4xl md:text-5xl lg:text-6xl font-bold text-blue-500 leading-tight mb-4"
-          v-html="formattedTitle"
-        />
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-blue-500 leading-tight mb-4"
+          v-html="formattedTitle" />
 
         <p class="text-section-subtitle text-lg mb-8 max-w-lg">
           {{ section.description }}
         </p>
 
         <ul class="space-y-3 mb-10">
-          <li class="flex items-center gap-3 text-section-subtitle font-medium">
-            <Icon name="mdi:lightning-bolt" class="text-orange-500 text-xl" />
-            Profissionais certificados
-          </li>
-          <li class="flex items-center gap-3 text-section-subtitle font-medium">
-            <Icon name="mdi:shield-check-outline" class="text-orange-500 text-xl" />
-            Garantia integral
-          </li>
-          <li class="flex items-center gap-3 text-section-subtitle font-medium">
-            <Icon name="mdi:check" class="text-orange-500 text-xl" />
-            Sem taxa escondida
+          <li v-for="feature of section.features" :key="feature.text"
+            class="flex items-center gap-3 text-section-subtitle font-medium">
+            <Icon :name="feature.icon" class="text-orange-500 text-xl" />
+            {{ feature.text }}
           </li>
         </ul>
 
-        <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4">
-          <UButton
-            color="primary"
-            variant="solid"
-            size="xl"
-            class="text-white font-bold rounded-lg px-8 py-3 transition-colors"
-          >
-            Solicitar Orçamento
-            <template #trailing>
-              <Icon name="mdi:arrow-right" class="text-xl" />
-            </template>
+        <div v-if="section.primaryCta && section.secondaryCta"
+          class="flex flex-col sm:flex-row items-start sm:items-center gap-4">
+          <UButton color="primary" variant="solid" size="xl" :to="section.primaryCta.link"
+            class="text-white font-bold rounded-lg px-8 py-3 transition-colors" :icon="section.primaryCta.icon">
+            {{ section.primaryCta.text }}
           </UButton>
-          <UButton
-            color="primary"
-            variant="ghost"
-            size="lg"
-            class="font-semibold px-4 transition-colors"
-          >
-            Ver profissionais disponíveis
-            <template #trailing>
-              <Icon name="mdi:arrow-right" class="text-xl" />
-            </template>
+          <UButton color="primary" variant="ghost" size="lg" :to="section.secondaryCta.link"
+            class="font-semibold rounded-lg p-4 transition-colors" :trailing-icon="section.secondaryCta.icon">
+            {{ section.secondaryCta.text }}
           </UButton>
         </div>
       </div>

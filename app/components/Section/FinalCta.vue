@@ -28,7 +28,7 @@ const section = computed(() => ({
       <h2 class="title-section text-3xl md:text-4xl font-bold text-white">
         {{ section.title }}
       </h2>
-      <p class="text-white/80 text-base md:text-lg mb-8">
+      <p class="text-white/80 text-base md:text-lg mb-8 lg:max-w-3xl">
         {{ section.description }}
       </p>
       <UButton :to="section.ctaLink" target="_blank" color="primary" variant="solid" size="xl"

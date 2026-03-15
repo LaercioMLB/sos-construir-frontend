@@ -621,7 +621,7 @@
     {
       "id": 19,
       "name": "Reforma de Telhado",
-      "slug": "reforma-telhado",
+      "slug": "reforma-de-telhado",
       "category": "reformas",
       "size": "medium",
       "icon": "mdi-home-roof",
@@ -730,7 +730,7 @@
     {
       "id": 22,
       "name": "Terraplanagem e Locação",
-      "slug": "terraplanagem",
+      "slug": "terraplanagem-e-locacao",
       "category": "estrutura",
       "size": "medium",
       "icon": "mdi-bulldozer",

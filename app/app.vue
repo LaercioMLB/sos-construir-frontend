@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { useWindowScroll } from '@vueuse/core';
 import AppHeader from './components/AppHeader.vue';
 import type Meta from './types/meta';
 import formatWhatsappLink from './utils/formatWhatsappLink';
@@ -6,6 +7,7 @@ import formatWhatsappLink from './utils/formatWhatsappLink';
 const PHONENUMBER = '5545999976544'
 const EMAIL = 'contato@sosconstruir.com.br'
 const whatsappMessage = encodeURIComponent('Olá! Gostaria de solicitar um orçamento para minha obra.')
+useColorMode().preference = 'light'
 useHead({
   meta: [{ name: 'viewport', content: 'width=device-width, initial-scale=1' }],
   link: [
@@ -109,6 +111,14 @@ useSeoMeta({
   twitterImage: meta.ogImage,
   twitterCard: 'summary_large_image',
 })
+
+// Botao flutunte
+const { y } = useWindowScroll()
+const showBackToTop = computed(() => y.value > 400)
+
+const scrollToTop = () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' })
+}
 </script>
 
 <template>
@@ -119,5 +129,27 @@ useSeoMeta({
     </UMain>
     <AppFooter :email="EMAIL" :phone-number="PHONENUMBER"
       :whatsapp-link="formatWhatsappLink(PHONENUMBER, whatsappMessage)" />
+    <Transition name="fade">
+      <div v-if="showBackToTop" class="fixed bottom-8 right-8">
+        <UButton class="p-3 bg-orange-500 hover:bg-orange-600 text-white rounded-full shadow-lg"
+          aria-label="Voltar ao topo" @click="scrollToTop" icon="mdi:arrow-up" />
+      </div>
+    </Transition>
   </UApp>
 </template>
+
+<style>
+/* Transição do botão flutuante */
+.fade-enter-active,
+.fade-leave-active {
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+  transform: translateY(20px);
+}
+</style>
