@@ -24,9 +24,7 @@ const whatsappLink = computed(() => {
 </script>
 
 <template>
-  <div
-    class="min-h-[70vh] flex items-center justify-center px-4 py-16 bg-gradient-to-b from-white to-gray-50"
-  >
+  <div class="min-h-[70vh] flex items-center justify-center px-4 py-16 bg-gradient-to-t from-white to-gray-50">
     <div class="max-w-2xl w-full text-center space-y-8">
       <div class="relative inline-flex justify-center items-center">
         <div class="relative bg-orange-100/50 p-6 rounded-full flex items-center justify-center">
@@ -44,28 +42,16 @@ const whatsappLink = computed(() => {
       </div>
 
       <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
-        <UButton
-          :to="whatsappLink"
-          target="_blank"
-          color="primary"
-          variant="solid"
-          size="xl"
-          class="text-white font-bold px-8 py-3 rounded-lg transition-colors flex items-center gap-2"
-        >
+        <UButton :to="whatsappLink" target="_blank" color="primary" variant="solid" size="xl"
+          class="text-white font-bold px-8 py-3 rounded-lg transition-colors flex items-center gap-2">
           <template #leading>
             <Icon name="mdi:chat-outline" class="text-2xl" />
           </template>
           Fale com a SOS (WhatsApp)
         </UButton>
 
-        <UButton
-          to="/servicos"
-          size="xl"
-          color="primary"
-          variant="ghost"
-          trailing-icon="mdi:arrow-right"
-          class="px-8 py-3"
-        >
+        <UButton to="/servicos" size="xl" color="primary" variant="ghost" trailing-icon="mdi:arrow-right"
+          class="px-8 py-3">
           Ver outros serviços
         </UButton>
       </div>

@@ -38,7 +38,7 @@ defineProps<{
 
         <div class="flex flex-col gap-4">
           <div class="flex items-center gap-2 max-h-20 max-w-44">
-            <AppLogo />
+            <AppLogo color2='white' />
           </div>
           <p class="text-sm text-">
             Mais de 10 anos transformando obras em realidade.

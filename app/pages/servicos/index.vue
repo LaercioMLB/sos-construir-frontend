@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue'
 import { useIntersectionObserver, useWindowScroll } from '@vueuse/core'
-import type { FinalCtaSection, SolutionCard } from '@/types/sections'
+import type { FinalCtaSection, ServiceCard } from '@/types/sections'
 import type { Category, Service } from '@/types/service'
 
 import data from '@/data/services.json'
@@ -85,19 +85,19 @@ const visibleServices = computed(() => {
   return filteredServices.value.slice(0, visibleCount.value)
 })
 
-// Mapeando do formato do JSON para o formato do Componente
-const mappedCards = computed<SolutionCard[]>(() => {
-  return visibleServices.value.map((service) => ({
-    id: service.id,
-    type: 'image',
-    size: service.size || 'medium',
-    title: service.name,
-    description: service.description,
-    icon: service.icon,
-    image: service.image,
-    link: `/servicos/${service.slug}`,
-  }))
-})
+const mappedCards = computed<ServiceCard[]>((
+  () => {
+    return visibleServices.value.map((s: Service): ServiceCard => {
+      return {
+        ...s,
+        link: `/servicos/${s.slug}`,
+        size: 'medium',
+        type: 'image'
+      }
+    })
+  }
+))
+
 
 // Resetar paginação ao trocar de categoria
 const setCategory = (category: string) => {
@@ -143,51 +143,30 @@ const clearFilters = () => {
         </div>
 
         <div class="w-full h-full md:max-w-md flex items-end">
-          <UInput
-            v-model="searchQuery"
-            icon="i-heroicons-magnifying-glass-20-solid"
-            placeholder="Buscar serviços..."
-            size="lg"
-            color="primary"
-            variant="outline"
-            class="grow bg-transparent border-none outline-none text-sm shadow-md"
-          >
+          <UInput v-model="searchQuery" icon="i-heroicons-magnifying-glass-20-solid" placeholder="Buscar serviços..."
+            size="lg" color="primary" variant="outline"
+            class="grow bg-transparent border-none outline-none text-sm shadow-md">
             <template v-if="searchQuery?.length" #trailing>
-              <UButton
-                color="primary"
-                variant="link"
-                icon="i-heroicons-x-mark-20-solid"
-                :padded="false"
-                @click="searchQuery = ''"
-              />
+              <UButton color="primary" variant="link" icon="i-heroicons-x-mark-20-solid" :padded="false"
+                @click="searchQuery = ''" />
             </template>
           </UInput>
         </div>
       </div>
 
-      <UScrollArea
-        v-slot="{ item }"
-        :items="categories"
-        orientation="horizontal"
-        class="w-full scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent hover:scrollbar-thumb-gray-400 mb-5 py-2 gap-3"
-      >
-        <button
-          class="px-5 py-2.5 rounded-full text-sm font-medium whitespace-nowrap transition-all duration-300 mx-2"
+      <UScrollArea v-slot="{ item }" :items="categories" orientation="horizontal"
+        class="w-full scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent hover:scrollbar-thumb-gray-400 mb-5 py-2 gap-3">
+        <button class="px-5 py-2.5 rounded-full text-sm font-medium whitespace-nowrap transition-all duration-300 mx-2"
           :class="[
             selectedCategory === item.slug
               ? 'bg-orange-500 text-white shadow-md shadow-orange-500/20'
               : 'bg-white text-gray-600 border border-gray-200 hover:border-orange-500 hover:text-orange-500',
-          ]"
-          @click="setCategory(item.slug)"
-        >
+          ]" @click="setCategory(item.slug)">
           {{ item.name }}
         </button>
       </UScrollArea>
 
-      <div
-        v-if="filteredServices.length === 0"
-        class="py-20 text-center flex flex-col items-center justify-center"
-      >
+      <div v-if="filteredServices.length === 0" class="py-20 text-center flex flex-col items-center justify-center">
         <UIcon name="i-heroicons-magnifying-glass" class="text-gray-300 text-6xl mb-4" />
         <h3 class="text-xl font-medium text-gray-900 mb-2">Nenhum serviço encontrado</h3>
         <p class="text-gray-500">Não encontramos nenhum resultado para "{{ searchQuery }}".</p>
@@ -201,23 +180,17 @@ const clearFilters = () => {
       </div>
 
       <div ref="loadMoreTrigger" class="h-20 flex items-center justify-center mt-8">
-        <UIcon
-          v-if="visibleCount < filteredServices.length"
-          name="i-heroicons-arrow-path"
-          class="animate-spin text-3xl text-orange-500"
-        />
+        <UIcon v-if="visibleCount < filteredServices.length" name="i-heroicons-arrow-path"
+          class="animate-spin text-3xl text-orange-500" />
       </div>
     </UContainer>
 
     <section-final-cta :section="finalCtaSection" />
 
     <Transition name="fade">
-      <button
-        v-if="showBackToTop"
+      <button v-if="showBackToTop"
         class="fixed bottom-8 right-8 z-50 p-3 bg-orange-500 hover:bg-orange-600 text-white rounded-full shadow-lg transition-all duration-300 hover:-translate-y-1 focus:outline-none focus:ring-4 focus:ring-orange-500/50"
-        aria-label="Voltar ao topo"
-        @click="scrollToTop"
-      >
+        aria-label="Voltar ao topo" @click="scrollToTop">
         <UIcon name="i-heroicons-arrow-up-20-solid" class="text-2xl block" />
       </button>
     </Transition>

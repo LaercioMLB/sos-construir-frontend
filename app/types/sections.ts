@@ -1,3 +1,5 @@
+import type { Service } from './service'
+
 export interface BaseSection {
   kicker?: string
   title?: string
@@ -64,17 +66,12 @@ export interface PartnersSection extends BaseSection {
   partners: Partner[]
 }
 
-export interface SolutionCard {
-  id: number | string
+export interface ServiceCard extends Service {
   type: 'image' | 'standard'
   size?: 'large' | 'medium'
-  title: string
-  description: string
-  icon: string
-  image?: string
   link?: string
 }
 
-export interface SolutionsSection extends BaseSection {
-  cards?: SolutionCard[]
+export interface ServicesSection extends BaseSection {
+  services?: ServiceCard[]
 }

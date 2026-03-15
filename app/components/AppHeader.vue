@@ -10,6 +10,11 @@ const route = useRoute()
 // Definição dos links de navegação solicitados
 const items = computed<NavigationMenuItem[]>(() => [
   {
+    label: 'Sobre',
+    to: '/sobre',
+    active: route.path.startsWith('/sobre')
+  },
+  {
     label: 'Serviços',
     to: '/servicos',
     active: route.path.startsWith('/servicos')
@@ -51,7 +56,7 @@ defineProps<{
       </div>
     </template>
 
-    <UNavigationMenu color="primary" class="text-whites" :items="items" :ui="{
+    <UNavigationMenu color="primary" :items="items" variant="link" :ui="{
       linkLabel: 'text-blue-500 hover:text-blue-600 text-base',
     }" />
 
@@ -63,9 +68,9 @@ defineProps<{
     </template>
 
     <template #body>
-      <UNavigationMenu :items="items" orientation="vertical" class="-mx-2.5" :ui="{
+      <UNavigationMenu :items="items" orientation="vertical" class="mx-2.5" :ui="{
         link: 'block text-center',
-        linkLabel: 'text-blue-500 hover:text-blue-600 text-base ',
+        linkLabel: 'text-blue-500 hover:text-blue-600 text-base bg-black',
       }" />
 
       <UButton color="primary" size="lg" block class="mt-6 font-semibold" :to="ctaLink">

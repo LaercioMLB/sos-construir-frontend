@@ -1,6 +1,8 @@
 <script setup lang="ts">
-import type { ProcessSection, WorkGallerySection } from '@/types/sections'
+import type { ProcessSection, ServiceCard, WorkGallerySection } from '@/types/sections'
 import type Meta from '~/types/meta'
+import servicesData from '~/data/services.json'
+import type { Service } from '~/types/service'
 
 const meta: Meta = {
   title: 'SOS Construir | Construção e Reforma em Foz do Iguaçu',
@@ -25,6 +27,19 @@ useSeoMeta({
   twitterImage: meta.ogImage,
   twitterCard: 'summary_large_image',
 })
+const services = servicesData.services as Service[]
+const topServices: ServiceCard[] = services
+  .toSorted((a, b) => b.popularity - a.popularity)
+  .slice(0, 5)
+  .map((s: Service, i): ServiceCard => {
+    return {
+      ...s,
+      link: `/servicos/${s.slug}`,
+      size: i === 0 ? 'large' : 'medium',
+      type: i % 1 === 0 ? 'image' : 'standard'
+    }
+  })
+
 
 const process: ProcessSection = {
   steps: [
@@ -88,7 +103,10 @@ const worksGallery: WorkGallerySection = {
   <div>
     <section-hero :section="{ bgSection: 'bg-section-bg-1' }" />
     <section-validation :section="{ bgSection: 'bg-section-bg-2' }" />
-    <section-services-categories :section="{ bgSection: 'bg-section-bg-1' }" />
+    <section-services-categories :section="{
+      bgSection: 'bg-section-bg-1',
+      services: topServices
+    }" />
     <section-partners :section="{ bgSection: 'bg-section-bg-2' }" />
     <section-why-choose-us :section="{ bgSection: 'bg-section-bg-1' }" />
     <section-our-process :section="{ ...process, bgSection: 'bg-section-bg-2' }" />

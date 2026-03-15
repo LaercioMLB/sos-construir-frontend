@@ -123,18 +123,12 @@ const reversedFilteredProjects = computed(() => {
 </script>
 
 <template>
-  <section
-    class="py-16 md:py-24 w-full overflow-hidden"
-    :class="section.bgSection"
-    @click="activeCardId = null"
-  >
+  <section class="py-16 md:py-24 w-full overflow-hidden" :class="section.bgSection" @click="activeCardId = null">
     <div class="container mx-auto px-4 max-w-7xl">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16">
         <div class="lg:col-span-4 flex flex-col justify-between">
           <div>
-            <h2
-              class="text-4xl lg:text-5xl font-bold text-blue-500 mb-6 leading-tight tracking-tight"
-            >
+            <h2 class="text-4xl lg:text-5xl font-bold text-blue-500 mb-6 leading-tight tracking-tight">
               {{ section.title }}
             </h2>
             <p class="text-section-subtitle text-base lg:text-lg mb-8 leading-relaxed">
@@ -142,27 +136,19 @@ const reversedFilteredProjects = computed(() => {
             </p>
 
             <div class="space-y-3 mb-10">
-              <UButton
-                v-for="filter in filters"
-                :key="filter.slug"
-                variant="ghost"
+              <UButton v-for="filter in filters" :key="filter.slug" variant="ghost"
                 class="w-full flex justify-between items-center px-6 py-4 rounded-xl border-2 transition-all font-bold group"
                 :class="[
                   activeFilter === filter.slug
                     ? 'bg-orange-500 text-white border-orange-500 hover:bg-orange-600'
                     : 'bg-white text-section-subtitle border-gray-100/60 hover:border-gray-200 hover:bg-gray-50',
-                ]"
-                @click.stop="activeFilter = filter.slug"
-              >
+                ]" @click.stop="activeFilter = filter.slug">
                 {{ filter.label }}
-                <span
-                  class="text-xs font-semibold px-2.5 py-1 rounded-full"
-                  :class="[
-                    activeFilter === filter.slug
-                      ? 'bg-white text-orange-500'
-                      : 'bg-gray-100 text-section-subtitle',
-                  ]"
-                >
+                <span class="text-xs font-semibold px-2.5 py-1 rounded-full" :class="[
+                  activeFilter === filter.slug
+                    ? 'bg-white text-orange-500'
+                    : 'bg-gray-100 text-section-subtitle',
+                ]">
                   {{ filter.count }}
                 </span>
               </UButton>
@@ -176,12 +162,8 @@ const reversedFilteredProjects = computed(() => {
             </div>
           </div>
 
-          <UButton
-            variant="outline"
-            size="lg"
-            :to="section.ctaLink"
-            class="hidden lg:flex w-full justify-center text-orange-500 border-orange-200 hover:bg-orange-50 py-3 rounded-lg font-bold"
-          >
+          <UButton variant="outline" size="lg" :to="section.ctaLink"
+            class="hidden lg:flex w-full justify-center text-orange-500 border-orange-200 hover:bg-orange-50 py-3 rounded-lg font-bold">
             {{ section.ctaText }}
             <template #trailing>
               <Icon name="mdi:arrow-right" class="text-xl" />
@@ -194,29 +176,21 @@ const reversedFilteredProjects = computed(() => {
             <USkeleton v-for="i in 6" :key="i" class="w-full h-full rounded-2xl basis-1/3" />
           </div>
           <div class="flex flex-col gap-5">
-            <UCarousel
-              v-slot="{ item }"
-              :prev="{ color: 'primary' }"
-              :next="{ variant: 'solid' }"
-              :items="filteredProjects"
-              :ui="{
+            <UCarousel v-slot="{ item }" :prev="{ color: 'primary' }" :next="{ variant: 'solid' }"
+              :items="filteredProjects" :ui="{
                 item: 'basis-1/3',
-              }"
-              class=""
-            >
+              }" loop :autoplay="{
+                delay: 4400
+              }">
               <WorksGalleryCard :work="item" :is-active="activeCardId === item.id" />
             </UCarousel>
 
-            <UCarousel
-              v-slot="{ item }"
-              :prev="{ color: 'primary' }"
-              :next="{ variant: 'solid' }"
-              :items="reversedFilteredProjects"
-              :ui="{
+            <UCarousel v-slot="{ item }" :prev="{ color: 'primary' }" :next="{ variant: 'solid' }"
+              :items="reversedFilteredProjects" :ui="{
                 item: 'basis-1/3',
-              }"
-              class=""
-            >
+              }" loop :autoplay="{
+                delay: 3500
+              }">
               <WorksGalleryCard :work="item" :is-active="activeCardId === item.id" />
             </UCarousel>
           </div>
@@ -230,12 +204,8 @@ const reversedFilteredProjects = computed(() => {
             </div>
           </div>
 
-          <UButton
-            variant="outline"
-            size="lg"
-            :to="section.ctaLink"
-            class="w-full flex justify-center text-orange-500 border-orange-200 hover:bg-orange-50 py-3 rounded-lg font-bold"
-          >
+          <UButton variant="outline" size="lg" :to="section.ctaLink"
+            class="w-full flex justify-center text-orange-500 border-orange-200 hover:bg-orange-50 py-3 rounded-lg font-bold">
             {{ section.ctaText }}
             <template #trailing>
               <Icon name="mdi:arrow-right" class="text-xl" />

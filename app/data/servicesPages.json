@@ -4,14 +4,14 @@
       "title": "Pintor Profissional em Foz do Iguaçu | SOS Construir",
       "description": "Pintores experientes em Foz do Iguaçu. Pintura interna, externa, comercial. Profissionais certificados com garantia integral.",
       "keywords": "pintor foz do iguaçu, pintura profissional, pintura interna, pintura externa",
-      "ogImage": "/images/services/pintor/hero.png",
+      "ogImage": "/images/services/pintor/hero.jpg",
       "breadcrumbLabel": "Pintor"
     },
     "sections": {
       "hero": {
         "title": "Pintura Profissional Sem Dor de Cabeça",
         "description": "Escolha seu pintor entre os melhores profissionais da região. Qualidade garantida, com prazos cumpridos e preço justo.",
-        "image": "/images/services/pintor/hero.png"
+        "image": "/images/services/pintor/hero.jpg"
       },
       "partner": {
         "partnerName": "FozTintas",
@@ -44,10 +44,26 @@
       },
       "workGallery": {
         "filters": [
-          { "label": "Todos os Projetos", "slug": "todos", "count": 360 },
-          { "label": "Trabalho Interno", "slug": "interno", "count": 180 },
-          { "label": "Trabalho externo", "slug": "externo", "count": 120 },
-          { "label": "Ampla diversidade", "slug": "diversidade", "count": 60 }
+          {
+            "label": "Todos os Projetos",
+            "slug": "todos",
+            "count": 360
+          },
+          {
+            "label": "Trabalho Interno",
+            "slug": "interno",
+            "count": 180
+          },
+          {
+            "label": "Trabalho externo",
+            "slug": "externo",
+            "count": 120
+          },
+          {
+            "label": "Ampla diversidade",
+            "slug": "diversidade",
+            "count": 60
+          }
         ]
       },
       "process": {
@@ -110,14 +126,14 @@
       "title": "Metalúrgica Profissional em Foz do Iguaçu | SOS Construir",
       "description": "Serviços metalúrgicos de excelência em Foz do Iguaçu. Estruturas metálicas, portões, soldas e projetos sob medida com profissionais certificados.",
       "keywords": "metalúrgica foz do iguaçu, serralheria, solda, estruturas metálicas, portões",
-      "ogImage": "/images/services/metalurgico/hero.png",
+      "ogImage": "/images/services/metalurgico/hero.jpg",
       "breadcrumbLabel": "Metalúrgica"
     },
     "sections": {
       "hero": {
         "title": "Metalúrgica Profissional Sem Dor de Cabeça",
         "description": "Escolha um metalúrgico entre os melhores profissionais da região. Qualidade garantida, com prazos cumpridos e preço justo.",
-        "image": "/images/services/metalurgico/hero.png"
+        "image": "/images/services/metalurgico/hero.jpg"
       },
       "partner": {
         "partnerName": "AçoFoz Fornecedores",

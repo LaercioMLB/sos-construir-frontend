@@ -38,11 +38,9 @@ useSeoMeta({
   title: service.value.meta.title,
   description: service.value.meta.description,
   keywords: service.value.meta.keywords,
-
   ogTitle: service.value.meta.title,
   ogDescription: service.value.meta.description,
   ogImage: service.value.meta.ogImage,
-
   twitterTitle: service.value.meta.title,
   twitterDescription: service.value.meta.description,
   twitterImage: service.value.meta.ogImage,
@@ -82,10 +80,10 @@ const sections = computed(() => {
       type: sectionKey,
       data: data
         ? {
-            ...data,
-            bgSection:
-              index === 0 ? undefined : index % 2 === 0 ? 'bg-section-bg-1' : 'bg-section-bg-2',
-          }
+          ...data,
+          bgSection:
+            index === 0 ? undefined : index % 2 === 0 ? 'bg-section-bg-1' : 'bg-section-bg-2',
+        }
         : undefined,
     }
   })
@@ -94,11 +92,7 @@ const sections = computed(() => {
 
 <template>
   <div>
-    <component
-      :is="sectionComponents[section.type] || 'div'"
-      v-for="section in sections"
-      :key="section.type"
-      :section="section.data"
-    />
+    <component :is="sectionComponents[section.type] || 'div'" v-for="section in sections" :key="section.type"
+      :section="section.data" />
   </div>
 </template>
