@@ -6,8 +6,8 @@ import type {
   FAQSection,
   WhyChooseUsSection,
   Tag,
-} from 'sections'
-import type { Meta } from './meta'
+} from '~~/shared/types/sections'
+import type { Meta } from '~~/shared/types/meta'
 
 interface Cta {
   link: string
