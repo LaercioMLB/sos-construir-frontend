@@ -1,12 +1,8 @@
 <script setup lang="ts">
-import { ref, computed } from 'vue'
 import { useIntersectionObserver } from '@vueuse/core'
-import type { FinalCtaSection, ServiceCard } from '@/types/sections'
-import type { Category, Service } from '@/types/service'
 
 import type { BreadcrumbItem } from '@nuxt/ui'
 import categoriesData from '@/data/servicesCategories.json'
-import type Meta from '~/types/meta'
 
 const categories = [{ name: 'Todos', slug: 'todos' }, ...categoriesData.categories] as Category[]
 
@@ -18,6 +14,8 @@ const {
   selectedCategory,
   filteredServices,
   visibleServices,
+  totalServices,
+  pending,
   setCategory,
   loadMore,
   clearFilters,
@@ -28,6 +26,7 @@ const finalCtaSection: FinalCtaSection = {
   description:
     'Temos ainda mais soluções customizadas! Entre em contato para conhecer todas as nossas opções disponíveis.',
 }
+
 const meta: Meta = {
   title: 'Serviços de Construção e Reforma em Foz do Iguaçu | SOS Construir',
   description:
@@ -37,45 +36,41 @@ const meta: Meta = {
   ogImage: '/og-image.jpg',
   breadcrumbLabel: 'Serviços',
 }
+
 useSeoMeta({
   title: meta.title,
   description: meta.description,
   keywords: meta.keywords,
-
   ogTitle: meta.title,
   ogDescription: meta.description,
   ogImage: meta.ogImage,
-
   twitterTitle: meta.title,
   twitterDescription: meta.description,
   twitterImage: meta.ogImage,
   twitterCard: 'summary_large_image',
 })
+
 const items = ref<BreadcrumbItem[]>([{ label: 'Home', to: '/' }, { label: 'Serviços' }])
 
-const mappedCards = computed<ServiceCard[]>((
-  () => {
-    return visibleServices.value.map((s: Service): ServiceCard => {
-      return {
-        ...s,
-        link: `/servicos/${s.slug}`,
-        size: 'medium',
-        type: 'image'
-      }
-    })
-  }
-))
-
-// Resetar paginação quando o usuário digitar algo novo na pesquisa
-watch(searchQuery, () => {
-  visibleCount.value = 12
+const mappedCards = computed<ServiceCard[]>(() => {
+  return visibleServices.value.map((s): ServiceCard => {
+    return {
+      ...s,
+      link: `/servicos/${s.slug}`,
+      size: 'medium',
+      type: 'image'
+    }
+  })
 })
 
-// Scroll Infinito
+// REMOVIDO: O watch(searchQuery) que resetava a paginação aqui, 
+// pois agora o composable já faz isso com debounce na API!
+
+// Scroll Infinito: Atualizado para checar contra o total do servidor
 useIntersectionObserver(
   loadMoreTrigger,
   ([entry]) => {
-    if (entry?.isIntersecting && visibleCount.value < filteredServices.value.length) {
+    if (entry?.isIntersecting && visibleCount.value < totalServices.value && !pending.value) {
       loadMore()
     }
   },
@@ -101,7 +96,7 @@ useIntersectionObserver(
             class="grow bg-transparent border-none outline-none text-sm shadow-md">
             <template v-if="searchQuery?.length" #trailing>
               <UButton color="primary" variant="link" icon="i-heroicons-x-mark-20-solid" :padded="false"
-                @click="searchQuery = ''" />
+                @click="clearFilters" />
             </template>
           </UInput>
         </div>
@@ -119,7 +114,8 @@ useIntersectionObserver(
         </button>
       </UScrollArea>
 
-      <div v-if="filteredServices.length === 0" class="py-20 text-center flex flex-col items-center justify-center">
+      <div v-if="filteredServices.length === 0 && !pending"
+        class="py-20 text-center flex flex-col items-center justify-center">
         <UIcon name="i-heroicons-magnifying-glass" class="text-gray-300 text-6xl mb-4" />
         <h3 class="text-xl font-medium text-gray-900 mb-2">Nenhum serviço encontrado</h3>
         <p class="text-gray-500">Não encontramos nenhum resultado para "{{ searchQuery }}".</p>
@@ -132,9 +128,9 @@ useIntersectionObserver(
         <ServiceCard v-for="card in mappedCards" :key="card.id" :card="card" class="min-h-72" />
       </div>
 
-      <div ref="loadMoreTrigger" v-show="visibleCount < filteredServices.length"
-        class="h-20 flex items-center justify-center ">
-        <UIcon name="i-heroicons-arrow-path" class="animate-spin text-3xl text-orange-500" />
+      <div ref="loadMoreTrigger" v-show="visibleCount < totalServices || pending"
+        class="h-20 flex items-center justify-center">
+        <UIcon v-if="pending" name="i-heroicons-arrow-path" class="animate-spin text-3xl text-orange-500" />
       </div>
     </UContainer>
 

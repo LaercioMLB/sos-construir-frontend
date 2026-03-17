@@ -7,7 +7,7 @@ export interface Service {
   name: string
   slug: string
   category: string
-  size?: 'large' | 'medium'
+  size?: 'medium' | 'large' | string
   icon: string
   image: string
   description: string

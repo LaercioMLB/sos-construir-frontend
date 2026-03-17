@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { Icon } from '#components'
-import type { ServiceCard } from '@/types/sections'
+import type { ServiceCard } from '~~/shared/types/sections'
 
 defineProps<{
   card: ServiceCard

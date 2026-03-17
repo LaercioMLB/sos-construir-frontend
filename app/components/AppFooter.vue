@@ -1,7 +1,4 @@
 <script setup lang="ts">
-import servicesData from '~/data/services.json'
-import type { Service } from '~/types/service'
-
 // Links de navegação principais e úteis
 const navigationLinks = [
   { label: 'Sobre Nós', to: '/sobre' },
@@ -11,15 +8,12 @@ const navigationLinks = [
   { label: 'Catálogo', to: '/catalogo' },
   { label: 'Blog', to: '/blog' },
 ]
-const services = servicesData.services as Service[]
-
-const featuredServices = services
-  .toSorted((a, b) => b.popularity - a.popularity)
-  .slice(0, 6)
-  .map(({ slug, name }) => ({
-    to: `/servicos/${slug}`,
-    label: name
-  }))
+const URL = '/api/servicos?sortBy=popularity&order=desc?page=1&limit=6'
+const { data, error } = await useFetch(URL)
+if (error.value) {
+  throw createError({ statusCode: 500, cause: error.value })
+}
+const services = data.value?.data
 
 defineProps<{
   whatsappLink: string
@@ -65,9 +59,10 @@ defineProps<{
         <div class="flex flex-col gap-4">
           <h3 class="font-bold uppercase text-">Serviços em Destaque</h3>
           <ul class="flex flex-col gap-2">
-            <li v-for="service in featuredServices" :key="service.label">
-              <ULink :to="service.to" class="text-sm text-[#CBD5E1] hover:text-primary transition-colors">
-                {{ service.label }}
+            <li v-for="service in services" :key="service.slug">
+              <ULink :to="'/servicos/' + service.slug"
+                class="text-sm text-[#CBD5E1] hover:text-primary transition-colors">
+                {{ service.name }}
               </ULink>
             </li>
           </ul>
@@ -77,7 +72,7 @@ defineProps<{
           <h3 class="font-bold uppercase text-">Contato</h3>
           <ul class="flex flex-col gap-5 text-sm ">
             <li class="flex items-start gap-2">
-              <UIcon name="i-lucide-map-pin" class="w-5 h-5 shrink-0 mt-0.5" />
+              <UIcon name="mdi:map-marker" class="w-5 h-5 shrink-0 mt-0.5" />
               <ULink to="https://maps.google.com/?q=Rua+Exemplo,123,Centro,Cidade,Estado" target="_blank"
                 class="hover:text-primary transition-colors text-[#CBD5E1]">
                 R. dos Eucalíptos, 597 - JARDIM BOURBON,<br>
@@ -85,13 +80,13 @@ defineProps<{
               </ULink>
             </li>
             <li class="flex items-center gap-2">
-              <UIcon name="i-lucide-phone" class="w-5 h-5 shrink-0 " />
+              <UIcon name="mdi:phone" class="w-5 h-5 shrink-0 " />
               <ULink :to="'tel:+' + phoneNumber" class="text-[#CBD5E1] hover:text-primary transition-colors">
                 {{ formatPhoneBR(phoneNumber) }}
               </ULink>
             </li>
             <li class="flex items-center gap-2">
-              <UIcon name="i-lucide-mail" class="w-5 h-5 shrink-0 mt-0.5" />
+              <UIcon name="mdi:email" class="w-5 h-5 shrink-0 mt-0.5" />
               <ULink :to="'mailto:' + email" class="text-[#CBD5E1] hover:text-primary transition-colors">
                 {{ email }}
               </ULink>

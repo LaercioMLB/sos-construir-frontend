@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import type Professional from '~/types/profissional'
 
 defineProps<{
   professional: Professional

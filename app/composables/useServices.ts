@@ -1,40 +1,33 @@
-import servicesData from '@/data/services.json'
-import type { Service } from '@/types/service'
+import { ref, computed, watch } from 'vue'
 import { useDebounceFn } from '@vueuse/core'
 
 const PAGE_SIZE = 9
 
 export function useServices() {
-  const allServices = servicesData.services as Service[]
-
   const searchQuery = ref('')
+  const debouncedSearch = ref('')
   const selectedCategory = ref('todos')
   const visibleCount = ref(PAGE_SIZE)
 
-  const filterByText = (list: Service[], query: string) => {
-    const q = query.toLowerCase().trim()
-    if (!q) return list
-    return list.filter(
-      (s) =>
-        s.name.toLowerCase().includes(q) ||
-        s.description.toLowerCase().includes(q) ||
-        s.keywords?.some((k) => k.toLowerCase().includes(q))
-    )
-  }
+  const _updateSearch = useDebounceFn((val: string) => {
+    debouncedSearch.value = val
+  }, 300)
 
-  const filteredServices = computed(() => {
-    let result = allServices
-
-    if (selectedCategory.value !== 'todos') {
-      result = result.filter(
-        (s) => s.category.toLowerCase() === selectedCategory.value.toLowerCase()
-      )
-    }
-
-    return filterByText(result, searchQuery.value)
+  watch(searchQuery, (newVal) => {
+    _updateSearch(newVal)
+    visibleCount.value = PAGE_SIZE
   })
 
-  const visibleServices = computed(() => filteredServices.value.slice(0, visibleCount.value))
+  const { data, pending } = useFetch('/api/servicos', {
+    query: computed(() => ({
+      limit: visibleCount.value,
+      category: selectedCategory.value === 'todos' ? undefined : selectedCategory.value,
+      search: debouncedSearch.value || undefined,
+    })),
+  })
+
+  const visibleServices = computed(() => data.value?.data || [])
+  const totalServices = computed(() => data.value?.meta?.total || 0)
 
   const setCategory = (slug: string) => {
     selectedCategory.value = slug
@@ -42,7 +35,9 @@ export function useServices() {
   }
 
   const loadMore = () => {
-    visibleCount.value += PAGE_SIZE
+    if (visibleCount.value < totalServices.value) {
+      visibleCount.value += PAGE_SIZE
+    }
   }
 
   const clearFilters = () => {
@@ -51,22 +46,25 @@ export function useServices() {
     visibleCount.value = PAGE_SIZE
   }
 
-  // reset paginaçao ao filtrar
-  watch([searchQuery, selectedCategory], () => {
-    visibleCount.value = PAGE_SIZE
-  })
-
   const suggestions = ref<Service[]>([])
 
-  const _updateSuggestions = useDebounceFn(() => {
+  const _updateSuggestions = useDebounceFn(async () => {
     const q = searchQuery.value.trim()
     if (q.length < 2) {
       suggestions.value = []
       return
     }
-    suggestions.value = filterByText(allServices, q)
-      .sort((a, b) => b.popularity - a.popularity)
-      .slice(0, 6)
+
+    try {
+      const res = await $fetch('/api/servicos', {
+        query: { search: q, limit: 6, sortBy: 'popularity', order: 'desc' },
+      })
+
+      suggestions.value = res.data
+    } catch (error) {
+      suggestions.value = []
+      throw error
+    }
   }, 250)
 
   watch(searchQuery, _updateSuggestions)
@@ -77,19 +75,21 @@ export function useServices() {
   }
 
   return {
-    // estado
+    // estadods
     searchQuery,
     selectedCategory,
     visibleCount,
+    totalServices,
+    pending,
 
-    // pagina de serviços
-    filteredServices,
+    // dados
+    filteredServices: visibleServices,
     visibleServices,
     setCategory,
     loadMore,
     clearFilters,
 
-    // hero / autocomplete
+    // hero e autocomplete
     suggestions,
     clearSearch,
   }

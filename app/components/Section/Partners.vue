@@ -1,8 +1,7 @@
 <script setup lang="ts">
-import type { PartnersSection } from '@/types/sections'
-// TODO: ARRUMAR ESSES PARTNERS --------
+import type { PartnersSection } from '~~/shared/types/sections'
+// TODO PEGAR PARTNERS POR API
 import partnersData from '@/data/partners.json'
-import type Partner from '@/types/partner'
 
 const partners: Partner[] = partnersData.partners as Partner[]
 

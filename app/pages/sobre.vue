@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import type { FinalCtaSection } from '~/types/sections'
-import type { ServiceHeroSection } from '~/types/servicePage'
 
 // SEO e Meta Tags
 useSeoMeta({

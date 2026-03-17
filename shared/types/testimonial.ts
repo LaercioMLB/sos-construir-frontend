@@ -1,4 +1,4 @@
-export default interface Testimonial {
+export interface Testimonial {
   id: number | string
   text: string
   authorName: string

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { FinalCtaSection } from '~/types/sections'
+import type { FinalCtaSection } from '~~/shared/types/sections'
 
 const defaultSection: FinalCtaSection = {
   title: 'Se ficar com alguma dúvida',

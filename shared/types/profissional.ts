@@ -1,4 +1,4 @@
-export default interface Professional {
+export interface Professional {
   id: string | number
   name: string
   experience: string

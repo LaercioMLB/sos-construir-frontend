@@ -1,7 +1,4 @@
 <script setup lang="ts">
-import { computed } from 'vue'
-import { useRoute } from 'vue-router'
-import type { ServiceHeroSection } from '~/types/servicePage'
 import type { BreadcrumbItem } from '@nuxt/ui'
 
 const defaultSection: ServiceHeroSection = {
@@ -79,7 +76,7 @@ const formattedTitle = computed(() => {
       <img v-if="props.section" :src="props.section.image" alt="Profissional trabalhando"
         class="w-full md:w-3/4 lg:w-2/3 h-full object-cover object-right" />
       <div
-        class="absolute inset-0 bg-gradient-to-r from-white via-white to-white/50 md:via-white/30 md:to-transparent" />
+        class="absolute inset-0 bg-gradient-to-r from-white via-white to-white/50 xl:via-white/40 md:to-transparent" />
     </div>
 
     <div class="container max-w-7xl mx-auto px-4 py-6 relative z-10">

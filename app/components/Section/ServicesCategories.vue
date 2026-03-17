@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { ServicesSection } from '@/types/sections'
+import type { ServicesSection } from '~~/shared/types/sections'
 
 const defaultSection: ServicesSection = {
   kicker: 'EXPLORE POR CATEGORIA',

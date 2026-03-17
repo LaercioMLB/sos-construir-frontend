@@ -1,7 +1,5 @@
 <script setup lang="ts">
 import { ref, onMounted } from 'vue'
-import type Professional from '~/types/profissional'
-import type { BaseSection } from '~/types/sections'
 
 const defaultSection: BaseSection = {
   title: 'Nossos Profissionais Especializados',
@@ -21,7 +19,7 @@ const section = computed(() => ({
 const professionals = ref<Professional[]>([])
 const loading = ref(true)
 
-// Mock
+// TODO: PASSAR PRA API
 const fetchProfessionalsFromApi = async () => {
   loading.value = true
   // Simulando

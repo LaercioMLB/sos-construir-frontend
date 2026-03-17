@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { ref, onMounted } from 'vue'
-import type Testimonial from '~/types/testimonial'
-import type { BaseSection } from '~/types/sections'
+import type { BaseSection } from '~~/shared/types/sections'
 
 const defaultSection: BaseSection = {
   kicker: 'RESULTADOS QUE FALAM POR SI',
@@ -18,7 +17,7 @@ const section = computed(() => ({
 
 const testimonials = ref<Testimonial[]>([])
 const loading = ref(true)
-
+// TODO: PASSAR PRA API
 const fetchTestimonials = async () => {
   loading.value = true
 

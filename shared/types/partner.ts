@@ -1,4 +1,4 @@
-export default interface Partner {
+export interface Partner {
   id: number | string
   name: string
   slug: string

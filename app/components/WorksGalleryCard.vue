@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import WorksGalleryCardBeforeAfter from './WorksGalleryCardBeforeAfter.vue'
-import type { ProjectWork } from '~/types/projectWork'
 
 const _props = defineProps<{
   work: ProjectWork

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { WhyChooseUsSection } from '~/types/sections'
+import type { WhyChooseUsSection } from '~~/shared/types/sections'
 
 const defaultSection: WhyChooseUsSection = {
   title: 'Sua Obra sem Dor de Cabeça',
@@ -63,28 +63,21 @@ const section = computed(() => ({
           {{ section.description }}
         </p>
 
-        <div
-          v-if="section.stats && section.stats.length > 0"
-          class="flex flex-wrap justify-center items-center gap-y-2 text-sm font-medium text-section-subtitle"
-        >
+        <div v-if="section.stats && section.stats.length > 0"
+          class="flex flex-wrap justify-center items-center gap-y-2 text-sm font-medium text-section-subtitle">
           <template v-for="(stat, index) in section.stats" :key="index">
             <div class="flex items-center gap-1.5 px-4">
               <Icon :name="stat.icon" class="text-orange-500 text-lg" />
               <span>{{ stat.text }}</span>
             </div>
-            <span v-if="index < section.stats.length - 1" class="text-gray-300 hidden sm:block"
-              >|</span
-            >
+            <span v-if="index < section.stats.length - 1" class="text-gray-300 hidden sm:block">|</span>
           </template>
         </div>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-        <div
-          v-for="(reason, index) in section.reasons"
-          :key="index"
-          class="bg-white rounded-2xl p-8 flex flex-col items-center text-center shadow-sm hover:shadow-md transition-shadow border border-gray-100/50"
-        >
+        <div v-for="(reason, index) in section.reasons" :key="index"
+          class="bg-white rounded-2xl p-8 flex flex-col items-center text-center shadow-sm hover:shadow-md transition-shadow border border-gray-100/50">
           <div class="w-16 h-16 rounded-2xl bg-orange-50 flex items-center justify-center mb-6">
             <Icon :name="reason.icon" class="text-3xl text-orange-500" />
           </div>
@@ -98,13 +91,8 @@ const section = computed(() => ({
         </div>
       </div>
       <div class="flex justify-center">
-        <UButton
-          :to="section.ctaLink"
-          color="primary"
-          variant="solid"
-          size="xl"
-          class="text-white font-bold px-8 py-3 rounded-lg transition-colors"
-        >
+        <UButton :to="section.ctaLink" color="primary" variant="solid" size="xl"
+          class="text-white font-bold px-8 py-3 rounded-lg transition-colors">
           {{ section.ctaText }}
           <template #trailing>
             <Icon name="mdi:arrow-right" class="text-xl" />

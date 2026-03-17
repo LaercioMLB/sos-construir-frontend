@@ -1,7 +1,4 @@
 <script setup lang="ts">
-import type { Service, SectionKey } from '~/types/servicePage'
-// TODO: pegar todos os serviços em /data/services.json e e com a slug pegar o conteudo da pagina  diretamente (como se fosse um map) pela servicePages.json 
-// se nao tiver nada em servicePages.json, ele gera apenas <SectionPageUnderConstruction>, se nao gera tudo 
 import {
   SectionTestimonials,
   SectionServiceHero,
@@ -40,44 +37,41 @@ const layoutOrder: SectionKey[] = [
   'finalCta',
 ]
 
-const { data: service } = await useAsyncData<Service | null>(
-  `service-${route.params.slug}`,
-  async () => {
-    const slug = route.params.slug as string
+const { data: service, error } = await useFetch<{
+  baseService: Service
+  pageContent: ServicePage
+}>(`/api/servicos/${route.params.slug}`)
 
-    const { default: servicesData } = await import('~/data/servicesPages.json')
-
-    return (servicesData as Record<string, Service>)[slug] ?? null
-  }
-)
-
-// Dispara 404 se o serviço não existir no JSON
-if (!service.value) {
+if (error.value?.statusCode === 404 || !service.value?.baseService) {
   throw createError({ statusCode: 404, fatal: true })
 }
 
-// Configuração de SEO
-useSeoMeta({
-  title: service.value.meta.title,
-  description: service.value.meta.description,
-  keywords: service.value.meta.keywords,
-  ogTitle: service.value.meta.title,
-  ogDescription: service.value.meta.description,
-  ogImage: service.value.meta.ogImage,
-  twitterTitle: service.value.meta.title,
-  twitterDescription: service.value.meta.description,
-  twitterImage: service.value.meta.ogImage,
-  twitterCard: 'summary_large_image',
-})
+const pageContent = computed<ServicePage | null>(
+  () => service.value?.pageContent ?? null
+)
 
-// Preparação das seções para renderização
+if (pageContent.value) {
+  useSeoMeta({
+    title: pageContent.value.meta.title,
+    description: pageContent.value.meta.description,
+    keywords: pageContent.value.meta.keywords,
+    ogTitle: pageContent.value.meta.title,
+    ogDescription: pageContent.value.meta.description,
+    ogImage: pageContent.value.meta.ogImage,
+    twitterTitle: pageContent.value.meta.title,
+    twitterDescription: pageContent.value.meta.description,
+    twitterImage: pageContent.value.meta.ogImage,
+    twitterCard: 'summary_large_image',
+  })
+}
+
 const sections = computed(() => {
-  if (!service.value) return []
+  if (!pageContent.value) return []
 
   return layoutOrder
     .map((sectionKey, index) => {
-      const data = service.value?.sections[sectionKey]
-      if (!data) return null // Ignora seção se não houver dados no JSON
+      const data = pageContent.value!.sections[sectionKey]
+      if (!data) return null
 
       return {
         type: sectionKey,
@@ -88,12 +82,14 @@ const sections = computed(() => {
         },
       }
     })
-    .filter(Boolean) // Remove itens nulos do array
+    .filter(Boolean)
 })
 </script>
 
 <template>
   <div>
+    <PageUnderConstruction v-if="!pageContent" />
+
     <template v-for="section in sections" :key="section!.type">
       <component :is="section!.component" v-if="section!.component" :section="section!.data" />
     </template>

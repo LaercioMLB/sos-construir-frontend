@@ -1,8 +1,7 @@
 <script setup lang="ts">
 import { ref, onMounted, computed } from 'vue'
 import WorksGalleryCard from '../WorksGalleryCard.vue'
-import type { ProjectWork } from '~/types/projectWork'
-import type { WorkGallerySection } from '~/types/sections'
+import type { WorkGallerySection } from '~~/shared/types/sections'
 
 const defaultSection: WorkGallerySection = {
   title: 'Confira Nossos Trabalhos',
@@ -35,7 +34,7 @@ const loading = ref(true)
 // Estado do clique no Mobile
 const activeCardId = ref<number | string | null>(null)
 
-// Função que simula a chamada da API
+// TODO: PASSAR POR API
 const fetchProjectsFromApi = async () => {
   loading.value = true
   await new Promise((resolve) => setTimeout(resolve, 1000))

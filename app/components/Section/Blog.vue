@@ -1,7 +1,5 @@
 <script setup lang="ts">
 import { ref, onMounted } from 'vue'
-import type { BaseSection } from '~/types/sections'
-import type { BlogPost } from '~/types/blogPost'
 
 const defaultSection: BaseSection = {
   title: 'Dicas e Novidades de Construção',
@@ -17,7 +15,7 @@ const section = computed(() => ({
 const posts = ref<BlogPost[]>([])
 const loading = ref(true)
 
-// Mock
+// TODO: PASSAR PRA SERVER
 const fetchPosts = async () => {
   loading.value = true
   await new Promise((resolve) => setTimeout(resolve, 800))

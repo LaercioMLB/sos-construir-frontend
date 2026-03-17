@@ -1,7 +1,5 @@
 <script setup lang="ts">
 import { useWindowScroll } from '@vueuse/core';
-import AppHeader from './components/AppHeader.vue';
-import type Meta from './types/meta';
 
 useColorMode().preference = 'light'
 useHead({

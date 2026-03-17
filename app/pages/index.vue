@@ -1,8 +1,7 @@
 <script setup lang="ts">
-import type { ProcessSection, ServiceCard, WorkGallerySection } from '@/types/sections'
-import type Meta from '~/types/meta'
+import type { ProcessSection, ServiceCard, WorkGallerySection } from '~~/shared/types/sections'
 import servicesData from '~/data/services.json'
-import type { Service } from '~/types/service'
+import type { Service } from '~~/shared/types/service'
 
 const meta: Meta = {
   title: 'SOS Construir | Construção e Reforma em Foz do Iguaçu',

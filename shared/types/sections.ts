@@ -1,4 +1,4 @@
-import type Partner from './partner'
+import type { Partner } from './partner'
 import type { Service } from './service'
 
 export interface BaseSection {

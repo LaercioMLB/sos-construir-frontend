@@ -89,9 +89,14 @@ const users = [
 // Input
 const { searchQuery, suggestions, clearSearch } = useServices()
 
-
-const showSuggestions = computed(() => suggestions.value.length > 0)
-
+const showSuggestions = computed({
+  get: () => suggestions.value.length > 0,
+  set: (isOpen) => {
+    if (!isOpen) {
+      clearSearch()
+    }
+  }
+})
 const handleSelect = (slug: string) => {
   clearSearch()
   navigateTo(`/servicos/${slug}`)
@@ -124,7 +129,7 @@ const handleSearch = () => {
           </p>
           <!-- input -->
           <div class="w-full max-w-xl relative">
-            <UPopover v-model:open="showSuggestions" :dismissible="false"
+            <UPopover v-model:open="showSuggestions" :dismissible="true"
               :ui="{ content: 'w-(--reka-popper-anchor-width) ' }">
               <template #anchor>
                 <div class="w-full bg-white rounded-2xl shadow-md border border-gray-100 flex items-center">

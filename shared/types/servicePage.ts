@@ -6,8 +6,8 @@ import type {
   FAQSection,
   WhyChooseUsSection,
   Tag,
-} from '../../app/types/sections'
-import type Meta from '../../app/types/meta'
+} from 'sections'
+import type { Meta } from './meta'
 
 interface Cta {
   link: string

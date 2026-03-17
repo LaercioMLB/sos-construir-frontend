@@ -1,4 +1,4 @@
-export default interface Meta {
+export interface Meta {
   title: string
   description: string
   keywords: string
