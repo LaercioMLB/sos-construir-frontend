@@ -99,7 +99,7 @@ onMounted(() => {
           stopOnMouseEnter: false,
           stopOnInteraction: false,
         }" :items="testimonials" :ui="{
-          item: 'basis-2/3 sm:basis-2/4 md:basis-2/4 lg:basis-2/4 xl:basis-1/4',
+          item: 'basis-2/3 sm:basis-2/4 md:basis-2/4 lg:basis-1/4',
         }">
           <TestimonialCard :testimonial="item" class="my-1" />
         </UCarousel>

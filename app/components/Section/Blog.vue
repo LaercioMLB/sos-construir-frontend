@@ -25,34 +25,34 @@ const fetchPosts = async () => {
     {
       id: 1,
       image:
-        'https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=800&auto=format&fit=crop',
+        '/images/blog/cover-2.jpg',
       category: 'DICAS VALIOSAS',
       title: 'Planejamento: O Segredo de uma Obra de Sucesso',
-      link: '#',
+      link: '/blog/1',
     },
     {
       id: 2,
       image:
-        'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=800&auto=format&fit=crop',
+        '/images/blog/cover-1.png',
       category: 'REFORMA',
       title: 'Como Fazer um Muro de Arrimo Seguro',
-      link: '#',
+      link: '/blog/2',
     },
     {
       id: 3,
       image:
-        'https://images.unsplash.com/photo-1588854337236-6889d631faa8?q=80&w=800&auto=format&fit=crop',
+        '/images/blog/cover-3.png',
       category: 'MANUTENÇÃO',
       title: 'Como Evitar Infiltrações na Sua Casa?',
-      link: '#',
+      link: '/blog/3',
     },
     {
       id: 4,
       image:
-        'https://images.unsplash.com/photo-1504307651254-35680f356f90?q=80&w=800&auto=format&fit=crop',
+        '/images/blog/cover-4.png',
       category: 'TENDÊNCIAS',
       title: 'Cores que Vão Dominar as Reformas em 2026',
-      link: '#',
+      link: '/blog/4',
     },
   ]
   loading.value = false

@@ -1,3 +1,4 @@
+import type Partner from './partner'
 import type { Service } from './service'
 
 export interface BaseSection {
@@ -52,13 +53,6 @@ export interface WorkGallerySection extends BaseSection {
 
 export interface FinalCtaSection extends BaseSection {
   ctaIcon?: string
-}
-
-interface Partner {
-  id: number
-  name: string
-  logo: string
-  link: string
 }
 
 export interface PartnersSection extends BaseSection {

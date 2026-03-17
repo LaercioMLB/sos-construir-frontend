@@ -1,5 +1,10 @@
 <script setup lang="ts">
-import type { PartnersSection } from '~/types/sections'
+import type { PartnersSection } from '@/types/sections'
+// TODO: ARRUMAR ESSES PARTNERS --------
+import partnersData from '@/data/partners.json'
+import type Partner from '@/types/partner'
+
+const partners: Partner[] = partnersData.partners as Partner[]
 
 const defaultSection: PartnersSection = {
   kicker: 'PARCEIROS CONFIÁVEIS',
@@ -13,15 +18,7 @@ const defaultSection: PartnersSection = {
   ],
   ctaText: 'Explorar Catálogo Completo',
   ctaLink: '/catalogo',
-  partners: [
-    { id: 1, name: 'Foz Tintas', logo: '/images/services/pintor/foztintas/logo.png', link: '#' },
-    { id: 2, name: 'Foz Tintas', logo: '/images/services/pintor/foztintas/logo.png', link: '#' },
-    { id: 3, name: 'Foz Tintas', logo: '/images/services/pintor/foztintas/logo.png', link: '#' },
-    { id: 4, name: 'Foz Tintas', logo: '/images/services/pintor/foztintas/logo.png', link: '#' },
-    { id: 5, name: 'Foz Tintas', logo: '/images/services/pintor/foztintas/logo.png', link: '#' },
-    { id: 6, name: 'Foz Tintas', logo: '/images/services/pintor/foztintas/logo.png', link: '#' },
-    { id: 7, name: 'Foz Tintas', logo: '/images/services/pintor/foztintas/logo.png', link: '#' },
-  ],
+  partners: partners.concat(...partners),
   bgSection: 'bg-section-bg-1',
 }
 
@@ -69,11 +66,15 @@ const section = computed(() => ({
         </UButton>
       </div>
 
-      <div class="w-full mt-16 px-4">
-        <UCarousel v-slot="{ item }" loop :auto-scroll="{ speed: 1 }" :items="section?.partners" :ui="{
-          item: 'basis-1/2 md:basis-1/3 lg:basis-1/5 snap-center',
-        }" class="w-full">
-          <div class="px-3 py-2 w-full flex justify-center">
+      <div class="w-full mt-16">
+        <UCarousel v-slot="{ item }" :items="section?.partners" loop class="w-full" :auto-scroll="{
+          speed: 1,
+          stopOnMouseEnter: false,
+          stopOnInteraction: false,
+        }" :ui="{
+          item: 'basis-1/2 md:basis-1/3 lg:basis-1/5 ',
+        }">
+          <div class="p-1 w-full flex justify-center">
             <div
               class="bg-white rounded-2xl p-6 w-full max-w-[200px] h-32 flex items-center justify-center shadow-sm shadow-gray-50 border border-gray-50/50 hover:shadow-md transition-shadow">
               <img :src="item.logo" :alt="item.name"

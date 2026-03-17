@@ -1,0 +1,28 @@
+{
+    "partners": [
+        {
+            "id": 1,
+            "name": "Foz Tintas",
+            "slug": "foz-tintas",
+            "category": "tintas",
+            "logo": "/images/services/pintor/foztintas/logo.png",
+            "description": "As melhores marcas de tintas para você dar mais cor a sua casa ou negócio. A Foz Tintas tem ótimas promoções para ajudar você a economizar na sua reforma."
+        },
+        {
+            "id": 2,
+            "name": "Rohden Portas",
+            "slug": "rohden",
+            "category": "portas",
+            "logo": "/images/services/instalacao-de-portas/rohden/logo.png",
+            "description": "Com uma história que se estende desde 1938, o Grupo Rohden é referência na fabricação de portas, vidros e projetos sustentáveis."
+        },
+        {
+            "id": 3,
+            "name": "Hiper Massa",
+            "slug": "hipermassa",
+            "category": "argamassa",
+            "logo": "/images/services/ceramica-porcelanato/hipermassa/logo.jpg",
+            "description": ""
+        }
+    ]
+}

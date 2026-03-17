@@ -7,7 +7,7 @@
       "category": "acabamento",
       "size": "medium",
       "icon": "mdi-floor-plan",
-      "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimg.freepik.com%2Ffotos-premium%2Fcolocando-piso-ceramico-renovando-o-piso_220873-14666.jpg%3Fw%3D2000&f=1&nofb=1&ipt=2f8a6505cc3251a8df56eaec47aa125be222b4f658e4da2de813415bac1ad157",
+      "image": "/images/services/ceramica-porcelanato/cover.jpg",
       "description": "Instalação profissional de cerâmica e porcelanato para pisos e paredes.",
       "keywords": [
         "porcelanato",
@@ -40,7 +40,7 @@
       "category": "acabamento",
       "size": "medium",
       "icon": "mdi-texture-box",
-      "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fhrcamargo.com.br%2Fwp-content%2Fuploads%2F2025%2F01%2Fo-que-e-piso-industrial-de-concreto-polido-1024x585.webp&f=1&nofb=1&ipt=cf7f77faf2eaee48dc5c55b61b857eb9382c27053d88417819edd2bb88cf8d74",
+      "image": "/images/services/concreto-polido/cover.jpg",
       "description": "Aplicação de concreto polido moderno para pisos residenciais e comerciais.",
       "keywords": [
         "concreto polido",
@@ -66,12 +66,12 @@
     },
     {
       "id": 3,
-      "name": "Construtor de Piscinas",
-      "slug": "construtor-de-piscinas",
+      "name": "Construção de Piscinas",
+      "slug": "construcao-de-piscinas",
       "category": "construcao",
       "size": "medium",
       "icon": "mdi-pool",
-      "image": "https://images.pexels.com/photos/261327/pexels-photo-261327.jpeg",
+      "image": "/images/services/construcao-de-piscinas/cover.jpg",
       "description": "Construção de piscinas personalizadas com acabamento profissional.",
       "keywords": [
         "construção de piscina",
@@ -103,7 +103,7 @@
       "category": "instalacoes",
       "size": "medium",
       "icon": "mdi-lightning-bolt",
-      "image": "https://images.pexels.com/photos/257736/pexels-photo-257736.jpeg",
+      "image": "/images/services/eletricista/cover.jpg",
       "description": "Instalações elétricas, manutenção e reparos residenciais e comerciais.",
       "keywords": [
         "eletricista",
@@ -139,7 +139,7 @@
       "category": "instalacoes",
       "size": "medium",
       "icon": "mdi-pipe-wrench",
-      "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.tudoconstrucao.com%2Fwp-content%2Fuploads%2F2023%2F07%2FEncanador-em-Curitiba-3.jpg&f=1&nofb=1&ipt=188dce122ff619826a00a84ba29787218109be2fe7900368e5f68626b1b3ebbb",
+      "image": "/images/services/encanador/cover..jpg",
       "description": "Reparos hidráulicos, vazamentos e instalação de encanamento.",
       "keywords": [
         "encanador",
@@ -175,7 +175,7 @@
       "category": "instalacoes",
       "size": "medium",
       "icon": "mdi-solar-power",
-      "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fhccenergiasolar.com.br%2Fwp-content%2Fuploads%2F2022%2F05%2FAnyConv.com__paineis-solares-mudancas.webp&f=1&nofb=1&ipt=7822a591f688c84ac26b4d94198d5ce245fcbf3095f6a438908ac99b81735f27",
+      "image": "/images/services/energia-solar/cover.jpg",
       "description": "Instalação de sistemas de energia solar para economia e sustentabilidade.",
       "keywords": [
         "energia solar",
@@ -208,7 +208,7 @@
       "category": "acabamento",
       "size": "medium",
       "icon": "mdi-wall",
-      "image": "https://images.pexels.com/photos/6474343/pexels-photo-6474343.jpeg",
+      "image": "/images/services/gesso-drywall/cover.jpg",
       "description": "Instalação de forros, paredes e sancas em gesso e drywall.",
       "keywords": [
         "drywall",
@@ -242,7 +242,7 @@
       "category": "instalacoes",
       "size": "medium",
       "icon": "mdi-gas-cylinder",
-      "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.aglgas.com.br%2Fwp-content%2Fuploads%2F2025%2F05%2FConstrucao-de-Instalacao-de-Gas.jpg&f=1&nofb=1&ipt=a7f2b3af04bb1dd016cfb682ccc222e19bd00562da563e0070624accae575ed9",
+      "image": "/images/services/instalacao-de-gas/cover.jpg",
       "description": "Instalação segura de sistemas de gás residencial e comercial.",
       "keywords": [
         "gás encanado",
@@ -275,7 +275,7 @@
       "category": "externo",
       "size": "medium",
       "icon": "mdi-flower",
-      "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fomaringa.com.br%2Fwp-content%2Fuploads%2F2025%2F02%2FCasa-e-Jardim-Pedra-28.jpg&f=1&nofb=1&ipt=a676a5f1c2e1fd415ba2e606514fecf981a92a1bde8f13ffd2204586007d0e1d",
+      "image": "/images/services/jardinagem-paisagismo/cover.jpg",
       "description": "Criação e manutenção de jardins e projetos paisagísticos.",
       "keywords": [
         "jardinagem",
@@ -310,7 +310,7 @@
       "category": "externo",
       "size": "medium",
       "icon": "mdi-water",
-      "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.totalconstrucao.com.br%2Fwp-content%2Fuploads%2F2019%2F04%2Flago-artificial-grande3.jpg&f=1&nofb=1&ipt=acd4fbc0b6a23d60b5ccf4a6d7de2ad9b1c7659144dfd4bb7bdc06ba6846a9cd",
+      "image": "/images/services/lago-artificial/cover.jpg",
       "description": "Construção de lagos artificiais decorativos para jardins.",
       "keywords": [
         "lago artificial",
@@ -343,7 +343,7 @@
       "category": "estrutura",
       "size": "medium",
       "icon": "mdi-anvil",
-      "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fas1.ftcdn.net%2Fjpg%2F00%2F59%2F15%2F30%2F1000_F_59153054_cMTv8b41eoUzcRAcfP4LSAMV2bBKgZv8.jpg&f=1&nofb=1&ipt=80498399dc4272532b0f5dfa30a82be2765e1f690076047a1f4b9f1a2ead5d2f",
+      "image": "/images/services/metalurgico/cover.png",
       "description": "Fabricação e instalação de estruturas metálicas sob medida.",
       "keywords": [
         "metalúrgica",
@@ -378,7 +378,7 @@
       "category": "externo",
       "size": "medium",
       "icon": "mdi-grid",
-      "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwesterninterlock.com%2Fwp-content%2Fuploads%2F2023%2F09%2F4-ways-to-retain-paver-edge-2.jpg&f=1&nofb=1&ipt=b5cd5a63a92c0319e1f5b0540a2cfb6fc2153984a0112a717d3a4a8d5d3fcd57",
+      "image": "/images/services/paver/cover.jpg",
       "description": "Instalação de paver para calçadas, garagens e áreas externas.",
       "keywords": [
         "paver",
@@ -411,7 +411,7 @@
       "category": "acabamento",
       "size": "medium",
       "icon": "mdi-diamond-stone",
-      "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.decorfacil.com%2Fwp-content%2Fuploads%2F2016%2F03%2Fimagem16-7.jpg&f=1&nofb=1&ipt=d85294a9145a755519e35a470b5848e32b2a828b3c025920c418836b0105e049",
+      "image": "images/services/pedras-decorativas/cover.jpg",
       "description": "Revestimento com pedras naturais para decoração interna e externa.",
       "keywords": [
         "pedra decorativa",
@@ -446,7 +446,7 @@
       "category": "construcao",
       "size": "medium",
       "icon": "mdi-hammer",
-      "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fthumbs.dreamstime.com%2Fb%2Ftrabalhador-industrial-de-pedreiros-instalando-alvenaria-tijolos-na-parede-exterior-com-faca-punho-galinha-357073339.jpg&f=1&nofb=1&ipt=06328538e968f468fd77a33213dee8e560ee7b49b82d7ae1b86349e4e48ae6bc",
+      "image": "/images/services/pedreiro/cover.jpg",
       "description": "Serviços gerais de alvenaria para obras e reformas.",
       "keywords": [
         "pedreiro",
@@ -485,7 +485,7 @@
       "category": "acabamento",
       "size": "medium",
       "icon": "mdi-format-paint",
-      "image": "https://images.pexels.com/photos/6474471/pexels-photo-6474471.jpeg",
+      "image": "/images/services/pintor/cover.jpg",
       "description": "Pintura profissional residencial e comercial.",
       "keywords": [
         "pintor",
@@ -523,7 +523,7 @@
       "category": "externo",
       "size": "medium",
       "icon": "mdi-slide",
-      "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F99%2F52%2F36%2F995236eb0abbf1553f4dece5e71726e9.jpg&f=1&nofb=1&ipt=f2e7d4a076d6098fe2bb5bc91acd40b6785f618cb367b3286950b3e9b661f275",
+      "image": "/images/services/playground/cover.jpg",
       "description": "Instalação de playgrounds para condomínios e áreas de lazer.",
       "keywords": [
         "playground",
@@ -555,7 +555,7 @@
       "category": "estrutura",
       "size": "medium",
       "icon": "mdi-water-pump",
-      "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fclickpetroleoegas.com.br%2Fwp-content%2Fuploads%2F2025%2F07%2Fpoco-artesiano-proibido-brasil.jpeg&f=1&nofb=1&ipt=d8b6b858742d95be8bd179ec93e668e428867cef130771fc8ca30eac715e233a",
+      "image": "/images/services/poco-artesiano/cover.jpg",
       "description": "Perfuração e instalação de poços artesianos.",
       "keywords": [
         "poço artesiano",
@@ -589,7 +589,7 @@
       "category": "acabamento",
       "size": "medium",
       "icon": "mdi-door",
-      "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.tenhaumareforma.com.br%2Fblog%2Fwp-content%2Fuploads%2F2026%2F01%2Fimage-144.jpg&f=1&nofb=1&ipt=c068815c1573ea7e29acc8bceed128273a06016199b0b2dde3f4fc41fb977a74",
+      "image": "/images/services/instalacao-de-portas/cover.jpg",
       "description": "Instalação e ajuste de portas internas e externas.",
       "keywords": [
         "instalação de portas",
@@ -625,7 +625,7 @@
       "category": "reformas",
       "size": "medium",
       "icon": "mdi-home-roof",
-      "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Funihands.com.br%2Fwp-content%2Fuploads%2F2024%2F11%2Fprofissionais-durante-reforma-de-um-telhado-2.jpg&f=1&nofb=1&ipt=3f23ffbf3049acaee55a3eb9ff7136a8a54029267af9a3d42dd8b6ae61370027",
+      "image": "/images/services/reforma-de-telhado/cover.jpeg",
       "description": "Manutenção, troca de telhas e reforma completa de telhados.",
       "keywords": [
         "reforma de telhado",
@@ -659,11 +659,11 @@
     {
       "id": 20,
       "name": "Reforma e Construção",
-      "slug": "reforma-construcao",
+      "slug": "reforma-e-construcao",
       "category": "construcao",
       "size": "medium",
       "icon": "mdi-home-edit",
-      "image": "https://images.pexels.com/photos/534220/pexels-photo-534220.jpeg",
+      "image": "/images/services/reforma-construcao/cover.jpg",
       "description": "Serviços completos de construção e reforma residencial.",
       "keywords": [
         "reforma",
@@ -698,7 +698,7 @@
       "category": "moveis",
       "size": "medium",
       "icon": "mdi-sofa",
-      "image": "https://images.pexels.com/photos/276583/pexels-photo-276583.jpeg",
+      "image": "/images/services/sofa-sob-medida/cover.jpg",
       "description": "Fabricação de sofás personalizados sob medida.",
       "keywords": [
         "sofa",
@@ -734,7 +734,7 @@
       "category": "estrutura",
       "size": "medium",
       "icon": "mdi-bulldozer",
-      "image": "https://demolidorafortaleza.com.br/images/service/terraplanagem.jpg",
+      "image": "/images/services/terraplanagem-e-locacao/cover.jpg",
       "description": "Serviços de terraplanagem e locação de máquinas pesadas.",
       "keywords": [
         "terraplanagem",
@@ -769,7 +769,7 @@
       "category": "acabamento",
       "size": "medium",
       "icon": "mdi-window-closed-variant",
-      "image": "https://www.vidracariaebox.com.br/wp-content/uploads/2018/10/servicos-vidracaria-no-rj-1024x680.jpg",
+      "image": "/images/services/vidracaria/cover.jpg",
       "description": "Instalação de vidros, box de banheiro e fachadas.",
       "keywords": [
         "vidraçaria",

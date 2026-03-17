@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import type { Service, SectionKey } from '~/types/servicePage'
-
+// TODO: pegar todos os serviços em /data/services.json e e com a slug pegar o conteudo da pagina  diretamente (como se fosse um map) pela servicePages.json 
+// se nao tiver nada em servicePages.json, ele gera apenas <SectionPageUnderConstruction>, se nao gera tudo 
 import {
   SectionTestimonials,
   SectionServiceHero,
