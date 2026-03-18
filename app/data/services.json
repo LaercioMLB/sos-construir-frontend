@@ -3,11 +3,11 @@
     {
       "id": 1,
       "name": "Cerâmica e Porcelanato",
-      "slug": "ceramica-porcelanato",
+      "slug": "ceramica-e-porcelanato",
       "category": "acabamento",
       "size": "medium",
       "icon": "mdi-floor-plan",
-      "image": "/images/services/ceramica-porcelanato/cover.jpg",
+      "image": "/images/services/ceramica-e-porcelanato/cover.jpg",
       "description": "Instalação profissional de cerâmica e porcelanato para pisos e paredes.",
       "keywords": [
         "porcelanato",
@@ -204,11 +204,11 @@
     {
       "id": 7,
       "name": "Gesso e Drywall",
-      "slug": "gesso-drywall",
+      "slug": "gesso-e-drywall",
       "category": "acabamento",
       "size": "medium",
       "icon": "mdi-wall",
-      "image": "/images/services/gesso-drywall/cover.jpg",
+      "image": "/images/services/gesso-e-drywall/cover.jpg",
       "description": "Instalação de forros, paredes e sancas em gesso e drywall.",
       "keywords": [
         "drywall",
@@ -271,11 +271,11 @@
     {
       "id": 9,
       "name": "Jardinagem e Paisagismo",
-      "slug": "jardinagem-paisagismo",
+      "slug": "jardinagem-e-paisagismo",
       "category": "externo",
       "size": "medium",
       "icon": "mdi-flower",
-      "image": "/images/services/jardinagem-paisagismo/cover.jpg",
+      "image": "/images/services/jardinagem-e-paisagismo/cover.jpg",
       "description": "Criação e manutenção de jardins e projetos paisagísticos.",
       "keywords": [
         "jardinagem",

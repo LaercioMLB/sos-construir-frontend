@@ -1,15 +1,15 @@
 {
   "pintor": {
     "meta": {
-      "title": "Pintor Profissional em Foz do Iguaçu | SOS Construir",
-      "description": "Pintores experientes em Foz do Iguaçu. Pintura interna, externa, comercial. Profissionais certificados com garantia integral.",
-      "keywords": "pintor foz do iguaçu, pintura profissional, pintura interna, pintura externa",
+      "title": "Pintura Residencial e Comercial em Foz do Iguaçu | SOS Construir",
+      "description": "Transforme seu ambiente com pintores profissionais em Foz do Iguaçu. Pintura interna, externa e decorativa com acabamento premium e limpeza garantida.",
+      "keywords": "pintor foz do iguaçu, pintura de casas, empresa de pintura foz, acabamento de pintura, pintor profissional pr",
       "ogImage": "/images/services/pintor/hero.jpg",
-      "breadcrumbLabel": "Pintor"
+      "breadcrumbLabel": "Pintura"
     },
     "sections": {
       "hero": {
-        "title": "Pintura Profissional Sem Dor de Cabeça",
+        "title": "Pintura Profissional Sem Dor de Cabeça | SOS Construir",
         "description": "Escolha seu pintor entre os melhores profissionais da região. Qualidade garantida, com prazos cumpridos e preço justo.",
         "image": "/images/services/pintor/hero.jpg"
       },
@@ -126,11 +126,11 @@
   },
   "metalurgica": {
     "meta": {
-      "title": "Pintor Profissional em Foz do Iguaçu | SOS Construir",
-      "description": "Pintores experientes em Foz do Iguaçu. Pintura interna, externa, comercial. Profissionais certificados com garantia integral.",
-      "keywords": "pintor foz do iguaçu, pintura profissional, pintura interna, pintura externa",
-      "ogImage": "/images/services/pintor/hero.jpg",
-      "breadcrumbLabel": "Pintor"
+      "title": "Metalúrgica e Serralheria em Foz do Iguaçu | SOS Construir",
+      "description": "Projetos em aço e ferro sob medida em Foz do Iguaçu. Portões, grades, estruturas metálicas e coberturas com solda profissional e alta durabilidade.",
+      "keywords": "metalúrgica foz do iguaçu, serralheria foz, portões de ferro, estruturas metálicas pr, grades e coberturas",
+      "ogImage": "/images/services/metalurgica/hero.jpg",
+      "breadcrumbLabel": "Metalúrgica"
     },
     "sections": {
       "hero": {
@@ -836,6 +836,1894 @@
         "title": "Proteja seu patrimônio hoje mesmo",
         "description": "Um pequeno vazamento pode destruir móveis, gesso e fiação elétrica. Agende sua inspeção gratuita com a SOS.",
         "ctaText": "Agendar Avaliação de Telhado"
+      }
+    }
+  },
+  "gesso-e-drywall": {
+    "meta": {
+      "title": "Gesso e Drywall em Foz do Iguaçu | SOS Construir",
+      "description": "Especialistas em forros de gesso, divisórias de drywall e sancas decorativas em Foz do Iguaçu. Instalação rápida, limpa e com acabamento impecável.",
+      "keywords": "gesso foz do iguaçu, drywall foz, forro de gesso, divisória drywall, sancas de gesso, gesso acartonado",
+      "ogImage": "/images/services/gesso-e-drywall/hero.jpg",
+      "breadcrumbLabel": "Gesso e Drywall"
+    },
+    "sections": {
+      "hero": {
+        "title": "Design e Agilidade para Transformar Seus Ambientes",
+        "description": "Crie espaços modernos com forros personalizados, iluminação embutida e divisórias inteligentes. O acabamento que sua obra merece com a rapidez que você precisa.",
+        "image": "/images/services/gesso-e-drywall/hero.jpg"
+      },
+      "workGallery": {
+        "filters": [
+          {
+            "label": "Todos",
+            "slug": "todos",
+            "count": 280
+          },
+          {
+            "label": "Forros e Sancas",
+            "slug": "forros",
+            "count": 150
+          },
+          {
+            "label": "Divisórias Drywall",
+            "slug": "divisorias",
+            "count": 90
+          },
+          {
+            "label": "Comercial/Escritórios",
+            "slug": "comercial",
+            "count": 40
+          }
+        ]
+      },
+      "process": {
+        "steps": [
+          {
+            "step": 1,
+            "title": "Projeto de Paginação",
+            "description": "Planejamos a disposição das placas e os pontos de iluminação para um visual harmônico.",
+            "icon": "vector-combine"
+          },
+          {
+            "step": 2,
+            "title": "Estruturação Técnica",
+            "description": "Montagem dos perfis de aço galvanizado com alinhamento a laser para garantir precisão total.",
+            "icon": "layers-outline"
+          },
+          {
+            "step": 3,
+            "title": "Fechamento e Tratamento",
+            "description": "Instalação das placas e tratamento rigoroso das juntas com fita e massa para evitar trincas.",
+            "icon": "texture-box"
+          },
+          {
+            "step": 4,
+            "title": "Acabamento Fino",
+            "description": "Lixamento técnico e limpeza da área. Seu teto ou parede prontos para a pintura final.",
+            "icon": "sparkles"
+          }
+        ]
+      },
+      "professionals": {
+        "title": "Gesseiros e Instaladores Certificados",
+        "description": "O segredo de um gesso perfeito está no tratamento das emendas. Nossa equipe utiliza as melhores massas e fitas do mercado, garantindo que sua parede ou teto permaneçam lisos e sem rachaduras por anos."
+      },
+      "whyChooseUs": {
+        "title": "Vantagens do Gesso e Drywall SOS",
+        "items": [
+          {
+            "title": "Obra Limpa e Rápida",
+            "description": "O sistema a seco gera muito menos entulho e permite ocupar o espaço em tempo recorde.",
+            "icon": "broom"
+          },
+          {
+            "title": "Isolamento Inteligente",
+            "description": "Opções de preenchimento com lã de rocha para silêncio e conforto térmico superior.",
+            "icon": "muffled"
+          },
+          {
+            "title": "Flexibilidade Total",
+            "description": "Mude o layout do seu escritório ou casa sem o quebra-quebra da alvenaria tradicional.",
+            "icon": " some-icon-for-flexibility "
+          }
+        ]
+      },
+      "faq": {
+        "title": "Dúvidas Frequentes sobre Gesso e Drywall",
+        "questions": [
+          {
+            "question": "Drywall aguenta pendurar TV ou armários?",
+            "answer": "Sim! Com o uso de reforços internos e buchas específicas (tipo basculante), o drywall suporta cargas pesadas com total segurança."
+          },
+          {
+            "question": "Pode usar gesso em áreas úmidas como banheiro?",
+            "answer": "Sim, para banheiros e cozinhas utilizamos as placas RU (verdes), que são resistentes à umidade e evitam mofo."
+          },
+          {
+            "question": "Qual a diferença entre gesso convencional e drywall?",
+            "answer": "O gesso convencional usa placas de gesso puro encaixadas. O drywall é um sistema de placas de gesso acartonado parafusadas em estruturas de aço, sendo mais resistente e rápido."
+          },
+          {
+            "question": "O teto de gesso diminui muito a altura do pé-direito?",
+            "answer": "O rebaixamento mínimo é de cerca de 12cm a 15cm para embutir spots de LED, mas podemos adaptar o projeto conforme sua necessidade."
+          }
+        ]
+      },
+      "finalCta": {
+        "title": "Dê um toque de sofisticação ao seu imóvel",
+        "description": "Seja para esconder fiações, melhorar a acústica ou criar um design único com sancas. Solicite seu orçamento.",
+        "ctaText": "Solicitar Orçamento de Gesso"
+      }
+    }
+  },
+  "poco-artesiano": {
+    "meta": {
+      "title": "Poço Artesiano em Foz do Iguaçu | SOS Construir",
+      "description": "Perfuração de poços artesianos e semi-artesianos em Foz do Iguaçu. Garanta autonomia, água de qualidade e redução de custos para sua residência ou empresa.",
+      "keywords": "poço artesiano foz do iguaçu, perfuração de poços, bomba submersa, manutenção de poços, outorga de água",
+      "ogImage": "/images/services/poco-artesiano/hero.jpg",
+      "breadcrumbLabel": "Poço Artesiano"
+    },
+    "sections": {
+      "hero": {
+        "title": "Independência e Água de Qualidade na sua Propriedade",
+        "description": "Garanta o abastecimento contínuo e reduza drasticamente seus custos com água. Projetos completos de perfuração e manutenção com total segurança técnica.",
+        "image": "/images/services/poco-artesiano/hero.jpg"
+      },
+      "workGallery": {
+        "filters": [
+          {
+            "label": "Todos",
+            "slug": "todos",
+            "count": 80
+          },
+          {
+            "label": "Residencial/Condomínios",
+            "slug": "residencial",
+            "count": 45
+          },
+          {
+            "label": "Áreas Rurais/Sítios",
+            "slug": "rural",
+            "count": 25
+          },
+          {
+            "label": "Indústria/Comércio",
+            "slug": "industrial",
+            "count": 10
+          }
+        ]
+      },
+      "process": {
+        "steps": [
+          {
+            "step": 1,
+            "title": "Estudo de Viabilidade",
+            "description": "Análise geológica do terreno para identificar a melhor localização e profundidade estimada para o poço.",
+            "icon": "map-search-outline"
+          },
+          {
+            "step": 2,
+            "title": "Perfuração Técnica",
+            "description": "Utilização de sondas rotativas modernas para perfuração de poços profundos em solo ou rocha.",
+            "icon": "drill"
+          },
+          {
+            "step": 3,
+            "title": "Instalação do Sistema",
+            "description": "Montagem da bomba submersa, tubulações e painéis elétricos de comando automático.",
+            "icon": "pipe-leak"
+          },
+          {
+            "step": 4,
+            "title": "Análise e Outorga",
+            "description": "Teste de vazão, análise química da água e auxílio no processo de regularização ambiental.",
+            "icon": "file-check-outline"
+          }
+        ]
+      },
+      "professionals": {
+        "title": "Engenharia de Perfuração",
+        "description": "Nossa equipe conta com geólogos e técnicos especializados que garantem a execução correta da obra, evitando contaminação de lençóis freáticos e garantindo a vazão constante do seu poço."
+      },
+      "whyChooseUs": {
+        "title": "Vantagens do Poço Artesiano",
+        "items": [
+          {
+            "title": "Economia Real",
+            "description": "Livre-se das tarifas crescentes das concessionárias e tenha um retorno rápido do seu investimento.",
+            "icon": "cash-multiple"
+          },
+          {
+            "title": "Água Mais Pura",
+            "description": "Acesso direto a reservatórios subterrâneos com água rica em minerais e livre de tratamentos químicos pesados.",
+            "icon": "water-check"
+          },
+          {
+            "title": "Valorização de Terra",
+            "description": "Uma propriedade com fonte própria de água é muito mais valorizada no mercado imobiliário e rural.",
+            "icon": "trending-up"
+          }
+        ]
+      },
+      "faq": {
+        "title": "Dúvidas sobre Poço Artesiano",
+        "questions": [
+          {
+            "question": "Qual a diferença entre poço artesiano e semi-artesiano?",
+            "answer": "O poço artesiano é mais profundo e a pressão natural pode fazer a água subir. O semi-artesiano geralmente atinge o primeiro lençol e necessita obrigatoriamente de bombas para a captação."
+          },
+          {
+            "question": "Precisa de autorização para furar um poço?",
+            "answer": "Sim. A perfuração e o uso da água exigem outorga ou dispensa de outorga dos órgãos ambientais. A SOS Construir auxilia você em todo esse processo burocrático."
+          },
+          {
+            "question": "Quanto tempo dura a perfuração?",
+            "answer": "Depende da geologia do terreno, mas em média o processo leva de 3 a 7 dias para ser concluído, desde o início da perfuração até a instalação da bomba."
+          },
+          {
+            "question": "A manutenção deve ser feita com qual frequência?",
+            "answer": "Recomendamos uma limpeza e revisão do sistema de bombeamento a cada 2 anos para garantir que a vazão e a qualidade da água permaneçam ideais."
+          }
+        ]
+      },
+      "finalCta": {
+        "title": "Garanta sua autonomia hídrica hoje",
+        "description": "Não fique à mercê de racionamentos ou aumentos de tarifa. Entre em contato e peça seu estudo de viabilidade gratuito.",
+        "ctaText": "Solicitar Orçamento de Poço"
+      }
+    }
+  },
+  "vidracaria": {
+    "meta": {
+      "title": "Vidraçaria e Esquadrias em Foz do Iguaçu | SOS Construir",
+      "description": "Serviços especializados de vidraçaria em Foz do Iguaçu. Box para banheiro, espelhos sob medida, fechamento de sacadas e esquadrias de alumínio com segurança e elegância.",
+      "keywords": "vidraçaria foz do iguaçu, box de vidro, espelhos sob medida, fechamento de sacada, vidro temperado foz",
+      "ogImage": "/images/services/vidracaria/hero.jpg",
+      "breadcrumbLabel": "Vidraçaria"
+    },
+    "sections": {
+      "hero": {
+        "title": "Transparência, Elegância e Segurança para seu Espaço",
+        "description": "Do box do banheiro ao fechamento da sacada. Projetos personalizados em vidro temperado e esquadrias de alumínio que transformam a iluminação e o design do seu imóvel.",
+        "image": "/images/services/vidracaria/hero.jpg"
+      },
+      "workGallery": {
+        "filters": [
+          {
+            "label": "Todos",
+            "slug": "todos",
+            "count": 320
+          },
+          {
+            "label": "Box e Banheiros",
+            "slug": "box",
+            "count": 140
+          },
+          {
+            "label": "Sacadas e Fachadas",
+            "slug": "fachadas",
+            "count": 85
+          },
+          {
+            "label": "Espelhos e Decoração",
+            "slug": "decoracao",
+            "count": 95
+          }
+        ]
+      },
+      "process": {
+        "steps": [
+          {
+            "step": 1,
+            "title": "Medição Técnica",
+            "description": "Realizamos a medição precisa no local para garantir que cada peça de vidro se encaixe com perfeição absoluta.",
+            "icon": "ruler-square-compass"
+          },
+          {
+            "step": 2,
+            "title": "Escolha do Vidro",
+            "description": "Orientamos sobre a melhor opção: temperado para resistência ou laminado para segurança máxima e acústica.",
+            "icon": "shield-check-outline"
+          },
+          {
+            "step": 3,
+            "title": "Instalação Especializada",
+            "description": "Equipe treinada para manipulação e fixação segura, utilizando ferragens e vedações de alta qualidade.",
+            "icon": "tools"
+          },
+          {
+            "step": 4,
+            "title": "Acabamento e Brilho",
+            "description": "Limpeza final e revisão de todos os ajustes de portas e janelas para um funcionamento suave.",
+            "icon": "sparkles"
+          }
+        ]
+      },
+      "professionals": {
+        "title": "Vidraceiros com Foco em Segurança",
+        "description": "Trabalhar com vidro exige responsabilidade. Nossos profissionais seguem rigorosamente as normas técnicas (ABNT) de instalação, garantindo que seu box, espelho ou sacada ofereça beleza sem nenhum risco para sua família."
+      },
+      "whyChooseUs": {
+        "title": "O Diferencial da Vidraçaria SOS",
+        "items": [
+          {
+            "title": "Projetos Sob Medida",
+            "description": "Não trabalhamos com padrões limitados. Criamos soluções que se moldam exatamente ao seu design.",
+            "icon": "pencil-ruler"
+          },
+          {
+            "title": "Iluminação Natural",
+            "description": "Nossas soluções de vidro ampliam ambientes e aproveitam 100% da luz externa.",
+            "icon": "white-balance-sunny"
+          },
+          {
+            "title": "Durabilidade e Estilo",
+            "description": "Vidros que não mancham e esquadrias de alumínio que resistem ao tempo sem oxidar.",
+            "icon": "medal-outline"
+          }
+        ]
+      },
+      "faq": {
+        "title": "Dúvidas Frequentes sobre Vidraçaria",
+        "questions": [
+          {
+            "question": "Qual a diferença entre vidro temperado e laminado?",
+            "answer": "O temperado é 5x mais resistente que o comum e se quebra em pequenos pedaços cegos. O laminado possui uma película interna que segura os estilhaços em caso de quebra, sendo ideal para coberturas e guarda-corpos."
+          },
+          {
+            "question": "Como escolher o box ideal para banheiro pequeno?",
+            "answer": "Para espaços reduzidos, recomendamos boxes de canto ou com portas de correr que otimizam a área de circulação, sempre em vidro temperado de 8mm."
+          },
+          {
+            "question": "Os espelhos da SOS mancham com o tempo?",
+            "answer": "Não. Utilizamos espelhos de primeira linha com fundo protetor contra umidade, ideais para banheiros e áreas com maresia ou vapor constante."
+          },
+          {
+            "question": "Vocês fazem fechamento de sacada (Sistema Reiki)?",
+            "answer": "Sim! Realizamos o fechamento completo de sacadas que permitem a abertura total dos vidros, proporcionando proteção contra chuva e vento sem perder a vista."
+          }
+        ]
+      },
+      "finalCta": {
+        "title": "Transforme sua casa com transparência e estilo",
+        "description": "Seja para um espelho decorativo ou uma fachada completa em vidro. Peça seu orçamento personalizado hoje.",
+        "ctaText": "Solicitar Orçamento de Vidraçaria"
+      }
+    }
+  },
+  "instalacao-de-gas": {
+    "meta": {
+      "title": "Instalação de Gás em Foz do Iguaçu | SOS Construir",
+      "description": "Serviços especializados de instalação de gás em Foz do Iguaçu. Residencial, comercial e industrial. Testes de estanqueidade e conversão de fogões com segurança total.",
+      "keywords": "instalação de gás foz do iguaçu, gás encanado, teste de estanqueidade, conversão de fogão, manutenção de rede de gás",
+      "ogImage": "/images/services/instalacao-de-gas/hero.jpg",
+      "breadcrumbLabel": "Instalação de Gás"
+    },
+    "sections": {
+      "hero": {
+        "title": "Segurança e Precisão em Cada Conexão",
+        "description": "Projetos e execuções de redes de gás seguindo rigorosamente as normas ABNT. Proteja seu patrimônio com técnicos especializados e testes de segurança certificados.",
+        "image": "/images/services/instalacao-de-gas/hero.jpg"
+      },
+      "workGallery": {
+        "filters": [
+          {
+            "label": "Todos",
+            "slug": "todos",
+            "count": 110
+          },
+          {
+            "label": "Residencial",
+            "slug": "residencial",
+            "count": 75
+          },
+          {
+            "label": "Comercial/Restaurantes",
+            "slug": "comercial",
+            "count": 25
+          },
+          {
+            "label": "Industrial",
+            "slug": "industrial",
+            "count": 10
+          }
+        ]
+      },
+      "process": {
+        "steps": [
+          {
+            "step": 1,
+            "title": "Visita e Dimensionamento",
+            "description": "Analisamos a demanda de consumo para definir o diâmetro da tubulação e a pressão ideal do sistema.",
+            "icon": "pipe-disconnected"
+          },
+          {
+            "step": 2,
+            "title": "Execução da Rede",
+            "description": "Instalação de tubulações em cobre ou multicamada, registros e pontos de consumo conforme o projeto.",
+            "icon": "tools"
+          },
+          {
+            "step": 3,
+            "title": "Teste de Estanqueidade",
+            "description": "Realizamos o teste de pressão para garantir que não existam microvazamentos em nenhuma conexão.",
+            "icon": "gauge"
+          },
+          {
+            "step": 4,
+            "title": "Entrega e Laudo",
+            "description": "Conexão dos aparelhos (fogão, aquecedor) e entrega do sistema testado e pronto para uso seguro.",
+            "icon": "shield-check"
+          }
+        ]
+      },
+      "professionals": {
+        "title": "Técnicos de Gás Certificados",
+        "description": "Gás não permite amadorismo. Nossos técnicos são treinados para lidar com alta e baixa pressão, realizando conversões e manutenções que seguem os mais altos padrões de segurança nacional."
+      },
+      "whyChooseUs": {
+        "title": "Por que confiar na SOS para seu Gás?",
+        "items": [
+          {
+            "title": "Normas ABNT",
+            "description": "Toda instalação é feita seguindo à risca as normas de segurança vigentes.",
+            "icon": "book-check-outline"
+          },
+          {
+            "title": "Detecção de Vazamentos",
+            "description": "Equipamentos de alta precisão para identificar vazamentos invisíveis a olho nu.",
+            "icon": "leak"
+          },
+          {
+            "title": "Soluções Completas",
+            "description": "Da conversão do fogão à instalação de aquecedores e churrasqueiras a gás.",
+            "icon": "stove"
+          }
+        ]
+      },
+      "faq": {
+        "title": "Dúvidas sobre Gás Encanado",
+        "questions": [
+          {
+            "question": "O que é o teste de estanqueidade?",
+            "answer": "É um teste de pressão realizado na rede de gás para verificar se o sistema é hermético (sem vazamentos). É obrigatório em inspeções e reformas."
+          },
+          {
+            "question": "Posso converter meu fogão de botijão para gás encanado?",
+            "answer": "Sim! Realizamos a troca dos bicos injetores e ajustes necessários para que seu fogão de GLP funcione perfeitamente com Gás Natural (ou vice-versa)."
+          },
+          {
+            "question": "Com que frequência devo fazer manutenção na rede de gás?",
+            "answer": "Recomenda-se uma inspeção preventiva a cada 12 meses para verificar o estado das mangueiras, válvulas e a integridade das conexões."
+          },
+          {
+            "question": "Senti cheiro de gás, o que devo fazer?",
+            "answer": "Feche o registro geral imediatamente, abra todas as janelas para ventilação e não acione interruptores de luz. Entre em contato conosco para uma detecção urgente."
+          }
+        ]
+      },
+      "finalCta": {
+        "title": "Não corra riscos desnecessários",
+        "description": "Seja para uma nova instalação ou para adequar sua rede antiga, conte com a perícia da SOS Construir.",
+        "ctaText": "Agendar Visita Técnica de Gás"
+      }
+    }
+  },
+  "pedras-decorativas": {
+    "meta": {
+      "title": "Pedras Decorativas em Foz do Iguaçu | Revestimentos SOS Construir",
+      "description": "Transforme seus ambientes com pedras decorativas em Foz do Iguaçu. Revestimentos naturais para paredes, pisos e jardins com instalação precisa e design exclusivo.",
+      "keywords": "pedras decorativas foz do iguaçu, revestimento de pedra, pedra canjiquinha, pedra ferro, filete de pedra, pedras para jardim",
+      "ogImage": "/images/services/pedras-decorativas/hero.jpg",
+      "breadcrumbLabel": "Pedras Decorativas"
+    },
+    "sections": {
+      "hero": {
+        "title": "A Beleza Natural que Transforma seu Ambiente",
+        "description": "Eleve o nível do seu projeto com texturas e cores que só a natureza oferece. Instalação artesanal de pedras decorativas para interiores, fachadas e paisagismo.",
+        "image": "/images/services/pedras-decorativas/hero.jpg"
+      },
+      "workGallery": {
+        "filters": [
+          {
+            "label": "Todos",
+            "slug": "todos",
+            "count": 250
+          },
+          {
+            "label": "Fachadas Externas",
+            "slug": "fachadas",
+            "count": 110
+          },
+          {
+            "label": "Interiores/Lareiras",
+            "slug": "interiores",
+            "count": 85
+          },
+          {
+            "label": "Jardins e Piscinas",
+            "slug": "externo",
+            "count": 55
+          }
+        ]
+      },
+      "process": {
+        "steps": [
+          {
+            "step": 1,
+            "title": "Seleção da Pedra",
+            "description": "Ajudamos você a escolher o tipo ideal (Ferro, São Tomé, Canjiquinha) conforme o estilo do seu projeto.",
+            "icon": "rhombus-split"
+          },
+          {
+            "step": 2,
+            "title": "Preparação da Base",
+            "description": "Tratamento da superfície para garantir aderência máxima, evitando que as pedras se soltem com o tempo.",
+            "icon": "wall"
+          },
+          {
+            "step": 3,
+            "title": "Assentamento Artesanal",
+            "description": "Aplicação peça por peça, cuidando do alinhamento, paginação e harmonia das texturas.",
+            "icon": "hand-back-right"
+          },
+          {
+            "step": 4,
+            "title": "Impermeabilização",
+            "description": "Aplicação de resinas protetoras que realçam a cor e facilitam a limpeza futura.",
+            "icon": "water-opacity"
+          }
+        ]
+      },
+      "professionals": {
+        "title": "Mão de Obra Especializada",
+        "description": "Instalar pedras decorativas é um trabalho artístico. Nossa equipe domina as técnicas de recorte e encaixe, garantindo um visual coeso, sem falhas de alinhamento e com acabamento impecável."
+      },
+      "whyChooseUs": {
+        "title": "O Toque Especial da SOS Construir",
+        "items": [
+          {
+            "title": "Ambientes Únicos",
+            "description": "Por serem naturais, nenhuma pedra é igual à outra, garantindo exclusividade total ao seu espaço.",
+            "icon": "star-face"
+          },
+          {
+            "title": "Durabilidade Eterna",
+            "description": "Revestimentos em pedra resistem ao sol, chuva e impactos, mantendo a beleza por décadas.",
+            "icon": "infinity"
+          },
+          {
+            "title": "Valorização Imobiliária",
+            "description": "O uso de pedras naturais é um dos investimentos que mais agregam valor estético e comercial a um imóvel.",
+            "icon": "trending-up"
+          }
+        ]
+      },
+      "faq": {
+        "title": "Dúvidas sobre Pedras Decorativas",
+        "questions": [
+          {
+            "question": "Posso aplicar pedras decorativas sobre pintura ou gesso?",
+            "answer": "O ideal é remover a pintura ou picotar a parede para garantir a aderência da argamassa. Em drywall, são necessários reforços e placas específicas devido ao peso das pedras."
+          },
+          {
+            "question": "As pedras precisam ser lavadas com frequência?",
+            "answer": "Não. Quando bem impermeabilizadas, a manutenção é mínima. Apenas uma limpeza leve com água e sabão neutro é suficiente para manter o brilho natural."
+          },
+          {
+            "question": "Qual a melhor pedra para fachadas externas?",
+            "answer": "Pedras como a Pedra Ferro ou a São Tomé são excelentes para áreas externas por serem muito resistentes às intempéries e variações térmicas de Foz do Iguaçu."
+          },
+          {
+            "question": "O assentamento das pedras gera muita sujeira?",
+            "answer": "Comparado a uma obra de alvenaria, o processo é mais limpo. No entanto, o corte das pedras gera pó, por isso nossa equipe utiliza técnicas para minimizar o impacto no ambiente."
+          }
+        ]
+      },
+      "finalCta": {
+        "title": "Leve a sofisticação da natureza para sua casa",
+        "description": "Quer uma fachada impactante ou uma sala de estar acolhedora? Fale com nossos especialistas em revestimentos naturais.",
+        "ctaText": "Solicitar Orçamento de Pedras"
+      }
+    }
+  },
+  "lago-artificial": {
+    "meta": {
+      "title": "Lagos Artificiais e Ornamentais em Foz do Iguaçu | SOS Construir",
+      "description": "Transforme seu jardim com um lago artificial em Foz do Iguaçu. Projetos personalizados com filtragem biológica, peixes ornamentais e rochas naturais. Peça seu orçamento.",
+      "keywords": "lago artificial foz do iguaçu, lago ornamental, carpas kói, cascata residencial, jardim com lago, geomembrana",
+      "ogImage": "/images/services/lago-artificial/hero.jpg",
+      "breadcrumbLabel": "Lago Artificial"
+    },
+    "sections": {
+      "hero": {
+        "title": "Tenha um Refúgio Natural Particular no seu Quintal",
+        "description": "Lagos artificiais que unem beleza, tecnologia de filtragem biológica e harmonia. O som relaxante da água e a vida ornamental integrados ao seu paisagismo.",
+        "image": "/images/services/lago-artificial/hero.jpg"
+      },
+      "workGallery": {
+        "filters": [
+          {
+            "label": "Todos",
+            "slug": "todos",
+            "count": 45
+          },
+          {
+            "label": "Lagos Ornamentais",
+            "slug": "ornamentais",
+            "count": 25
+          },
+          {
+            "label": "Espelhos d'Água",
+            "slug": "espelhos",
+            "count": 12
+          },
+          {
+            "label": "Cascatas e Pedras",
+            "slug": "cascatas",
+            "count": 8
+          }
+        ]
+      },
+      "process": {
+        "steps": [
+          {
+            "step": 1,
+            "title": "Design e Escavação",
+            "description": "Planejamento das profundidades e áreas de filtragem, seguido de escavação precisa conforme o layout.",
+            "icon": "water-outline"
+          },
+          {
+            "step": 2,
+            "title": "Impermeabilização",
+            "description": "Aplicação de manta geomembrana de alta resistência para garantir estanqueidade total e duradoura.",
+            "icon": "shield-check-outline"
+          },
+          {
+            "step": 3,
+            "title": "Filtragem e Bombas",
+            "description": "Instalação de sistemas biológicos e UV para manter a água sempre cristalina e saudável para os peixes.",
+            "icon": "filter-variant"
+          },
+          {
+            "step": 4,
+            "title": "Acabamento e Paisagismo",
+            "description": "Composição com rochas naturais, plantas aquáticas e introdução dos peixes para dar vida ao lago.",
+            "icon": "fish-bowl-outline"
+          }
+        ]
+      },
+      "professionals": {
+        "title": "Especialistas em Ecossistemas Aquáticos",
+        "description": "Construir um lago é diferente de uma piscina. Nossa equipe entende de biologia e hidráulica, garantindo um sistema que se equilibra sozinho, sem gerar água verde ou odores desagradáveis."
+      },
+      "whyChooseUs": {
+        "title": "O Diferencial da SOS Construir",
+        "items": [
+          {
+            "title": "Água Cristalina",
+            "description": "Sistemas de filtragem avançados que garantem transparência total e baixa manutenção.",
+            "icon": "shimmer"
+          },
+          {
+            "title": "Redução de Temperatura",
+            "description": "Lagos ajudam a refrescar o microclima local, ideal para o calor de Foz do Iguaçu.",
+            "icon": "thermometer-minus"
+          },
+          {
+            "title": "Integração Total",
+            "description": "Harmonizamos o lago com seu jardim, criando uma transição perfeita entre o natural e o construído.",
+            "icon": "nature"
+          }
+        ]
+      },
+      "faq": {
+        "title": "Dúvidas sobre Lagos Artificiais",
+        "questions": [
+          {
+            "question": "O lago artificial gera muitos mosquitos?",
+            "answer": "Não. Como a água está em constante circulação e os peixes (como carpas) se alimentam de larvas, o lago impede a proliferação de insetos."
+          },
+          {
+            "question": "Dá muito trabalho manter um lago limpo?",
+            "answer": "Com nosso sistema de filtragem biológica e UV, a manutenção é simples: limpeza de filtros a cada 15 ou 30 dias e alimentação dos peixes."
+          },
+          {
+            "question": "Qual o tamanho mínimo para ter um lago com peixes?",
+            "answer": "Podemos criar mini lagos a partir de 2m², mas para carpas maiores, recomendamos profundidades de pelo menos 60cm a 1 metro."
+          },
+          {
+            "question": "O lago gasta muita energia elétrica?",
+            "answer": "Utilizamos bombas de alta eficiência e baixo consumo, projetadas para funcionar 24h por dia com impacto mínimo na sua fatura."
+          }
+        ]
+      },
+      "finalCta": {
+        "title": "Transforme seu jardim em um oásis particular",
+        "description": "Valorize seu imóvel e ganhe um espaço de relaxamento único. Solicite um projeto personalizado hoje mesmo.",
+        "ctaText": "Solicitar Orçamento de Lago"
+      }
+    }
+  },
+  "jardinagem-e-paisagismo": {
+    "meta": {
+      "title": "Jardinagem e Paisagismo em Foz do Iguaçu | SOS Construir",
+      "description": "Serviços profissionais de jardinagem e paisagismo em Foz do Iguaçu. Plantio de grama, jardins verticais, podas especializadas e manutenção completa de áreas verdes.",
+      "keywords": "jardinagem foz do iguaçu, paisagismo residencial, plantio de grama, jardim vertical, manutenção de jardim, poda de árvores",
+      "ogImage": "/images/services/jardinagem-e-paisagismo/hero.jpg",
+      "breadcrumbLabel": "Jardinagem e Paisagismo"
+    },
+    "sections": {
+      "hero": {
+        "title": "A Natureza Planejada para o seu Bem-Estar",
+        "description": "Transforme sua área externa em um cenário de cinema. Do plantio da grama perfeita ao design de jardins verticais, cuidamos de cada detalhe para seu jardim florescer o ano todo.",
+        "image": "/images/services/jardinagem-e-paisagismo/hero.jpg"
+      },
+      "workGallery": {
+        "filters": [
+          {
+            "label": "Todos",
+            "slug": "todos",
+            "count": 420
+          },
+          {
+            "label": "Paisagismo Residencial",
+            "slug": "residencial",
+            "count": 210
+          },
+          {
+            "label": "Jardins Verticais",
+            "slug": "verticais",
+            "count": 85
+          },
+          {
+            "label": "Manutenção Corporativa",
+            "slug": "corporativo",
+            "count": 125
+          }
+        ]
+      },
+      "process": {
+        "steps": [
+          {
+            "step": 1,
+            "title": "Consultoria e Layout",
+            "description": "Analisamos a incidência de sol e o tipo de solo para escolher as espécies que melhor se adaptam ao seu espaço.",
+            "icon": "flower-tulip-outline"
+          },
+          {
+            "step": 2,
+            "title": "Preparo do Solo",
+            "description": "Adubação técnica e nivelamento para garantir que a grama e as plantas cresçam saudáveis e sem pragas.",
+            "icon": "sprout-outline"
+          },
+          {
+            "step": 3,
+            "title": "Plantio e Execução",
+            "description": "Instalação de tapetes de grama, mudas e estruturas de jardins verticais com acabamento profissional.",
+            "icon": "tree-outline"
+          },
+          {
+            "step": 4,
+            "title": "Manutenção Vitalícia",
+            "description": "Cronograma de podas, regas e nutrição para manter seu jardim sempre impecável e valorizado.",
+            "icon": "water-pump"
+          }
+        ]
+      },
+      "professionals": {
+        "title": "Jardineiros e Paisagistas Experientes",
+        "description": "Nossa equipe não apenas corta grama; nós projetamos vida. Com profissionais treinados em botânica e design de exteriores, garantimos que seu investimento em verde cresça com saúde e harmonia estética."
+      },
+      "whyChooseUs": {
+        "title": "Vantagens do Paisagismo SOS",
+        "items": [
+          {
+            "title": "Otimização de Espaço",
+            "description": "Com jardins verticais, levamos a natureza até para os menores apartamentos e varandas.",
+            "icon": "arrow-expand-vertical"
+          },
+          {
+            "title": "Saúde Ambiental",
+            "description": "Plantas selecionadas que melhoram a qualidade do ar e reduzem a temperatura ao redor da sua casa.",
+            "icon": "leaf-circle-outline"
+          },
+          {
+            "title": "Solução de Ponta a Ponta",
+            "description": "Da roçada mecanizada inicial à instalação de sistemas de irrigação automatizados.",
+            "icon": "all-inclusive"
+          }
+        ]
+      },
+      "faq": {
+        "title": "Dúvidas sobre Jardinagem e Gramados",
+        "questions": [
+          {
+            "question": "Qual a melhor época para plantar grama em Foz do Iguaçu?",
+            "answer": "Embora a primavera e o outono sejam ideais, com o preparo de solo e a irrigação correta da SOS, podemos realizar o plantio em qualquer época do ano."
+          },
+          {
+            "question": "Como funciona a manutenção de um jardim vertical?",
+            "answer": "Utilizamos sistemas de irrigação gota-a-gota e vasos autoirrigáveis que facilitam o cuidado, exigindo apenas podas leves e adubação periódica."
+          },
+          {
+            "question": "Vocês fazem a remoção dos resíduos (galhos e grama)?",
+            "answer": "Sim! Oferecemos a solução completa, incluindo a coleta e o descarte correto de resíduos verdes e entulhos através de caçambas próprias."
+          },
+          {
+            "question": "Como escolher entre os tipos de grama (Esmeralda, São Carlos, etc)?",
+            "answer": "Nossa consultoria avalia se a área terá muito pisoteio (lazer) ou se é uma área de sombra, indicando a espécie com melhor custo-benefício para sua necessidade."
+          }
+        ]
+      },
+      "finalCta": {
+        "title": "Dê vida ao seu espaço exterior",
+        "description": "Um jardim bem cuidado valoriza seu imóvel em até 15%. Peça seu orçamento de paisagismo personalizado hoje mesmo.",
+        "ctaText": "Solicitar Orçamento de Jardinagem"
+      }
+    }
+  },
+  "encanador": {
+    "meta": {
+      "title": "Encanador Profissional em Foz do Iguaçu | SOS Construir",
+      "description": "Serviços hidráulicos completos em Foz do Iguaçu. Detecção de vazamentos, desentupimento, manutenção de tubulações e reparos de emergência 24h.",
+      "keywords": "encanador foz do iguaçu, caça vazamento, desentupidora foz, encanador 24h, conserto de descarga, reparo hidráulico",
+      "ogImage": "/images/services/encanador/hero.jpg",
+      "breadcrumbLabel": "Encanador"
+    },
+    "sections": {
+      "hero": {
+        "title": "Soluções Hidráulicas Inteligentes Sem Quebra-Quebra",
+        "description": "Vazamentos, entupimentos ou novas instalações? Nossa equipe utiliza tecnologia de ponta para diagnosticar e reparar problemas hidráulicos com máxima eficiência e limpeza.",
+        "image": "/images/services/encanador/hero.jpg"
+      },
+      "workGallery": {
+        "filters": [
+          {
+            "label": "Todos",
+            "slug": "todos",
+            "count": 450
+          },
+          {
+            "label": "Detecção de Vazamento",
+            "slug": "vazamento",
+            "count": 180
+          },
+          {
+            "label": "Instalações Novas",
+            "slug": "instalacoes",
+            "count": 120
+          },
+          {
+            "label": "Manutenção Predial",
+            "slug": "manutencao",
+            "count": 150
+          }
+        ]
+      },
+      "process": {
+        "steps": [
+          {
+            "step": 1,
+            "title": "Diagnóstico Preciso",
+            "description": "Usamos geofone e câmeras térmicas para localizar vazamentos invisíveis sem precisar quebrar paredes aleatoriamente.",
+            "icon": "magnify-scan"
+          },
+          {
+            "step": 2,
+            "title": "Orçamento Transparente",
+            "description": "Apresentamos o plano de reparo e os materiais necessários antes de iniciar qualquer intervenção.",
+            "icon": "file-document-outline"
+          },
+          {
+            "step": 3,
+            "title": "Reparo Especializado",
+            "description": "Substituição de conexões, reparos em PPR, PVC ou cobre com técnica que garante zero vazamentos futuros.",
+            "icon": "pipe-wrench"
+          },
+          {
+            "step": 4,
+            "title": "Teste de Pressão",
+            "description": "Validamos o serviço com testes de carga e pressão para garantir que o fluxo está 100% normalizado.",
+            "icon": "gauge"
+          }
+        ]
+      },
+      "professionals": {
+        "title": "Mestres em Hidráulica",
+        "description": "Nossos encanadores são treinados para lidar desde a troca de um simples reparo de torneira até redes complexas de esgoto e água quente. Profissionalismo que evita desperdício de água e dinheiro."
+      },
+      "whyChooseUs": {
+        "title": "O Diferencial Hidráulico da SOS",
+        "items": [
+          {
+            "title": "Tecnologia Caça-Vazamento",
+            "description": "Localização eletrônica que economiza tempo e evita destruição desnecessária do seu acabamento.",
+            "icon": "radar"
+          },
+          {
+            "title": "Atendimento de Emergência",
+            "description": "Sabemos que água vazando não espera. Equipes prontas para agir rápido em situações críticas.",
+            "icon": "alert-decagram-outline"
+          },
+          {
+            "title": "Garantia de Estanqueidade",
+            "description": "Serviço certificado que garante que sua rede hidráulica ficará seca e segura por muito tempo.",
+            "icon": "water-off-outline"
+          }
+        ]
+      },
+      "faq": {
+        "title": "Dúvidas sobre Serviços Hidráulicos",
+        "questions": [
+          {
+            "question": "Como saber se tenho um vazamento oculto?",
+            "answer": "Sinais como conta de água alta, manchas de umidade, mofo ou o relógio girando sem uso de água indicam vazamentos. Nós usamos aparelhos eletrônicos para confirmar o local exato."
+          },
+          {
+            "question": "Vocês trabalham com água quente (aquecimento solar/gás)?",
+            "answer": "Sim! Instalamos e reparamos tubulações específicas para água quente, como CPVC e PPR, garantindo isolamento térmico e resistência."
+          },
+          {
+            "question": "O desentupimento danifica os canos?",
+            "answer": "Não. Utilizamos técnicas de mola rotativa ou hidrojateamento que limpam as paredes internas da tubulação sem comprometer a estrutura do cano."
+          },
+          {
+            "question": "Vocês instalam metais e louças sanitárias?",
+            "answer": "Sim. Instalamos desde torneiras gourmet e chuveiros modernos até vasos sanitários com caixa acoplada e sistemas de descarga monobloco."
+          }
+        ]
+      },
+      "finalCta": {
+        "title": "Não deixe o prejuízo escorrer pelo ralo",
+        "description": "Vazamentos pequenos podem causar grandes danos estruturais. Chame quem entende de hidráulica de verdade.",
+        "ctaText": "Solicitar Encanador Agora"
+      }
+    }
+  },
+  "eletricista": {
+    "meta": {
+      "title": "Eletricista Profissional em Foz do Iguaçu | Padrão Copel | SOS Construir",
+      "description": "Serviços elétricos residenciais, prediais e industriais em Foz do Iguaçu. Especialistas em Padrão Copel, manutenção preventiva e instalações seguras.",
+      "keywords": "eletricista foz do iguaçu, padrão copel foz, instalação elétrica residencial, manutenção elétrica, eletricista 24h foz",
+      "ogImage": "/images/services/eletricista/hero.jpg",
+      "breadcrumbLabel": "Eletricista"
+    },
+    "sections": {
+      "hero": {
+        "title": "Energia Segura e Instalações Dentro das Normas",
+        "description": "Evite curto-circuitos e prejuízos. Conte com eletricistas certificados para projetos residenciais, prediais e adequação total ao Padrão Copel.",
+        "image": "/images/services/eletricista/hero.jpg"
+      },
+      "workGallery": {
+        "filters": [
+          {
+            "label": "Todos",
+            "slug": "todos",
+            "count": 520
+          },
+          {
+            "label": "Padrão Copel",
+            "slug": "copel",
+            "count": 180
+          },
+          {
+            "label": "Instalações Prediais",
+            "slug": "predial",
+            "count": 140
+          },
+          {
+            "label": "Manutenção Residencial",
+            "slug": "residencial",
+            "count": 200
+          }
+        ]
+      },
+      "process": {
+        "steps": [
+          {
+            "step": 1,
+            "title": "Dimensionamento de Carga",
+            "description": "Calculamos a demanda real dos seus aparelhos para evitar sobrecargas e quedas de energia.",
+            "icon": "flash-auto"
+          },
+          {
+            "step": 2,
+            "title": "Passagem e Cabeamento",
+            "description": "Instalação de condutores e fiação seguindo as cores e normas técnicas de segurança (NBR 5410).",
+            "icon": "cable-data"
+          },
+          {
+            "step": 3,
+            "title": "Montagem de Quadros",
+            "description": "Organização de disjuntores e dispositivos de proteção (DR e DPS) para proteger sua família contra choques e surtos.",
+            "icon": "dresser-outline"
+          },
+          {
+            "step": 4,
+            "title": "Testes e Certificação",
+            "description": "Verificação de aterramento e tensão em todos os pontos para garantir uma rede 100% operacional.",
+            "icon": "check-network-outline"
+          }
+        ]
+      },
+      "professionals": {
+        "title": "Eletricistas Certificados (NR-10)",
+        "description": "Eletricidade é coisa séria. Nossa equipe possui certificação NR-10 e está apta a realizar desde pequenos reparos até a montagem de padrões de entrada complexos, sempre com foco na preservação da vida e do seu patrimônio."
+      },
+      "whyChooseUs": {
+        "title": "Por que a SOS é a escolha certa para sua parte elétrica?",
+        "items": [
+          {
+            "title": "Especialistas Copel",
+            "description": "Garantimos a aprovação da sua entrada de energia sem idas e vindas burocráticas.",
+            "icon": "home-lightning-bolt-outline"
+          },
+          {
+            "title": "Segurança Preventiva",
+            "description": "Identificamos fios aquecidos e conexões frouxas que podem causar incêndios invisíveis.",
+            "icon": "shield-flash-outline"
+          },
+          {
+            "title": "Economia de Energia",
+            "description": "Projetos bem dimensionados evitam a fuga de corrente e reduzem o valor da sua conta.",
+            "icon": "leaf-outline"
+          }
+        ]
+      },
+      "faq": {
+        "title": "Dúvidas sobre Serviços Elétricos",
+        "questions": [
+          {
+            "question": "O que é o Padrão Copel e por que preciso dele?",
+            "answer": "É o conjunto de normas que a concessionária exige para ligar a energia no seu imóvel. Se o poste ou a caixa de luz estiverem fora do padrão, a Copel não faz a ligação."
+          },
+          {
+            "question": "Por que meu disjuntor cai quando ligo o chuveiro e o ar-condicionado?",
+            "answer": "Isso indica sobrecarga no circuito. O disjuntor desarma para evitar que os fios derretam e causem um incêndio. Precisamos redimensionar a fiação desse setor."
+          },
+          {
+            "question": "Vocês instalam ventiladores, lustres e ar-condicionado?",
+            "answer": "Sim! Realizamos toda a parte de iluminação decorativa e a preparação elétrica necessária (fiação e disjuntores) para a instalação de ar-condicionado."
+          },
+          {
+            "question": "O que são os dispositivos DR e DPS?",
+            "answer": "O DR protege as pessoas contra choques elétricos fatais, desligando o circuito ao menor sinal de fuga. O DPS protege seus eletrônicos contra queimas causadas por raios e surtos na rede."
+          }
+        ]
+      },
+      "finalCta": {
+        "title": "Proteja seu lar contra riscos elétricos",
+        "description": "Instalações antigas ou mal feitas são as maiores causas de incêndios. Agende uma revisão elétrica hoje mesmo.",
+        "ctaText": "Solicitar Orçamento Elétrico"
+      }
+    }
+  },
+  "ceramica-e-porcelanato": {
+    "meta": {
+      "title": "Assentamento de Cerâmica e Porcelanato em Foz do Iguaçu | SOS Construir",
+      "description": "Especialistas em colocação de porcelanato e cerâmica em Foz do Iguaçu. Acabamento impecável, nivelamento perfeito e venda de materiais de alta qualidade.",
+      "keywords": "porcelanato foz do iguaçu, assentamento de piso, azulejista foz, colocar cerâmica, piso retificado, revestimento de parede",
+      "ogImage": "/images/services/ceramica-e-porcelanato/hero.jpg",
+      "breadcrumbLabel": "Cerâmica e Porcelanato"
+    },
+    "sections": {
+      "hero": {
+        "title": "O Piso dos Seus Sonhos com Acabamento Impecável",
+        "description": "Transforme seus ambientes com a elegância do porcelanato e a versatilidade da cerâmica. Unimos mão de obra de elite e materiais premium para um resultado duradouro e sofisticado.",
+        "image": "/images/services/ceramica-e-porcelanato/hero.jpg"
+      },
+      "workGallery": {
+        "filters": [
+          {
+            "label": "Todos",
+            "slug": "todos",
+            "count": 380
+          },
+          {
+            "label": "Porcelanato Grandes Formatos",
+            "slug": "grandes-formatos",
+            "count": 150
+          },
+          {
+            "label": "Revestimentos de Banheiro",
+            "slug": "banheiros",
+            "count": 120
+          },
+          {
+            "label": "Áreas Externas",
+            "slug": "externas",
+            "count": 110
+          }
+        ]
+      },
+      "process": {
+        "steps": [
+          {
+            "step": 1,
+            "title": "Preparação do Contrapiso",
+            "description": "Verificamos o nível e a cura da base para evitar que as peças soltem ou fiquem com som 'oco'.",
+            "icon": "format-horizontal-align-center"
+          },
+          {
+            "step": 2,
+            "title": "Paginação Estratégica",
+            "description": "Planejamos o início do assentamento para minimizar recortes e valorizar a estética do ambiente.",
+            "icon": "grid-large"
+          },
+          {
+            "step": 3,
+            "title": "Assentamento com Niveladores",
+            "description": "Uso de cunhas e niveladores profissionais para garantir um piso perfeitamente liso, sem 'dentes'.",
+            "icon": "unfold-more-horizontal"
+          },
+          {
+            "step": 4,
+            "title": "Rejuntamento Técnico",
+            "description": "Aplicação de rejunte (epóxi ou acrílico) com acabamento fino para facilitar a limpeza e evitar mofo.",
+            "icon": "brush-variant"
+          }
+        ]
+      },
+      "professionals": {
+        "title": "Azulejistas Especialistas",
+        "description": "Assentar porcelanato de grandes formatos exige técnica e ferramentas específicas. Nossa equipe é treinada para lidar com peças retificadas e juntas mínimas, entregando um visual de peça única e sofisticação extrema."
+      },
+      "whyChooseUs": {
+        "title": "Por que a SOS é líder em Revestimentos?",
+        "items": [
+          {
+            "title": "Solução Completa",
+            "description": "Nós vendemos o material e entregamos instalado. Uma única responsabilidade para sua tranquilidade.",
+            "icon": "cart-check"
+          },
+          {
+            "title": "Precisão Milimétrica",
+            "description": "Cortes em 45 graus (meia esquadria) perfeitos para nichos e quinas de alto padrão.",
+            "icon": "angle-acute"
+          },
+          {
+            "title": "Durabilidade Garantida",
+            "description": "Técnica de dupla colagem em peças grandes, seguindo as normas da ABNT para evitar descolamentos.",
+            "icon": "shield-lock-outline"
+          }
+        ]
+      },
+      "faq": {
+        "title": "Dúvidas sobre Pisos e Revestimentos",
+        "questions": [
+          {
+            "question": "Qual a diferença real entre cerâmica e porcelanato?",
+            "answer": "O porcelanato é cozido a temperaturas mais altas, sendo mais denso, resistente e com absorção de água quase zero. É ideal para áreas de alto tráfego e elegância."
+          },
+          {
+            "question": "O que é um piso retificado?",
+            "answer": "São peças com bordas cortadas perfeitamente retas. Isso permite o uso de juntas mínimas (1mm ou 1,5mm), dando uma sensação de continuidade e amplitude ao ambiente."
+          },
+          {
+            "question": "Quanto tempo demora para poder pisar após o assentamento?",
+            "answer": "Geralmente recomendamos aguardar 72 horas para tráfego pesado, mas após 24 horas já é possível realizar o rejuntamento com cuidado."
+          },
+          {
+            "question": "Vocês fazem a instalação sobre um piso antigo (Piso sobre Piso)?",
+            "answer": "Sim, desde que o piso antigo esteja bem aderido. Usamos argamassas especiais (AC3) para garantir que a nova camada fique perfeitamente firme."
+          }
+        ]
+      },
+      "finalCta": {
+        "title": "Pronto para transformar seu ambiente?",
+        "description": "Seja uma reforma de banheiro ou o piso de toda a sua casa. Peça seu orçamento com quem é especialista em detalhes.",
+        "ctaText": "Solicitar Orçamento de Revestimento"
+      }
+    }
+  },
+  "concreto-polido": {
+    "meta": {
+      "title": "Piso de Concreto Polido em Foz do Iguaçu | SOS Construir",
+      "description": "Especialistas em concreto polido em Foz do Iguaçu. Pisos brilhantes, resistentes e de baixa manutenção para indústrias, comércios e residências modernas.",
+      "keywords": "concreto polido foz do iguaçu, piso industrial, cimento queimado polido, polimento de concreto, piso para galpão",
+      "ogImage": "/images/services/concreto-polido/hero.jpg",
+      "breadcrumbLabel": "Concreto Polido"
+    },
+    "sections": {
+      "hero": {
+        "title": "A Força do Concreto com o Brilho do Alto Padrão",
+        "description": "Transforme pisos comuns em superfícies espelhadas, densas e altamente resistentes. A solução definitiva para quem busca durabilidade extrema sem abrir mão da elegância.",
+        "image": "/images/services/concreto-polido/hero.jpg"
+      },
+      "workGallery": {
+        "filters": [
+          {
+            "label": "Todos",
+            "slug": "todos",
+            "count": 180
+          },
+          {
+            "label": "Industrial/Galpões",
+            "slug": "industrial",
+            "count": 90
+          },
+          {
+            "label": "Comercial/Lojas",
+            "slug": "comercial",
+            "count": 55
+          },
+          {
+            "label": "Residencial Loft",
+            "slug": "residencial",
+            "count": 35
+          }
+        ]
+      },
+      "process": {
+        "steps": [
+          {
+            "step": 1,
+            "title": "Desbaste Inicial",
+            "description": "Uso de abrasivos diamantados para remover a camada superficial e expor os agregados do concreto.",
+            "icon": "layers-remove"
+          },
+          {
+            "step": 2,
+            "title": "Endurecimento Químico",
+            "description": "Aplicação de silicatos que reagem com o concreto, tornando-o muito mais denso e resistente à abrasão.",
+            "icon": "flask-round-bottom-outline"
+          },
+          {
+            "step": 3,
+            "title": "Polimento Progressivo",
+            "description": "Sequência de lixamento com granulometrias finas até atingir o nível de brilho (fosco, acetinado ou espelhado) desejado.",
+            "icon": "auto-fix"
+          },
+          {
+            "step": 4,
+            "title": "Selagem Protetora",
+            "description": "Tratamento final que fecha os poros, protegendo contra manchas de óleo e facilitando a limpeza diária.",
+            "icon": "shield-star-outline"
+          }
+        ]
+      },
+      "professionals": {
+        "title": "Especialistas em Polimento Mecânico",
+        "description": "Nossa equipe utiliza maquinário de última geração (politrizes planetárias) para garantir um nivelamento perfeito. Não é apenas brilho; é uma correção estrutural da superfície que elimina irregularidades e poeira excessiva."
+      },
+      "whyChooseUs": {
+        "title": "Vantagens do Concreto Polido SOS",
+        "items": [
+          {
+            "title": "Manutenção Zero",
+            "description": "Diferente de tintas ou cerâmicas, o concreto polido não descasca e não exige cera. Basta água e sabão neutro.",
+            "icon": "mop"
+          },
+          {
+            "title": "Reflexão de Luz",
+            "description": "Aumenta a luminosidade do ambiente em até 30%, gerando economia real de energia elétrica.",
+            "icon": "lightbulb-outline"
+          },
+          {
+            "title": "Sustentabilidade",
+            "description": "Aproveita a estrutura existente do piso, reduzindo o desperdício de materiais e a pegada de carbono.",
+            "icon": "leaf-outline"
+          }
+        ]
+      },
+      "faq": {
+        "title": "Dúvidas sobre Concreto Polido",
+        "questions": [
+          {
+            "question": "O concreto polido é escorregadio?",
+            "answer": "Apesar do brilho intenso, o concreto polido seco tem um coeficiente de atrito excelente. Em áreas molhadas, aplicamos aditivos antiderrapantes para garantir a segurança."
+          },
+          {
+            "question": "Posso polir um concreto antigo que já está feio?",
+            "answer": "Sim! O processo de polimento remove a camada degradada e 'abre' o concreto novo por baixo, revitalizando totalmente o piso antigo."
+          },
+          {
+            "question": "Qual a diferença entre concreto polido e cimento queimado?",
+            "answer": "O cimento queimado é uma argamassa aplicada sobre o piso que costuma trincar. O concreto polido é o próprio piso de concreto trabalhado mecanicamente, sendo muito mais resistente e durável."
+          },
+          {
+            "question": "Quanto tempo demora o processo?",
+            "answer": "Depende da área, mas em média conseguimos polir de 50m² a 100m² por dia com nossa equipe e maquinário especializado."
+          }
+        ]
+      },
+      "finalCta": {
+        "title": "Dê um upgrade no seu piso hoje mesmo",
+        "description": "Quer um piso indestrutível e com brilho de shopping? Fale com quem é referência em concreto polido na região.",
+        "ctaText": "Solicitar Orçamento de Polimento"
+      }
+    }
+  },
+  "pedreiro": {
+    "meta": {
+      "title": "Pedreiro Profissional em Foz do Iguaçu | SOS Construir",
+      "description": "Encontre pedreiros experientes e confiáveis em Foz do Iguaçu. Construção, reforma, reboco e estruturas com garantia de qualidade e zero dor de cabeça.",
+      "keywords": "pedreiro foz do iguaçu, mestre de obras, pedreiro para reforma, construção civil foz, reboco e alvenaria",
+      "ogImage": "/images/services/pedreiro/hero.jpg",
+      "breadcrumbLabel": "Pedreiro"
+    },
+    "sections": {
+      "hero": {
+        "title": "Mão de Obra de Elite para Construir Seus Sonhos",
+        "description": "Chega de atrasos e serviços mal executados. Conte com pedreiros verificados pela SOS Construir para uma obra limpa, rápida e com acabamento de alto padrão.",
+        "image": "/images/services/pedreiro/hero.jpg"
+      },
+      "workGallery": {
+        "filters": [
+          {
+            "label": "Todos os Projetos",
+            "slug": "todos",
+            "count": 650
+          },
+          {
+            "label": "Construção do Zero",
+            "slug": "construcao",
+            "count": 280
+          },
+          {
+            "label": "Reformas Gerais",
+            "slug": "reformas",
+            "count": 220
+          },
+          {
+            "label": "Lazer e Gourmet",
+            "slug": "lazer",
+            "count": 150
+          }
+        ]
+      },
+      "process": {
+        "steps": [
+          {
+            "step": 1,
+            "title": "Planejamento e Medição",
+            "description": "Alinhamos cada detalhe do projeto, definindo níveis, esquadros e o cronograma exato da obra.",
+            "icon": "ruler-square"
+          },
+          {
+            "step": 2,
+            "title": "Infraestrutura e Alvenaria",
+            "description": "Levantamento de paredes, vigas e colunas com precisão técnica e materiais de primeira linha.",
+            "icon": "wall-outline"
+          },
+          {
+            "step": 3,
+            "title": "Reboco e Regularização",
+            "description": "Acabamento de paredes e contrapisos perfeitamente nivelados, prontos para receber o revestimento final.",
+            "icon": "format-paint"
+          },
+          {
+            "step": 4,
+            "title": "Entrega e Limpeza",
+            "description": "Finalização do serviço com inspeção rigorosa de qualidade. Entregamos sua obra limpa e organizada.",
+            "icon": "home-check-outline"
+          }
+        ]
+      },
+      "professionals": {
+        "title": "Pedreiros Verificados e Confiáveis",
+        "description": "Na SOS Construir, não contratamos curiosos. Nossos pedreiros passam por um rigoroso processo de seleção técnica e avaliação de histórico, garantindo que você tenha um profissional dedicado e honesto dentro da sua propriedade."
+      },
+      "whyChooseUs": {
+        "title": "Por que a SOS é a melhor escolha para sua obra?",
+        "items": [
+          {
+            "title": "Zero Surpresas",
+            "description": "Trabalhamos com transparência total. Você sabe exatamente o que está sendo feito em cada etapa.",
+            "icon": "eye-check-outline"
+          },
+          {
+            "title": "Versatilidade Técnica",
+            "description": "Especialistas em tudo: de escadas complexas a churrasqueiras e lareiras personalizadas.",
+            "icon": "hammer-wrench"
+          },
+          {
+            "title": "Garantia de Entrega",
+            "description": "Compromisso real com prazos. Sua obra não fica parada nem um dia sequer.",
+            "icon": "calendar-check-outline"
+          }
+        ]
+      },
+      "faq": {
+        "title": "Dúvidas sobre Serviços de Pedreiro",
+        "questions": [
+          {
+            "question": "Vocês pegam obras desde o alicerce?",
+            "answer": "Sim! Temos equipes capacitadas para realizar a obra completa, desde a fundação até o acabamento final, ou apenas reformas específicas conforme sua necessidade."
+          },
+          {
+            "question": "Como é feito o pagamento do serviço?",
+            "answer": "Oferecemos condições flexíveis e facilitadas, com cronograma financeiro atrelado à evolução da obra, garantindo segurança para você."
+          },
+          {
+            "question": "A SOS fornece os materiais básicos também?",
+            "answer": "Sim, como um Hub completo, podemos fornecer areia, pedra, tijolos e cimento direto da fábrica, otimizando o custo total da sua construção."
+          },
+          {
+            "question": "Vocês fazem manutenção corretiva em prédios e condomínios?",
+            "answer": "Com certeza. Realizamos reparos estruturais, manutenção de calçadas, rebocos externos e soluções de drenagem para condomínios residenciais e comerciais."
+          }
+        ]
+      },
+      "finalCta": {
+        "title": "Transforme seu projeto em realidade hoje",
+        "description": "Evite as dores de cabeça comuns da construção civil. Fale com quem entrega qualidade e profissionalismo há mais de 10 anos.",
+        "ctaText": "Falar com Especialista em Obras"
+      }
+    }
+  },
+  "construcao-de-piscinas": {
+    "meta": {
+      "title": "Construção de Piscinas em Foz do Iguaçu | SOS Construir",
+      "description": "Transforme seu quintal em um oásis. Especialistas em construção de piscinas de alvenaria, vinil e fibra em Foz do Iguaçu. Projetos personalizados com garantia.",
+      "keywords": "construção de piscinas foz do iguaçu, piscina de alvenaria, piscina de fibra, piscina de vinil, reforma de piscina, cascata e iluminação led",
+      "ogImage": "/images/services/construcao-de-piscinas/hero.jpg",
+      "breadcrumbLabel": "Construção de Piscinas"
+    },
+    "sections": {
+      "hero": {
+        "title": "A Área de Lazer dos Seus Sonhos com Segurança Total",
+        "description": "Projetamos e construímos sua piscina do zero, unindo design moderno, tecnologia de filtragem e acabamento premium. Sua diversão sem dor de cabeça.",
+        "image": "/images/services/construcao-de-piscinas/hero.jpg"
+      },
+      "workGallery": {
+        "filters": [
+          {
+            "label": "Todos os Projetos",
+            "slug": "todos",
+            "count": 180
+          },
+          {
+            "label": "Alvenaria e Azulejo",
+            "slug": "alvenaria",
+            "count": 85
+          },
+          {
+            "label": "Fibra e Vinil",
+            "slug": "fibra-vinil",
+            "count": 65
+          },
+          {
+            "label": "Áreas Gourmet com Piscina",
+            "slug": "gourmet",
+            "count": 30
+          }
+        ]
+      },
+      "process": {
+        "steps": [
+          {
+            "step": 1,
+            "title": "Projeto e Locação",
+            "description": "Definimos o melhor posicionamento solar, formato e profundidade conforme seu espaço e desejo.",
+            "icon": "pool"
+          },
+          {
+            "step": 2,
+            "title": "Escavação e Estrutura",
+            "description": "Preparação do terreno com maquinário próprio e construção da estrutura armada com foco em resistência.",
+            "icon": "excavator"
+          },
+          {
+            "step": 3,
+            "title": "Hidráulica e Impermeabilização",
+            "description": "Instalação de tubulações, bombas, filtros e aplicação de mantas para garantir zero vazamentos.",
+            "icon": "water-pump"
+          },
+          {
+            "step": 4,
+            "title": "Revestimento e LEDs",
+            "description": "Acabamento final com azulejos, pastilhas ou vinil, além da automação de luzes e cascatas.",
+            "icon": "lightbulb-on-outline"
+          }
+        ]
+      },
+      "professionals": {
+        "title": "Piscineiros e Engenheiros Especializados",
+        "description": "Construir uma piscina exige cálculos precisos de carga e pressão. Nossa equipe é composta por técnicos que dominam a norma técnica de piscinas, garantindo que seu investimento seja duradouro e seguro para sua família."
+      },
+      "whyChooseUs": {
+        "title": "Por que a SOS é a escolha certa para sua Piscina?",
+        "items": [
+          {
+            "title": "Personalização Total",
+            "description": "Borda infinita, prainha para crianças ou spa integrado? Nós realizamos qualquer projeto.",
+            "icon": "palette-swatch-outline"
+          },
+          {
+            "title": "Tecnologia de Filtragem",
+            "description": "Sistemas de tratamento de água modernos que reduzem o uso de cloro e facilitam a limpeza.",
+            "icon": "filter-cog-outline"
+          },
+          {
+            "title": "Valorização do Imóvel",
+            "description": "Uma piscina bem projetada pode valorizar sua propriedade em até 30% no mercado imobiliário.",
+            "icon": "trending-up"
+          }
+        ]
+      },
+      "faq": {
+        "title": "Dúvidas sobre Construção de Piscinas",
+        "questions": [
+          {
+            "question": "Qual a diferença entre piscina de fibra, vinil e alvenaria?",
+            "answer": "Fibra é rápida e prática. Vinil oferece ótimo custo-benefício e versatilidade. Alvenaria é a mais durável e permite formatos e revestimentos (como pastilhas) totalmente exclusivos."
+          },
+          {
+            "question": "Quanto tempo leva para a piscina ficar pronta?",
+            "answer": "Uma piscina de fibra pode ser instalada em 15 dias. Já projetos de alvenaria personalizados costumam levar entre 45 a 60 dias para conclusão total."
+          },
+          {
+            "question": "Vocês instalam aquecimento solar para piscinas?",
+            "answer": "Sim! Como somos um Hub de soluções, integramos o sistema de aquecimento solar para que você aproveite sua piscina em todas as estações do ano."
+          },
+          {
+            "question": "Como é garantida a impermeabilização?",
+            "answer": "Utilizamos produtos de marcas líderes e realizamos o teste de estanqueidade (encher a piscina por 72h) antes de aplicar o revestimento final."
+          }
+        ]
+      },
+      "finalCta": {
+        "title": "Realize o sonho da piscina própria agora",
+        "description": "Aproveite o clima de Foz do Iguaçu com conforto e sofisticação. Agende uma visita técnica e receba um orçamento completo.",
+        "ctaText": "Solicitar Orçamento de Piscina"
+      }
+    }
+  },
+  "sofa-sob-medida": {
+    "meta": {
+      "title": "Sofá Sob Medida em Foz do Iguaçu | Estofados SOS Construir",
+      "description": "Criação e reforma de sofás sob medida em Foz do Iguaçu. Conforto exclusivo, design personalizado e materiais premium para sua sala. Peça seu orçamento.",
+      "keywords": "sofá sob medida foz do iguaçu, estofados personalizados, reforma de sofá, sofá retrátil sob medida, fabricação de sofás foz",
+      "ogImage": "/images/services/sofa-sob-medida/hero.jpg",
+      "breadcrumbLabel": "Sofá Sob Medida"
+    },
+    "sections": {
+      "hero": {
+        "title": "Conforto e Estilo Planejados para o Seu Espaço",
+        "description": "Não adapte sua sala ao sofá; nós criamos o sofá perfeito para sua sala. Design exclusivo, tecidos premium e ergonomia sob medida para o seu descanso.",
+        "image": "/images/services/sofa-sob-medida/hero.jpg"
+      },
+      "workGallery": {
+        "filters": [
+          {
+            "label": "Todos os Modelos",
+            "slug": "todos",
+            "count": 120
+          },
+          {
+            "label": "Sofás Retráteis",
+            "slug": "retrateis",
+            "count": 55
+          },
+          {
+            "label": "Modelos em L/Canto",
+            "slug": "canto",
+            "count": 40
+          },
+          {
+            "label": "Reformas de Estofados",
+            "slug": "reformas",
+            "count": 25
+          }
+        ]
+      },
+      "process": {
+        "steps": [
+          {
+            "step": 1,
+            "title": "Medição e Consultoria",
+            "description": "Visitamos seu espaço para definir as dimensões exatas e entender seu estilo de uso (TV, recepção ou relaxamento).",
+            "icon": "ruler-square"
+          },
+          {
+            "step": 2,
+            "title": "Escolha de Materiais",
+            "description": "Seleção entre centenas de tecidos (Linho, Veludo, Couro) e densidades de espuma para o conforto ideal.",
+            "icon": "palette-swatch"
+          },
+          {
+            "step": 3,
+            "title": "Produção Artesanal",
+            "description": "Fabricação com estrutura reforçada e costura de precisão por mestres estofadores.",
+            "icon": "needle"
+          },
+          {
+            "step": 4,
+            "title": "Entrega e Montagem",
+            "description": "Levamos seu novo sofá até sua casa com cuidado total, garantindo o ajuste perfeito no ambiente.",
+            "icon": "truck-delivery-outline"
+          }
+        ]
+      },
+      "professionals": {
+        "title": "Mestres Estofadores",
+        "description": "Contamos com artesãos que dominam a tapeçaria fina. Da estrutura de madeira tratada ao acabamento da costura, cada detalhe é revisado para garantir um móvel que não deforma e mantém a beleza por anos."
+      },
+      "whyChooseUs": {
+        "title": "Por que escolher um sofá da SOS?",
+        "items": [
+          {
+            "title": "Ergonomia Adaptada",
+            "description": "Defina a altura do encosto e a profundidade do assento de acordo com sua altura para o máximo conforto.",
+            "icon": "seat-recline-normal"
+          },
+          {
+            "title": "Aproveitamento de Espaço",
+            "description": "Ideal para apartamentos compactos ou salas com ângulos difíceis onde sofás prontos não cabem.",
+            "icon": "arrow-expand-horizontal"
+          },
+          {
+            "title": "Tecidos de Alta Performance",
+            "description": "Opções com proteção contra líquidos e pets, unindo sofisticação e praticidade no dia a dia.",
+            "icon": "shield-check-outline"
+          }
+        ]
+      },
+      "faq": {
+        "title": "Dúvidas sobre Sofás Personalizados",
+        "questions": [
+          {
+            "question": "Qual a vantagem do sofá sob medida sobre o de loja?",
+            "answer": "A principal vantagem é a personalização total: você escolhe o tamanho exato, o tecido que combina com sua decoração e a densidade da espuma, além de garantir uma estrutura muito mais resistente."
+          },
+          {
+            "question": "Vocês também fazem a reforma de sofás antigos?",
+            "answer": "Sim! Nosso serviço de estofados sob medida permite renovar seu móvel favorito, trocando o tecido, reforçando a estrutura e renovando o conforto das espumas."
+          },
+          {
+            "question": "Quanto tempo demora para meu sofá ficar pronto?",
+            "answer": "O prazo médio de produção é de 20 a 40 dias úteis, dependendo da complexidade do design e da disponibilidade do tecido escolhido."
+          },
+          {
+            "question": "Quais tipos de tecidos são mais indicados para quem tem pets?",
+            "answer": "Recomendamos tecidos de trama fechada ou tecidos náuticos e tecnológicos que resistem melhor a arranhões e facilitam a remoção de pelos e limpeza."
+          }
+        ]
+      },
+      "finalCta": {
+        "title": "O sofá perfeito para a sua família está aqui",
+        "description": "Transforme sua sala em um cinema particular ou em um lounge sofisticado. Agende sua consultoria de estofados hoje.",
+        "ctaText": "Solicitar Orçamento de Sofá"
+      }
+    }
+  },
+  "reforma-e-construcao": {
+    "meta": {
+      "title": "Reforma e Construção em Foz do Iguaçu | SOS Construir",
+      "description": "Sua solução completa em construção civil residencial e comercial em Foz do Iguaçu. Da fundação ao acabamento, garantimos prazos, qualidade e zero dor de cabeça.",
+      "keywords": "reforma residencial foz, construção civil foz do iguaçu, construtora foz, reforma comercial, gerenciamento de obras",
+      "ogImage": "/images/services/reforma-e-construcao/hero.png",
+      "breadcrumbLabel": "Reforma e Construção"
+    },
+    "sections": {
+      "hero": {
+        "title": "Construímos o Seu Sonho, Gerenciamos Sua Tranquilidade",
+        "description": "Sua obra entregue no prazo, com custo otimizado e qualidade superior. Assumimos a responsabilidade integral do seu projeto, da fundação à entrega das chaves.",
+        "image": "/images/services/reforma-e-construcao/hero.png"
+      },
+      "workGallery": {
+        "filters": [
+          {
+            "label": "Todos os Projetos",
+            "slug": "todos",
+            "count": 1200
+          },
+          {
+            "label": "Residencial",
+            "slug": "residencial",
+            "count": 750
+          },
+          {
+            "label": "Comercial/Predial",
+            "slug": "comercial",
+            "count": 300
+          },
+          {
+            "label": "Reformas de Alto Padrão",
+            "slug": "alto-padrao",
+            "count": 150
+          }
+        ]
+      },
+      "process": {
+        "steps": [
+          {
+            "step": 1,
+            "title": "Planejamento e Viabilidade",
+            "description": "Análise técnica do projeto, levantamento de custos e definição do cronograma real da obra.",
+            "icon": "clipboard-edit-outline"
+          },
+          {
+            "step": 2,
+            "title": "Gestão de Suprimentos",
+            "description": "Logística integrada de materiais básicos e acabamentos direto dos melhores fornecedores e parceiros.",
+            "icon": "truck-cargo-container"
+          },
+          {
+            "step": 3,
+            "title": "Execução Especializada",
+            "description": "Equipes multidisciplinares coordenadas por mestres de obra e engenheiros experientes.",
+            "icon": "crane"
+          },
+          {
+            "step": 4,
+            "title": "Entrega e Pós-Obra",
+            "description": "Inspeção final de qualidade, limpeza técnica e garantia total de todos os serviços prestados.",
+            "icon": "key-chain"
+          }
+        ]
+      },
+      "professionals": {
+        "title": "Expertise que Faz a Diferença",
+        "description": "Nossa força reside na curadoria de talentos. Pedreiros, eletricistas, encanadores e engenheiros trabalham de forma integrada sob a gestão da SOS Construir, eliminando falhas de comunicação e atrasos típicos de obras fragmentadas."
+      },
+      "whyChooseUs": {
+        "title": "O Padrão de Qualidade SOS Construir",
+        "items": [
+          {
+            "title": "Responsabilidade Única",
+            "description": "Você lida apenas com a SOS. Nós resolvemos qualquer desafio com fornecedores ou equipes.",
+            "icon": "shield-account"
+          },
+          {
+            "title": "Transparência Financeira",
+            "description": "Relatórios periódicos e controle rigoroso de custos para que seu orçamento seja respeitado.",
+            "icon": "cash-register"
+          },
+          {
+            "title": "Tecnologia na Obra",
+            "description": "Utilização de métodos modernos e materiais de primeira linha para maior durabilidade estrutural.",
+            "icon": "hammer-wrench"
+          }
+        ]
+      },
+      "faq": {
+        "title": "Dúvidas sobre Reformas e Construções",
+        "questions": [
+          {
+            "question": "A SOS Construir faz apenas grandes obras?",
+            "answer": "Não! Atendemos desde pequenas reformas em apartamentos e residências até construções comerciais de grande porte e prédios."
+          },
+          {
+            "question": "O gerenciamento de obras aumenta o custo final?",
+            "answer": "Pelo contrário. Com nossa rede de parceiros e logística eficiente, evitamos desperdícios e compras erradas, o que costuma reduzir o custo final da obra em comparação ao modelo tradicional."
+          },
+          {
+            "question": "Vocês ajudam com a parte de documentação e alvarás?",
+            "answer": "Sim. Nossa consultoria orienta e auxilia em todos os trâmites necessários para que sua obra esteja em total conformidade com a prefeitura e órgãos ambientais."
+          },
+          {
+            "question": "Como funciona a garantia da obra?",
+            "answer": "Oferecemos garantia integral sobre os serviços prestados. Em caso de qualquer eventualidade após a conclusão, nossa equipe de assistência técnica resolve rapidamente."
+          }
+        ]
+      },
+      "finalCta": {
+        "title": "Sua obra merece o profissionalismo da SOS",
+        "description": "Transforme sua visão em realidade com a empresa líder em Foz do Iguaçu. Agende agora uma consultoria gratuita.",
+        "ctaText": "Solicitar Orçamento Personalizado"
+      }
+    }
+  },
+  "playground": {
+    "meta": {
+      "title": "Fabricação e Instalação de Playgrounds em Foz do Iguaçu | SOS Construir",
+      "description": "Playgrounds seguros e criativos em Foz do Iguaçu. Fabricação sob medida em madeira, plástico ou metal para condomínios, escolas e parques. Normas ABNT.",
+      "keywords": "playground foz do iguaçu, parquinho infantil, brinquedos de madeira para condomínio, playground de plástico, instalação de parquinho",
+      "ogImage": "/images/services/playground/hero.jpg",
+      "breadcrumbLabel": "Playground"
+    },
+    "sections": {
+      "hero": {
+        "title": "Diversão Segura e Ambientes que Estimulam o Brincar",
+        "description": "Criamos espaços de lazer que unem design inovador, resistência e total conformidade com as normas de segurança. O playground perfeito para seu condomínio ou escola.",
+        "image": "/images/services/playground/hero.jpg"
+      },
+      "workGallery": {
+        "filters": [
+          {
+            "label": "Todos os Projetos",
+            "slug": "todos",
+            "count": 95
+          },
+          {
+            "label": "Playgrounds de Madeira",
+            "slug": "madeira",
+            "count": 45
+          },
+          {
+            "label": "Linha Plástica/Colorida",
+            "slug": "plastico",
+            "count": 30
+          },
+          {
+            "label": "Estruturas Metálicas",
+            "slug": "metalico",
+            "count": 20
+          }
+        ]
+      },
+      "process": {
+        "steps": [
+          {
+            "step": 1,
+            "title": "Estudo do Espaço",
+            "description": "Analisamos a área disponível e definimos o layout para garantir zonas de circulação e segurança adequadas.",
+            "icon": "ruler-square"
+          },
+          {
+            "step": 2,
+            "title": "Escolha do Material",
+            "description": "Definição entre madeira tratada, polietileno ou aço galvanizado conforme o fluxo de uso e estética desejada.",
+            "icon": "toy-brick-outline"
+          },
+          {
+            "step": 3,
+            "title": "Fabricação e Testes",
+            "description": "Produção com acabamentos arredondados e parafusos embutidos para evitar qualquer risco de acidente.",
+            "icon": "saw-blade"
+          },
+          {
+            "step": 4,
+            "title": "Instalação Certificada",
+            "description": "Montagem técnica no local, garantindo a fixação correta e a estabilidade de cada brinquedo.",
+            "icon": "check-decagram-outline"
+          }
+        ]
+      },
+      "professionals": {
+        "title": "Especialistas em Lazer Infantil",
+        "description": "Nossa equipe não entrega apenas brinquedos; entregamos segurança. Nossos projetistas e montadores seguem rigorosamente as normas da ABNT para playgrounds, garantindo que cada escorregador, balanço ou gangorra seja um ambiente de alegria sem riscos."
+      },
+      "whyChooseUs": {
+        "title": "Por que investir em um Playground SOS?",
+        "items": [
+          {
+            "title": "Alta Durabilidade",
+            "description": "Materiais com proteção UV e tratamentos anticorrosivos para resistir ao sol e chuva de Foz do Iguaçu.",
+            "icon": "weather-sunny"
+          },
+          {
+            "title": "Desenvolvimento Infantil",
+            "description": "Projetos que estimulam a coordenação motora, o equilíbrio e a socialização das crianças.",
+            "icon": "human-child"
+          },
+          {
+            "title": "Baixa Manutenção",
+            "description": "Estruturas sólidas e superfícies de fácil limpeza, ideal para uso intenso em áreas coletivas.",
+            "icon": "hammer-sickle"
+          }
+        ]
+      },
+      "faq": {
+        "title": "Dúvidas sobre Playgrounds",
+        "questions": [
+          {
+            "question": "Qual o melhor material para um playground de condomínio?",
+            "answer": "A madeira tratada oferece estética natural e resistência, enquanto o plástico (polietileno) é excelente pela baixa manutenção e cores vibrantes. Avaliamos seu perfil para indicar a melhor opção."
+          },
+          {
+            "question": "Os brinquedos possuem garantia?",
+            "answer": "Sim! Oferecemos garantia total contra defeitos de fabricação e problemas estruturais, além de suporte para manutenções preventivas periódicas."
+          },
+          {
+            "question": "Qual o piso ideal para colocar embaixo do playground?",
+            "answer": "Recomendamos grama sintética, areia lavada ou pisos emborrachados de impacto para amortecer quedas, conforme exigido pelas normas de segurança."
+          },
+          {
+            "question": "Vocês fazem projetos para espaços pequenos?",
+            "answer": "Com certeza! Fabricamos modelos compactos e integrados que aproveitam cada metro quadrado, ideais para áreas gourmet residenciais ou escolas infantis."
+          }
+        ]
+      },
+      "finalCta": {
+        "title": "Crie um espaço de diversão inesquecível",
+        "description": "Valorize seu condomínio ou escola com um playground de alto padrão. Solicite um orçamento personalizado hoje mesmo.",
+        "ctaText": "Solicitar Orçamento de Playground"
       }
     }
   }
