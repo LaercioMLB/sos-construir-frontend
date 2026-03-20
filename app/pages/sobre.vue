@@ -11,7 +11,7 @@ useSeoMeta({
 const hero: ServiceHeroSection = {
   title: 'Sua obra do jeito certo. Sem Dor de Cabeça.',
   description: 'Conectamos você aos melhores profissionais e materiais da região, e cuidamos de cada etapa da obra. ',
-  image: '/images/about/hero.jpg',
+  image: '/images/about/hero.webp',
   secondaryCta: {
     text: 'Conheça Nossos Serviços',
     link: '/servicos',

@@ -171,13 +171,13 @@ const reversedFilteredProjects = computed(() => {
         </div>
 
         <div class="lg:col-span-8 relative">
-          <div v-if="loading" class="grid grid-cols-3 grid-rows-2 gap-6 h-full">
+          <div v-if="loading" class="grid grid-cols-3 grid-rows-2 gap-6 h-full basis-2/3">
             <USkeleton v-for="i in 6" :key="i" class="w-full h-full rounded-2xl basis-1/3" />
           </div>
           <div class="flex flex-col gap-5">
             <UCarousel v-slot="{ item }" :prev="{ color: 'primary' }" :next="{ variant: 'solid' }"
               :items="filteredProjects" :ui="{
-                item: 'basis-1/3',
+                item: 'basis-3/5 sm:basis-1/3',
               }" loop :autoplay="{
                 delay: 4400
               }">
@@ -186,16 +186,16 @@ const reversedFilteredProjects = computed(() => {
 
             <UCarousel v-slot="{ item }" :prev="{ color: 'primary' }" :next="{ variant: 'solid' }"
               :items="reversedFilteredProjects" :ui="{
-                item: 'basis-1/3',
+                item: 'basis-3/5 sm:basis-1/3',
               }" loop :autoplay="{
                 delay: 3500
-              }">
+              }" class="min-h-52">
               <WorksGalleryCard :work="item" :is-active="activeCardId === item.id" />
             </UCarousel>
           </div>
         </div>
 
-        <div class="col-span-1 flex lg:hidden mt-2 flex-col">
+        <div class="col-span-1 flex lg:hidden mt-2 flex-col min-h-32">
           <div class="space-y-4 mb-8 rounded-xl p-6 border border-gray-100">
             <div v-for="stat in projectStats" :key="stat.text" class="flex items-center gap-3">
               <Icon :name="stat.icon" class="text-orange-500 text-xl flex-shrink-0" />

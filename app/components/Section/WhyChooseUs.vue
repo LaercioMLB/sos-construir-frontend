@@ -12,24 +12,24 @@ const defaultSection: WhyChooseUsSection = {
   ],
   reasons: [
     {
-      icon: 'mdi:target',
+      icon: 'target',
       title: 'Gestão Centralizada',
       description:
         'Você lida apenas com a SOS. Nós coordenamos todos os profissionais para você não se estressar.',
     },
     {
-      icon: 'mdi:license',
+      icon: 'license',
       title: 'Profissionais Certificados',
       description: 'Equipe rigorosamente selecionada, testada na prática e de extrema confiança.',
     },
     {
-      icon: 'mdi:shield-check-outline',
+      icon: 'shield-check-outline',
       title: 'Garantia Integral',
       description:
         'Cobertura total contra imprevistos. Se algo sair do combinado, nós resolvemos sem custos extras.',
     },
     {
-      icon: 'mdi:handshake-outline',
+      icon: 'handshake-outline',
       title: 'Suporte Pós-Obra',
       description:
         'Nossa responsabilidade não acaba na entrega. Estaremos à disposição para qualquer ajuste futuro.',
@@ -75,11 +75,11 @@ const section = computed(() => ({
         </div>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+      <div class="flex flex-wrap justify-center gap-6 mb-16gap-6 mb-16 place-content-center ">
         <div v-for="(reason, index) in section.reasons" :key="index"
-          class="bg-white rounded-2xl p-8 flex flex-col items-center text-center shadow-sm hover:shadow-md transition-shadow border border-gray-100/50">
+          class="bg-white rounded-2xl p-8 flex flex-col items-center text-center shadow-sm hover:shadow-md transition-shadow border border-gray-100/50 max-w-[18rem] ">
           <div class="w-16 h-16 rounded-2xl bg-orange-50 flex items-center justify-center mb-6">
-            <Icon :name="reason.icon" class="text-3xl text-orange-500" />
+            <Icon :name="'mdi:' + reason.icon" class="text-3xl text-orange-500" />
           </div>
 
           <h3 class="font-bold text-blue-500 text-lg mb-3">
@@ -90,9 +90,9 @@ const section = computed(() => ({
           </p>
         </div>
       </div>
-      <div class="flex justify-center">
+      <div class="flex justify-center w-full ">
         <UButton :to="section.ctaLink" color="primary" variant="solid" size="xl"
-          class="text-white font-bold px-8 py-3 rounded-lg transition-colors">
+          class="text-white font-bold px-8 py-3 rounded-lg transition-colors w-full md:w-auto  justify-center">
           {{ section.ctaText }}
           <template #trailing>
             <Icon name="mdi:arrow-right" class="text-xl" />

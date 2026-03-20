@@ -63,9 +63,6 @@ const mappedCards = computed<ServiceCard[]>(() => {
   })
 })
 
-// REMOVIDO: O watch(searchQuery) que resetava a paginação aqui, 
-// pois agora o composable já faz isso com debounce na API!
-
 // Scroll Infinito: Atualizado para checar contra o total do servidor
 useIntersectionObserver(
   loadMoreTrigger,
@@ -129,8 +126,8 @@ useIntersectionObserver(
       </div>
 
       <div ref="loadMoreTrigger" v-show="visibleCount < totalServices || pending"
-        class="h-20 flex items-center justify-center">
-        <UIcon v-if="pending" name="i-heroicons-arrow-path" class="animate-spin text-3xl text-orange-500" />
+        class="h-32 flex items-center justify-center">
+        <UIcon v-if="pending" name="mdi:loading" class="animate-spin text-3xl text-orange-500" />
       </div>
     </UContainer>
 

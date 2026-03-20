@@ -17,7 +17,7 @@ const defaultSection: PartnersSection = {
   ],
   ctaText: 'Explorar Catálogo Completo',
   ctaLink: '/catalogo',
-  partners: partners.concat(...partners),
+  partners: partners,
   bgSection: 'bg-section-bg-1',
 }
 
@@ -57,7 +57,7 @@ const section = computed(() => ({
         </div>
 
         <UButton v-if="section?.ctaText" :to="section.ctaLink" color="primary" variant="solid" size="lg"
-          class="text-white font-bold px-8 py-3 rounded-lg transition-colors">
+          class="text-white font-bold px-8 py-3 rounded-lg transition-colors w-full md:w-auto justify-center">
           {{ section.ctaText }}
           <template #trailing>
             <Icon name="mdi:arrow-right" class="text-xl" />

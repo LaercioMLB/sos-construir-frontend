@@ -37,8 +37,8 @@ const props = defineProps<{
           </ul>
 
           <div>
-            <UButton :to="section.cta.link" target="_blank" color="primary" variant="solid" size="xl"
-              class="text-white font-bold px-8 py-3 rounded-lg">
+            <UButton :to="section.cta.link" target="_blank" color="primary" variant="outline" size="lg"
+              class="px-10 py-3 rounded-lg w-full  justify-center font-bold">
               {{ props.section.cta.text }}
               <template #trailing>
                 <Icon name="mdi:arrow-right" class="text-xl" />
