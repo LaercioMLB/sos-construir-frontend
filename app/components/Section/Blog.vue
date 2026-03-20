@@ -1,9 +1,8 @@
 <script setup lang="ts">
-import { ref, onMounted } from 'vue'
-
 const defaultSection: BaseSection = {
   title: 'Dicas e Novidades de Construção',
 }
+
 const props = defineProps<{
   section?: Partial<BaseSection>
 }>()
@@ -12,57 +11,13 @@ const section = computed(() => ({
   ...defaultSection,
   ...props.section,
 }))
-const posts = ref<BlogPost[]>([])
-const loading = ref(true)
 
-// TODO: PASSAR PRA SERVER
-const fetchPosts = async () => {
-  loading.value = true
-  await new Promise((resolve) => setTimeout(resolve, 800))
-  posts.value = [
-    {
-      id: 1,
-      image:
-        '/images/blog/cover-2.jpg',
-      category: 'DICAS VALIOSAS',
-      title: 'Planejamento: O Segredo de uma Obra de Sucesso',
-      link: '/blog/1',
-    },
-    {
-      id: 2,
-      image:
-        '/images/blog/cover-1.jpg',
-      category: 'REFORMA',
-      title: 'Como Fazer um Muro de Arrimo Seguro',
-      link: '/blog/2',
-    },
-    {
-      id: 3,
-      image:
-        '/images/blog/cover-3.jpg',
-      category: 'MANUTENÇÃO',
-      title: 'Como Evitar Infiltrações na Sua Casa?',
-      link: '/blog/3',
-    },
-    {
-      id: 4,
-      image:
-        '/images/blog/cover-4.jpg',
-      category: 'TENDÊNCIAS',
-      title: 'Cores que Vão Dominar as Reformas em 2026',
-      link: '/blog/4',
-    },
-  ]
-  loading.value = false
-}
 
-onMounted(() => {
-  fetchPosts()
-})
+const { posts, loading } = useBlogList()
 </script>
 
 <template>
-  <section class="py-16 md:py-24 w-full overflow-hidden" :class="section?.bgSection">
+  <section v-if="posts" class="py-16 md:py-24 w-full overflow-hidden" :class="section?.bgSection">
     <div class="container mx-auto px-4 max-w-7xl">
       <div class="text-center mb-12">
         <span class="text-orange-500 font-bold text-xs tracking-widest uppercase mb-3"> BLOG </span>
@@ -83,8 +38,8 @@ onMounted(() => {
         </div>
       </div>
 
-      <div>
-        <UCarousel v-slot="{ item }" loop wheel-gestures :autoplay="{ delay: 5000 }" :items="posts"
+      <div v-else>
+        <UCarousel v-slot="{ item }" loop wheel-gestures :autoplay="{ delay: 5000 }" :items="posts ?? []"
           :ui="{ item: 'basis-2/3 md:basis-1/3' }">
           <BlogCard :post="item" class="my-1" />
         </UCarousel>
