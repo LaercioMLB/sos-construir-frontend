@@ -58,7 +58,7 @@ useSeoMeta({
           </UInput>
         </div>
       </div>
-
+      <!-- Categorias -->
       <UScrollArea v-slot="{ item }" :items="categories" orientation="horizontal"
         class="w-full scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent hover:scrollbar-thumb-gray-400 mb-5 py-2 gap-3">
         <button class="px-5 py-2.5 rounded-full text-sm font-medium whitespace-nowrap transition-all duration-300 mx-2"
@@ -74,6 +74,15 @@ useSeoMeta({
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
         <div class="lg:col-span-8 flex flex-col">
 
+          <div v-if="posts.length === 0 && !loading && searchQuery.length > 0"
+            class="py-20 text-center flex flex-col items-center justify-center min-h-60">
+            <UIcon name="i-heroicons-magnifying-glass" class="text-gray-300 text-6xl mb-4" />
+            <h3 class="text-xl font-medium text-gray-900 mb-2">Nenhum serviço encontrado</h3>
+            <p class="text-gray-500">Não encontramos nenhum resultado para "{{ searchQuery }}".</p>
+            <UButton class="mt-4" color="primary" variant="soft" @click="searchQuery = ''">
+              Limpar filtros
+            </UButton>
+          </div>
           <!-- Skeleton -->
           <div v-if="loading" class="grid md:grid-cols-2 gap-8 mb-12">
             <div v-for="i in limit" :key="i" class="bg-white rounded-2xl border border-gray-100 h-[420px]">

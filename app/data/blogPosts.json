@@ -9,11 +9,26 @@
         "author": "Equipe SOS Construir",
         "coverImage": "/images/blog/cover-construcao.webp",
         "categories": [
-            "Construção",
-            "Reformas",
-            "Materiais",
-            "Acabamento",
-            "Planejamento"
+            {
+                "name": "Construção",
+                "slug": "construcao"
+            },
+            {
+                "name": "Reformas",
+                "slug": "reformas"
+            },
+            {
+                "name": "Planejamento",
+                "slug": "planejamento"
+            },
+            {
+                "name": "Materiais",
+                "slug": "materiais"
+            },
+            {
+                "name": "Acabamento",
+                "slug": "acabamento"
+            }
         ],
         "content": [
             {
@@ -67,10 +82,26 @@
         "author": "Equipe SOS Construir",
         "coverImage": "/images/blog/cover-infiltracao.webp",
         "categories": [
-            "Construção",
-            "Reformas",
-            "Manutenção",
-            "Impermeabilização"
+            {
+                "name": "Construção",
+                "slug": "construcao"
+            },
+            {
+                "name": "Reformas",
+                "slug": "reformas"
+            },
+            {
+                "name": "Manutenção",
+                "slug": "manutencao"
+            },
+            {
+                "name": "Acabamento",
+                "slug": "acabamento"
+            },
+            {
+                "name": "Impermeabilização",
+                "slug": "impermeabilização"
+            }
         ],
         "content": [
             {
@@ -143,11 +174,30 @@
         "author": "Equipe SOS Construir",
         "coverImage": "/images/blog/cover-cores-2026.webp",
         "categories": [
-            "Decoração",
-            "Reformas",
-            "Tendências",
-            "Acabamento",
-            "Planejamento"
+            {
+                "name": "Tendências",
+                "slug": "tendencias"
+            },
+            {
+                "name": "Reformas",
+                "slug": "reformas"
+            },
+            {
+                "name": "Planejamento",
+                "slug": "planejamento"
+            },
+            {
+                "name": "Materiais",
+                "slug": "materiais"
+            },
+            {
+                "name": "Acabamento",
+                "slug": "acabamento"
+            },
+            {
+                "name": "Decoração",
+                "slug": "decoracao"
+            }
         ],
         "content": [
             {
@@ -210,11 +260,26 @@
         "author": "Equipe SOS Construir",
         "coverImage": "/images/blog/cover-muro-arrimo.webp",
         "categories": [
-            "Construção",
-            "Estrutura",
-            "Fundações",
-            "Planejamento",
-            "Segurança"
+            {
+                "name": "Construção",
+                "slug": "construcao"
+            },
+            {
+                "name": "Estrutura",
+                "slug": "estrutura"
+            },
+            {
+                "name": "Planejamento",
+                "slug": "planejamento"
+            },
+            {
+                "name": "Fundações",
+                "slug": "fundacoes"
+            },
+            {
+                "name": "Segurança",
+                "slug": "seguranca"
+            }
         ],
         "content": [
             {

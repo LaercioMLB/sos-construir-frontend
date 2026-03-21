@@ -1,0 +1,242 @@
+[
+    {
+        "id": 1,
+        "type": "before-after",
+        "category": "reformas",
+        "imageUrl": "https://images.unsplash.com/photo-1618220179428-22790b461013?q=80&w=1200&auto=format&fit=crop",
+        "beforeImageUrl": "https://images.unsplash.com/photo-1505693314120-0d443867891c?q=80&w=1200&auto=format&fit=crop",
+        "aspectRatio": "2/3",
+        "tag": "Reforma",
+        "title": "Reforma Quarto Master",
+        "author": "Equipe SOS Construir",
+        "description": "Reforma completa de quarto master com troca de revestimentos, pintura, marcenaria planejada e iluminação de destaque. O projeto priorizou conforto, funcionalidade e um acabamento sofisticado que transformou completamente a experiência do ambiente.",
+        "location": "Foz do Iguaçu, PR",
+        "duration": "3 semanas",
+        "year": 2025,
+        "services": [
+            "Pintura",
+            "Revestimentos",
+            "Marcenaria",
+            "Iluminação"
+        ],
+        "gallery": [
+            "https://images.unsplash.com/photo-1618220179428-22790b461013?q=80&w=1200&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?q=80&w=1200&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1560185007-cde436f6a4d0?q=80&w=1200&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=1200&auto=format&fit=crop"
+        ]
+    },
+    {
+        "id": 3,
+        "type": "classic",
+        "category": "construcoes",
+        "imageUrl": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop",
+        "aspectRatio": "2/3",
+        "tag": "Externa",
+        "title": "Fachada Moderna",
+        "author": "Equipe SOS Construir",
+        "description": "Projeto de fachada moderna com aplicação de revestimento texturizado, esquadrias de alumínio anodizado e iluminação de embutir. A composição entre volumes e materiais entrega uma identidade forte e contemporânea ao imóvel.",
+        "location": "Foz do Iguaçu, PR",
+        "duration": "5 semanas",
+        "year": 2025,
+        "services": [
+            "Revestimento Externo",
+            "Esquadrias",
+            "Iluminação",
+            "Pintura"
+        ],
+        "gallery": [
+            "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1613490493576-7fde63acd811?q=80&w=1200&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1523217582562-09d0def993a6?q=80&w=1200&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=1200&auto=format&fit=crop"
+        ]
+    },
+    {
+        "id": 5,
+        "type": "classic",
+        "category": "piscinas",
+        "imageUrl": "https://images.unsplash.com/photo-1575429198097-0414ec08e8cd?q=80&w=1200&auto=format&fit=crop",
+        "aspectRatio": "2/3",
+        "tag": "Piscina",
+        "title": "Piscina com Deck",
+        "author": "Equipe SOS Construir",
+        "description": "Construção de piscina de alvenaria com deck em madeira cumaru tratada, iluminação subaquática e sistema de filtragem automatizado. O projeto integrou a área de lazer à paisagem do jardim criando um ambiente de alto padrão.",
+        "location": "Foz do Iguaçu, PR",
+        "duration": "8 semanas",
+        "year": 2026,
+        "services": [
+            "Piscina",
+            "Deck",
+            "Paisagismo",
+            "Iluminação",
+            "Automação"
+        ],
+        "gallery": [
+            "https://images.unsplash.com/photo-1575429198097-0414ec08e8cd?q=80&w=1200&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1562778612-e1e0cda9915c?q=80&w=1200&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1571902943202-507ec2618e8f?q=80&w=1200&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=1200&auto=format&fit=crop"
+        ]
+    },
+    {
+        "id": 2,
+        "type": "classic",
+        "category": "acabamentos",
+        "imageUrl": "https://images.unsplash.com/photo-1600210492493-0946911123ea?q=80&w=1200&auto=format&fit=crop",
+        "aspectRatio": "2/3",
+        "tag": "Interna",
+        "title": "Sala de Estar",
+        "author": "Equipe SOS Construir",
+        "description": "Projeto de acabamento completo para sala de estar com aplicação de revestimentos, pintura em tons neutros, instalação de rodapés e molduras em gesso. O resultado é um ambiente elegante, aconchegante e com acabamento de alto padrão.",
+        "location": "Foz do Iguaçu, PR",
+        "duration": "2 semanas",
+        "year": 2025,
+        "services": [
+            "Pintura",
+            "Gesso",
+            "Revestimentos",
+            "Rodapés"
+        ],
+        "gallery": [
+            "https://images.unsplash.com/photo-1600210492493-0946911123ea?q=80&w=1200&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=1200&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?q=80&w=1200&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1560185007-cde436f6a4d0?q=80&w=1200&auto=format&fit=crop"
+        ]
+    },
+    {
+        "id": 4,
+        "type": "classic",
+        "category": "construcoes",
+        "imageUrl": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1200&auto=format&fit=crop",
+        "aspectRatio": "2/3",
+        "tag": "Externa",
+        "title": "Residência Alto Padrão",
+        "author": "Equipe SOS Construir",
+        "description": "Construção de residência alto padrão com estrutura em concreto armado, fachada em pedra natural e esquadrias em alumínio. O projeto uniu arquitetura contemporânea com materiais nobres, entregando uma residência sofisticada e durável.",
+        "location": "Foz do Iguaçu, PR",
+        "duration": "12 meses",
+        "year": 2025,
+        "services": [
+            "Estrutura",
+            "Alvenaria",
+            "Revestimento Externo",
+            "Esquadrias",
+            "Pintura"
+        ],
+        "gallery": [
+            "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1200&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1613490493576-7fde63acd811?q=80&w=1200&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1523217582562-09d0def993a6?q=80&w=1200&auto=format&fit=crop"
+        ]
+    },
+    {
+        "id": 7,
+        "type": "classic",
+        "category": "acabamentos",
+        "imageUrl": "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?q=80&w=1200&auto=format&fit=crop",
+        "aspectRatio": "2/3",
+        "tag": "Cozinha",
+        "title": "Cozinha Planejada",
+        "author": "Equipe SOS Construir",
+        "description": "Instalação de cozinha planejada com marcenaria sob medida, revestimento em porcelanato acetinado, bancada em quartzo e iluminação embutida em LED. Um projeto funcional e moderno que aproveita ao máximo o espaço disponível.",
+        "location": "Foz do Iguaçu, PR",
+        "duration": "3 semanas",
+        "year": 2025,
+        "services": [
+            "Marcenaria",
+            "Revestimentos",
+            "Bancada",
+            "Iluminação"
+        ],
+        "gallery": [
+            "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?q=80&w=1200&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?q=80&w=1200&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=1200&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1600210492493-0946911123ea?q=80&w=1200&auto=format&fit=crop"
+        ]
+    },
+    {
+        "id": 8,
+        "type": "before-after",
+        "category": "reformas",
+        "imageUrl": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=1200&auto=format&fit=crop",
+        "beforeImageUrl": "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1200&auto=format&fit=crop",
+        "aspectRatio": "2/3",
+        "tag": "Reforma",
+        "title": "Área Externa Revitalizada",
+        "author": "Equipe SOS Construir",
+        "description": "Revitalização completa de área externa com aplicação de revestimento antiderrapante, pintura de muros, instalação de pergolado de madeira tratada e readequação da iluminação. A transformação trouxe vida e funcionalidade ao espaço.",
+        "location": "Foz do Iguaçu, PR",
+        "duration": "4 semanas",
+        "year": 2026,
+        "services": [
+            "Revestimentos",
+            "Pintura",
+            "Pergolado",
+            "Iluminação"
+        ],
+        "gallery": [
+            "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=1200&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1200&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1200&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=1200&auto=format&fit=crop"
+        ]
+    },
+    {
+        "id": 10,
+        "type": "classic",
+        "category": "acabamentos",
+        "imageUrl": "https://images.unsplash.com/photo-1560185007-cde436f6a4d0?q=80&w=1200&auto=format&fit=crop",
+        "aspectRatio": "2/3",
+        "tag": "Banheiro",
+        "title": "Banheiro de Luxo",
+        "author": "Equipe SOS Construir",
+        "description": "Reforma e acabamento de banheiro de luxo com revestimento em mármore travertino, louças de design, box em vidro temperado e iluminação indireta em LED. Cada detalhe foi planejado para criar uma experiência de bem-estar e sofisticação.",
+        "location": "Foz do Iguaçu, PR",
+        "duration": "3 semanas",
+        "year": 2025,
+        "services": [
+            "Revestimentos",
+            "Louças e Metais",
+            "Box",
+            "Iluminação",
+            "Pintura"
+        ],
+        "gallery": [
+            "https://images.unsplash.com/photo-1560185007-cde436f6a4d0?q=80&w=1200&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?q=80&w=1200&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1618220179428-22790b461013?q=80&w=1200&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?q=80&w=1200&auto=format&fit=crop"
+        ]
+    },
+    {
+        "id": 9,
+        "type": "classic",
+        "category": "construcoes",
+        "imageUrl": "https://images.unsplash.com/photo-1613490493576-7fde63acd811?q=80&w=1200&auto=format&fit=crop",
+        "aspectRatio": "2/3",
+        "tag": "Construção",
+        "title": "Sobrado Moderno",
+        "author": "Equipe SOS Construir",
+        "description": "Construção de sobrado moderno com dois pavimentos, varanda integrada, fachada em concreto aparente e revestimento em porcelanato externo. O projeto combina estética minimalista com soluções estruturais eficientes para um resultado de alto impacto visual.",
+        "location": "Foz do Iguaçu, PR",
+        "duration": "14 meses",
+        "year": 2026,
+        "services": [
+            "Estrutura",
+            "Alvenaria",
+            "Revestimento Externo",
+            "Fachada",
+            "Esquadrias"
+        ],
+        "gallery": [
+            "https://images.unsplash.com/photo-1613490493576-7fde63acd811?q=80&w=1200&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1200&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=1200&auto=format&fit=crop"
+        ]
+    }
+]

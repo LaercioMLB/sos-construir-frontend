@@ -10,6 +10,7 @@ const { post, relatedPosts, error } = useBlogPost(slug)
 if (error.value?.statusCode === 404) {
   throw createError({ statusCode: 404, fatal: true })
 }
+
 if (post.value) {
   useSeoMeta({
     title: `${post.value.title} | SOS Construir`,
@@ -31,7 +32,7 @@ const scrollToContent = () => {
 </script>
 
 <template>
-  <div v-if="post" class="min-h-screen bg-section-bg-1 pt-8 pb-20">
+  <div v-if="post" class="min-h-screen bg-gray-50/30 pt-8 pb-20">
     <UContainer>
       <div class="mb-8">
         <UBreadcrumb :items="breadcrumbItems" />
@@ -139,7 +140,7 @@ const scrollToContent = () => {
           <UCard class="bg-white border border-gray-200">
             <h3 class="font-bold text-blue-500 text-xl mb-6">Categorias</h3>
             <div class="flex flex-wrap gap-2">
-              <NuxtLink v-for="cat in post.categories" :key="cat" :to="`/blog?categoria=${cat.toLowerCase()}`"
+              <NuxtLink v-for="cat in post.categories" :key="cat.slug" :to="`/blog?categoria=${cat.slug}`"
                 class="px-4 py-2 bg-section-bg-1 hover:bg-orange-50 text-gray-600 hover:text-orange-600 text-sm font-semibold rounded-full transition-colors border border-gray-100">
                 {{ cat }}
               </NuxtLink>

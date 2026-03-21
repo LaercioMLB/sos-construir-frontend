@@ -45,7 +45,7 @@ export interface WhyChooseUsSection extends BaseSection {
 export interface WorkGalleryFilter {
   label: string
   slug: string
-  count: number
+  count?: number
 }
 export interface WorkGallerySection extends BaseSection {
   filters: WorkGalleryFilter[]

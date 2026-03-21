@@ -39,7 +39,6 @@ const topServices: ServiceCard[] = services
     }
   })
 
-
 const process: ProcessSection = {
   steps: [
     {
@@ -76,23 +75,19 @@ const worksGallery: WorkGallerySection = {
   filters: [
     {
       label: 'Todos os Projetos',
-      slug: 'todos',
-      count: 600,
+      slug: 'todos'
     },
     {
       label: 'Construções',
-      slug: 'construcoes',
-      count: 100,
+      slug: 'construcoes'
     },
     {
       label: 'Reformas',
-      slug: 'reformas',
-      count: 200,
+      slug: 'reformas'
     },
     {
-      label: 'Piscinas',
-      slug: 'piscinas',
-      count: 70,
+      label: 'Acabamentos',
+      slug: 'acabamentos'
     },
   ],
 }

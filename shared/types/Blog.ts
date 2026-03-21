@@ -1,3 +1,5 @@
+import type { Category } from './service'
+
 export interface BlogPost {
   title: string
   slug: string
@@ -7,7 +9,7 @@ export interface BlogPost {
   readingTime: string
   author: string
   coverImage: string
-  categories: string[]
+  categories: Category[]
   content: BlogContentSection[]
 }
 

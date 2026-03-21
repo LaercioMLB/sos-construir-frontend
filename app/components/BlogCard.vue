@@ -15,7 +15,7 @@ defineProps<{
     </div>
     <div class="p-6 md:p-8 flex flex-col flex-grow">
       <span class="text-orange-500 font-bold text-[10px] uppercase tracking-widest mb-3">
-        {{ post.categories[0] }}
+        {{ post.categories[0]?.name }}
       </span>
       <h3 class="font-bold text-blue-500 text-lg md:text-xl leading-tight mb-6">
         {{ post.title }}
@@ -39,7 +39,7 @@ defineProps<{
     <div class="p-6 flex flex-col flex-1">
       <span class="text-orange-500 font-bold text-[10px] uppercase tracking-widest mb-3">
 
-        {{ post.categories[0] }}
+        {{ post.categories[0]?.name }}
       </span>
 
       <NuxtLink :to="`/blog/${post.slug}`">

@@ -9,7 +9,8 @@ const _props = defineProps<{
 
 <template>
   <WorksGalleryCardBeforeAfter v-if="work.type === 'before-after' && work.beforeImageUrl"
-    :before-image-url="work.beforeImageUrl" :after-image-url="work.imageUrl" :aspect-ratio="work.aspectRatio" />
+    :before-image-url="work.beforeImageUrl" :after-image-url="work.imageUrl" :aspect-ratio="work.aspectRatio"
+    :to="'/portfolio/' + work.id" />
 
   <div v-else class="relative w-full rounded-2xl overflow-hidden group shadow-sm hover:shadow-lg transition-shadow"
     :style="{ aspectRatio: work.aspectRatio || '2/3' }">

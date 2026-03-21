@@ -39,9 +39,7 @@ export default defineEventHandler((event) => {
   }
 
   if (category) {
-    filtered = filtered.filter((p) =>
-      p.categories.some((c) => c.toLowerCase() === category.toLowerCase())
-    )
+    filtered = filtered.filter((p) => p.categories.some((c) => c.slug === category.toLowerCase()))
   }
   const exclude = query.exclude as string | undefined
 
