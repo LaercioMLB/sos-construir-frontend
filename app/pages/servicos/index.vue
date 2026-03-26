@@ -28,13 +28,11 @@ const finalCtaSection: FinalCtaSection = {
 }
 
 const meta: Meta = {
-  title: 'Serviços de Construção e Reforma em Foz do Iguaçu | SOS Construir',
+  title: 'Serviços de Construção e Reforma em Foz do Iguaçu',
   description:
     'Eletricista, encanador, pintor, pedreiro, energia solar e muito mais. A SOS Construir conecta você aos melhores especialistas de Foz do Iguaçu com garantia, sem dor de cabeça. Peça seu orçamento.',
   keywords:
     'serviços de construção Foz do Iguaçu, reforma residencial Foz do Iguaçu, eletricista Foz do Iguaçu, encanador Foz do Iguaçu, pintor Foz do Iguaçu, pedreiro Foz do Iguaçu, empresa de reforma, construção civil, mão de obra qualificada, orçamento de obra, empresa de construção Foz do Iguaçu, SOS Construir',
-  ogImage: '/og-image.jpg',
-  breadcrumbLabel: 'Serviços',
 }
 
 useSeoMeta({
@@ -43,7 +41,6 @@ useSeoMeta({
   keywords: meta.keywords,
   ogTitle: meta.title,
   ogDescription: meta.description,
-  ogImage: meta.ogImage,
   twitterTitle: meta.title,
   twitterDescription: meta.description,
   twitterImage: meta.ogImage,

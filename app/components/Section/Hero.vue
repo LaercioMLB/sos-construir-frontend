@@ -179,7 +179,8 @@ const handleSearch = () => {
           </div>
         </div>
         <div class="relative w-full h-[400px] sm:h-[500px] lg:h-[600px] mt-8 lg:mt-0">
-          <img :src="section.mainImage" alt="Obra perfeita" class="w-full h-full object-cover rounded-3xl shadow-2xl" />
+          <NuxtImg :src="section.mainImage" alt="Obra perfeita"
+            class="w-full h-full object-cover rounded-3xl shadow-2xl" />
 
           <div v-if="section.floatingCard"
             class="absolute -bottom-6 left-4 lg:-left-10 sm:bottom-12 bg-white p-5 sm:p-6 rounded-2xl shadow-xl border border-gray-100 max-w-[260px] animate-fade-in-up">

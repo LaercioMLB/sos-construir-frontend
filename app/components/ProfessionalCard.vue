@@ -19,7 +19,7 @@ defineProps<{
       <div class="md:col-span-4 flex flex-col justify-between">
         <div class="flex items-center gap-4 mb-4">
           <div class="rounded-full border-3 border-orange-500">
-            <img :src="professional.avatar" :alt="professional.name"
+            <NuxtImg :src="professional.avatar" :alt="professional.name"
               class="w-18 rounded-full object-cover border-3 border-white" />
           </div>
           <div>
@@ -90,7 +90,7 @@ defineProps<{
             Portfólio Recente
           </p>
           <div class="flex gap-2">
-            <img v-for="(img, idx) in professional.portfolio" :key="idx" :src="img"
+            <NuxtImg v-for="(img, idx) in professional.portfolio" :key="idx" :src="img"
               class="w-16 h-16 rounded-lg object-cover border border-gray-200" alt="Projeto recente" />
           </div>
         </div>

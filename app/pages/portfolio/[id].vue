@@ -116,7 +116,8 @@ function select(index: number) {
 
             <UCarousel ref="carousel" v-slot="{ item }" autoplay :items="project.gallery"
               :prev="{ onClick: onClickPrev }" :next="{ onClick: onClickNext }" class="" @select="onSelect">
-              <img :src="item" class="aspect-video w-full object-cover transition-all duration-500" loading="lazy">
+              <NuxtImg :src="item" class="aspect-video w-full object-cover transition-all duration-500"
+                loading="lazy" />
             </UCarousel>
           </div>
 
@@ -125,20 +126,21 @@ function select(index: number) {
             <div v-for="(item, index) in project.gallery" :key="index"
               class="aspect-square opacity-25 hover:opacity-100 transition-opacity"
               :class="{ 'opacity-100': activeIndex === index }" @click="select(index)">
-              <img :src="item" width="44" height="44" class="rounded-lg w-full h-full object-cover" loading="lazy">
+              <NuxtImg :src="item" width="44" height="44" class="rounded-lg w-full h-full object-cover"
+                loading="lazy" />
             </div>
           </div>
 
           <!-- Before/After se aplicável -->
           <div v-if="project.type === 'before-after'" class="grid grid-cols-2 gap-4">
             <div class="rounded-2xl overflow-hidden relative">
-              <img :src="project.beforeImageUrl" class="w-full aspect-video object-cover" />
+              <NuxtImg :src="project.beforeImageUrl" class="w-full aspect-video object-cover" />
               <span class="absolute bottom-3 left-3 bg-black/70 text-white text-xs font-bold px-3 py-1 rounded-full">
                 ANTES
               </span>
             </div>
             <div class="rounded-2xl overflow-hidden relative">
-              <img :src="project.imageUrl" class="w-full aspect-video object-cover" />
+              <NuxtImg :src="project.imageUrl" class="w-full aspect-video object-cover" />
               <span class="absolute bottom-3 right-3 bg-orange-500 text-white text-xs font-bold px-3 py-1 rounded-full">
                 DEPOIS
               </span>

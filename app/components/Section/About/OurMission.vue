@@ -37,8 +37,8 @@ const stats = [
               Cada detalhe importa.
             </h2>
           </div>
-          <img src="/images/about/cover-3-mobile.jpg" alt="Obra em andamento"
-            class="w-full lg:hidden h-[300px] my-3 object-cover rounded-2xl shadow-sm" loading="lazy">
+          <NuxtImg src="/images/about/cover-3-mobile.jpg" alt="Obra em andamento"
+            class="w-full lg:hidden h-[300px] my-3 object-cover rounded-2xl shadow-sm" loading="lazy" />
 
           <div class="space-y-6 text-gray-600 leading-relaxed text-[16px]">
             <p>
@@ -69,8 +69,8 @@ const stats = [
 
         <div class="hidden lg:flex lg:flex-1 justify-center lg:justify-end">
           <div class="w-full max-w-xs lg:max-w-sm">
-            <img src="/images/about/cover-4.jpg" alt="Profissional dedicado transformando espaços"
-              class="w-full aspect-[9/16] object-cover rounded-3xl shadow-lg" loading="lazy">
+            <NuxtImg src="/images/about/cover-4.jpg" alt="Profissional dedicado transformando espaços"
+              class="w-full aspect-[9/16] object-cover rounded-3xl shadow-lg" loading="lazy" />
           </div>
         </div>
       </div>

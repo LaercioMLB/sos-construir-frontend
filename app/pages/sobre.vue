@@ -2,8 +2,8 @@
 
 // SEO e Meta Tags
 useSeoMeta({
-  title: 'Sobre Nós | SOS Construir - Foz do Iguaçu',
-  description: 'Conheça a Só Construir, o seu SOS da Construção em Foz do Iguaçu. Transformamos sonhos em realidade com qualidade, prazos cumpridos e zero dor de cabeça.',
+  title: 'Sobre Nós',
+  description: 'Conheça a SOS Construir, o seu SOS da Construção em Foz do Iguaçu. Transformamos sonhos em realidade com qualidade, prazos cumpridos e zero dor de cabeça.',
   ogTitle: 'Sobre a SOS Construir',
   ogDescription: 'Sua parceira de confiança para construção e reforma em Foz do Iguaçu.',
 })

@@ -14,7 +14,7 @@ const _props = defineProps<{
 
   <div v-else class="relative w-full rounded-2xl overflow-hidden group shadow-sm hover:shadow-lg transition-shadow"
     :style="{ aspectRatio: work.aspectRatio || '2/3' }">
-    <img :src="work.imageUrl" :alt="work.title || 'Projeto'"
+    <NuxtImg :src="work.imageUrl" :alt="work.title || 'Projeto'"
       class="absolute inset-0 w-full h-full object-cover z-0 transition-transform duration-500 lg:group-hover:scale-105"
       :class="{ 'scale-105': isActive }" />
 

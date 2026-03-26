@@ -10,7 +10,7 @@ const props = defineProps<{
     <div class="container mx-auto px-4 max-w-7xl">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div class="w-full h-[500px] lg:h-[600px] rounded-2xl overflow-hidden shadow-lg">
-          <img :src="props.section.coverImage" :alt="`Fachada do parceiro ${props.section.partnerName}`"
+          <NuxtImg :src="props.section.coverImage" :alt="`Fachada do parceiro ${props.section.partnerName}`"
             class="w-full h-full object-cover" />
         </div>
 
@@ -58,7 +58,7 @@ const props = defineProps<{
           </div>
 
           <div class="mt-8 pt-6 border-t border-section-bg-1 flex items-center gap-4">
-            <img :src="props.section.logo" :alt="`Logo ${props.section.partnerName}`"
+            <NuxtImg :src="props.section.logo" :alt="`Logo ${props.section.partnerName}`"
               class="h-12 w-auto object-contain" />
             <div>
               <p class="font-bold text-blue-500 text-lg">

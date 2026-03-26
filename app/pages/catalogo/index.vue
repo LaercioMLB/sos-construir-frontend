@@ -32,7 +32,7 @@ const breadcrumbItems: BreadcrumbItem[] = [
 ]
 
 useSeoMeta({
-  title: 'Catálogo de Materiais | SOS Construir',
+  title: 'Catálogo de Materiais',
   description:
     'Materiais direto da fábrica, preço justo e qualidade garantida. Tintas, cerâmicas, revestimentos, pisos e muito mais para sua obra.',
 })
@@ -175,7 +175,7 @@ const brandItems = computed(() => {
             <NuxtLink v-for="product in products" :key="product.id" :to="`/catalogo/${product.slug}`"
               class="bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow overflow-hidden group flex flex-col">
               <div class="relative h-48 overflow-hidden">
-                <img :src="product.image" :alt="product.title"
+                <NuxtImg :src="product.image" :alt="product.title"
                   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                 <span
                   class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm text-gray-700 text-[10px] font-bold uppercase tracking-widest px-2.5 py-1 rounded-full border border-gray-100">

@@ -42,28 +42,55 @@ const { data: service, error } = await useFetch<{
   pageContent: ServicePage
 }>(`/api/servicos/${route.params.slug}`)
 
-if (error.value?.statusCode === 404 || !service.value?.baseService) {
+if (error.value?.statusCode === 404) {
   throw createError({ statusCode: 404, fatal: true })
 }
 
 const pageContent = computed<ServicePage | null>(
   () => service.value?.pageContent ?? null
 )
+// SEO
 
-if (pageContent.value) {
-  useSeoMeta({
-    title: pageContent.value.meta.title,
-    description: pageContent.value.meta.description,
-    keywords: pageContent.value.meta.keywords,
-    ogTitle: pageContent.value.meta.title,
-    ogDescription: pageContent.value.meta.description,
-    ogImage: pageContent.value.meta.ogImage,
-    twitterTitle: pageContent.value.meta.title,
-    twitterDescription: pageContent.value.meta.description,
-    twitterImage: pageContent.value.meta.ogImage,
-    twitterCard: 'summary_large_image',
-  })
-}
+useSeoMeta({
+  title: () => `${pageContent.value?.meta.title}`,
+  description: () => pageContent.value?.meta.description,
+  ogTitle: () => pageContent.value?.meta.title,
+  ogImage: () => pageContent.value?.meta.ogImage,
+  ogDescription: () => pageContent.value?.meta.description,
+})
+
+// if (pageContent.value) {
+//   useSeoMeta({
+//     title: pageContent.value.meta.title,
+//     description: pageContent.value.meta.description,
+//     keywords: pageContent.value.meta.keywords,
+//     ogTitle: pageContent.value.meta.title,
+//     ogDescription: pageContent.value.meta.description,
+//     ogImage: pageContent.value.meta.ogImage,
+//     twitterTitle: pageContent.value.meta.title,
+//     twitterDescription: pageContent.value.meta.description,
+//     twitterImage: pageContent.value.meta.ogImage,
+//     twitterCard: 'summary_large_image',
+//   })
+//   useSchemaOrg([
+//     defineWebPage({
+//       '@type': ['WebPage', 'ItemPage'],
+//       mainEntity: {
+//         '@type': 'Service',
+//         name: pageContent.value?.meta.title || service.value?.baseService.name,
+//         description: pageContent.value?.meta.description || service.value?.baseService.description,
+//         provider: {
+//           '@id': 'https://sosconstruir.com.br/#identity'
+//         },
+//         serviceType: service.value?.baseService.category,
+//         areaServed: {
+//           '@type': 'City',
+//           name: 'Foz do Iguaçu'
+//         }
+//       }
+//     })
+//   ])
+// }
 
 const sections = computed(() => {
   if (!pageContent.value) return []

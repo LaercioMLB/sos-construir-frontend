@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+# admin futuro
+Disallow: /admin
+Disallow: /dashboard
+
+# Paginas geradas por filtro
+Disallow: /*?search=
+Disallow: /*?category=
+Disallow: /*?brand=
+Disallow: /*?sortBy=

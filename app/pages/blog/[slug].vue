@@ -10,14 +10,17 @@ const { post, relatedPosts, error } = useBlogPost(slug)
 if (error.value?.statusCode === 404) {
   throw createError({ statusCode: 404, fatal: true })
 }
+// SEO
+useSeoMeta({
+  title: () => `${post.value?.title}`,
+  description: () => post.value?.description,
+  ogTitle: () => post.value?.title,
 
-if (post.value) {
-  useSeoMeta({
-    title: `${post.value.title} | SOS Construir`,
-    description: post.value.description,
-    ogImage: post.value.coverImage,
-  })
-}
+  ogImage: () => post.value?.coverImage,
+  ogDescription: () => post.value?.description
+})
+
+
 const breadcrumbItems = computed<BreadcrumbItem[]>(() => [
   { label: 'Home', to: '/' },
   { label: 'Blog', to: '/blog' },
@@ -27,8 +30,6 @@ const breadcrumbItems = computed<BreadcrumbItem[]>(() => [
 const scrollToContent = () => {
   postContent.value?.scrollIntoView({ behavior: 'smooth' })
 }
-
-
 </script>
 
 <template>
@@ -124,7 +125,7 @@ const scrollToContent = () => {
             <div class="space-y-6">
               <NuxtLink v-for="related in relatedPosts" :key="related.slug" :to="`/blog/${related.slug}`"
                 class="flex gap-4 group">
-                <img :src="related.image" :alt="related.title"
+                <NuxtImg :src="related.image" :alt="related.title"
                   class="w-23 h-24 object-cover rounded-lg shrink-0 group-hover:opacity-80 transition-opacity" />
                 <div class="flex flex-col justify-center">
                   <h4
@@ -142,7 +143,7 @@ const scrollToContent = () => {
             <div class="flex flex-wrap gap-2">
               <NuxtLink v-for="cat in post.categories" :key="cat.slug" :to="`/blog?categoria=${cat.slug}`"
                 class="px-4 py-2 bg-section-bg-1 hover:bg-orange-50 text-gray-600 hover:text-orange-600 text-sm font-semibold rounded-full transition-colors border border-gray-100">
-                {{ cat }}
+                {{ cat.name }}
               </NuxtLink>
             </div>
           </UCard>

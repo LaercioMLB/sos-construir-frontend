@@ -4,6 +4,7 @@ export const useBlogPost = (slug: string) => {
   const { data: relatedPostsData } = useFetch('/api/blog', {
     query: { limit: 3, exclude: slug },
   })
+
   const post = computed(() => postData.value ?? null)
 
   const relatedPosts = computed<RelatedPost[]>(() =>

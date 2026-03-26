@@ -76,7 +76,7 @@ const section = computed(() => ({
           <div class="p-1 w-full flex justify-center">
             <div
               class="bg-white rounded-2xl p-6 w-full max-w-[200px] h-32 flex items-center justify-center shadow-sm shadow-gray-50 border border-gray-50/50 hover:shadow-md transition-shadow">
-              <img :src="item.logo" :alt="item.name"
+              <NuxtImg :src="item.logo" :alt="item.name"
                 class="max-w-full max-h-full object-contain opacity-90 hover:opacity-100 transition-opacity"
                 draggable="false" />
             </div>

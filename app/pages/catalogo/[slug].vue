@@ -10,13 +10,20 @@ if (error.value?.statusCode === 404) {
   throw createError({ statusCode: 404, fatal: true })
 }
 
-if (product.value) {
-  useSeoMeta({
-    title: `${product.value.title} | Catálogo - SOS Construir`,
-    description: product.value.description,
-    ogImage: product.value.image,
-  })
-}
+// SEO
+useSeoMeta({
+  title: () => `${product.value?.title} | Catálogo`,
+  description: () => product.value?.description,
+  ogTitle: () => product.value?.title,
+  ogImage: () => product.value?.image,
+  ogDescription: () => product.value?.description,
+})
+
+defineOgImage('Product.takumi', {
+  title: 'title',
+  image: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fobservandotecnologia.com%2Fwp-content%2Fuploads%2F2024%2F01%2Fimagem-1200-x-800-para-o-artigo-de-beneficios-da-internet.jpg&f=1&nofb=1&ipt=ba759ea5eb147a3501a7b1cc6809e3c1e7d04bcea6975444ba01543564b53e43',
+})
+
 const categoryLabel = computed(() =>
   product.value?.category
     .split('-')
@@ -54,7 +61,7 @@ const ctaText = computed(() =>
         <!-- Imagem -->
         <div class="lg:col-span-5">
           <div class="rounded-2xl overflow-hidden aspect-square bg-white border border-gray-100 shadow-sm">
-            <img :src="product.image" :alt="product.title" class="w-full h-full object-cover" />
+            <NuxtImg :src="product.image" :alt="product.title" class="w-full h-full object-cover" />
           </div>
         </div>
 
@@ -137,7 +144,7 @@ const ctaText = computed(() =>
           <NuxtLink v-for="related in relatedProducts.data" :key="related.id" :to="`/catalogo/${related.slug}`"
             class="bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow overflow-hidden group flex flex-col">
             <div class="h-40 overflow-hidden">
-              <img :src="related.image" :alt="related.title"
+              <NuxtImg :src="related.image" :alt="related.title"
                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
             </div>
             <div class="p-4 flex flex-col flex-1">

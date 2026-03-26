@@ -78,7 +78,7 @@ const formattedTitle = computed(() => {
     <!-- hero img desktop -->
     <!-- img mobile -->
     <div class="absolute inset-0 z-0 justify-end hidden md:flex">
-      <img v-if="props.section" :src="props.section.image" alt="Profissional trabalhando"
+      <NuxtImg v-if="props.section" :src="props.section.image" alt="Profissional trabalhando"
         class=" w-full md:w-3/4 lg:w-2/3 h-full object-cover object-right" />
       <div
         class="absolute inset-0 z-0 bg-gradient-to-r from-white via-white to-white/50 xl:from-20% xl:via-50% xl:to-70% md:to-transparent" />
@@ -95,7 +95,7 @@ const formattedTitle = computed(() => {
           {{ section.description }}
         </p>
         <div class="w-full h-[250px] sm:h-[450px] md:hidden">
-          <img v-if="section.image" :src="section.image" alt="Profissional trabalhando"
+          <NuxtImg v-if="section.image" :src="section.image" alt="Profissional trabalhando"
             class="w-full h-full object-cover object-center rounded-xl" />
         </div>
 

@@ -1,78 +1,68 @@
 <script setup lang="ts">
 import { useWindowScroll } from '@vueuse/core';
 
+useSchemaOrg([
+  defineLocalBusiness({
+    '@type': 'HomeAndConstructionBusiness',
+    name: 'SOS Construir',
+    description:
+      'Empresa especializada em construção, reforma e acabamento em Foz do Iguaçu.',
+    url: 'https://sosconstruir.com.br',
+    logo: 'https://sosconstruir.com.br/logo.png',
+    image: 'https://sosconstruir.com.br/og-image.jpg',
+    telephone: '+554599976544',
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: 'R. dos Eucaliptos, 597',
+      addressLocality: 'Foz do Iguaçu',
+      addressRegion: 'PR',
+      postalCode: '85854-610',
+      addressCountry: 'BR',
+    },
+    geo: {
+      '@type': 'GeoCoordinates',
+      latitude: '-25.5163',
+      longitude: '-54.5854',
+    },
+    areaServed: [
+      { '@type': 'City', name: 'Foz do Iguaçu' },
+      { '@type': 'City', name: 'Santa Terezinha de Itaipu' },
+    ],
+    priceRange: '$$',
+    openingHoursSpecification: [
+      {
+        '@type': 'OpeningHoursSpecification',
+        dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+        opens: '08:00',
+        closes: '18:00',
+      },
+      {
+        '@type': 'OpeningHoursSpecification',
+        dayOfWeek: 'Saturday',
+        opens: '08:00',
+        closes: '12:00',
+      },
+    ],
+    sameAs: [
+      'https://www.instagram.com/sos_construir',
+      'https://www.facebook.com/sosconstruir',
+    ],
+  })
+])
+
 useHead({
-  meta: [{ name: 'viewport', content: 'width=device-width, initial-scale=1' }],
+  htmlAttrs: {
+    lang: 'pt-BR',
+  },
   link: [
     { rel: 'icon', href: '/favicon.ico' },
     { rel: 'canonical', href: 'https://sosconstruir.com.br' },
   ],
-  htmlAttrs: {
-    lang: 'pt-BR',
-  },
-  script: [
-    {
-      type: 'application/ld+json',
-      innerHTML: JSON.stringify({
-        '@context': 'https://schema.org',
-        '@type': 'LocalBusiness',
-        name: 'SOS Construir',
-        description:
-          'Mais de 10 anos resolvendo obras e reformas em Foz do Iguaçu. Eletricista, encanador, pedreiro, energia solar e mais de 20 serviços com garantia e zero dor de cabeça.',
-        url: 'https://sosconstruir.com.br',
-        telephone: PHONENUMBER,
-        image: 'https://sosconstruir.com.br/og-image.jpg',
-        logo: 'https://sosconstruir.com.br/logo.png',
-        priceRange: '$$',
-        address: {
-          '@type': 'PostalAddress',
-          streetAddress: 'R. dos Eucalíptos, 597',
-          addressLocality: 'Foz do Iguaçu',
-          addressRegion: 'PR',
-          postalCode: '85854-610',
-          addressCountry: 'BR',
-          addressArea: 'Jardim Bourbon',
-        },
-        geo: {
-          '@type': 'GeoCoordinates',
-          latitude: -25.5163,
-          longitude: -54.5854,
-        },
-        openingHoursSpecification: [
-          {
-            '@type': 'OpeningHoursSpecification',
-            dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday'],
-            opens: '07:00',
-            closes: '17:30',
-          },
-          {
-            '@type': 'OpeningHoursSpecification',
-            dayOfWeek: 'Friday',
-            opens: '07:00',
-            closes: '16:00',
-          },
-          {
-            '@type': 'OpeningHoursSpecification',
-            dayOfWeek: 'Saturday',
-            opens: '07:00',
-            closes: '12:00',
-          },
-        ],
-        areaServed: {
-          '@type': 'City',
-          name: 'Foz do Iguaçu',
-        },
-        sameAs: [
-          'https://www.instagram.com/sos_construir',
-          'https://www.facebook.com/sosconstruir',
-        ],
-      }),
-    },
-  ],
 })
 
+// 2. Metadados para SEO e Redes Sociais
 const meta: Meta = {
-  title: 'SOS Construir | Construção e Reforma em Foz do Iguaçu',
+  title: 'Construção e Reforma em Foz do Iguaçu',
   description:
     'Mais de 10 anos resolvendo obras e reformas em Foz do Iguaçu. Eletricista, encanador, pedreiro, energia solar e mais de 20 serviços com garantia, materiais de qualidade e zero dor de cabeça.',
   keywords:
@@ -105,7 +95,7 @@ useSeoMeta({
   twitterCard: 'summary_large_image',
 })
 
-// Botao flutunte
+// Botao flutuante
 const { y } = useWindowScroll()
 const showBackToTop = computed(() => y.value > 400)
 

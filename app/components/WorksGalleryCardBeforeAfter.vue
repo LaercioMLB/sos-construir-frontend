@@ -65,8 +65,8 @@ onUnmounted(() => {
     <!-- Slider -->
     <div ref="containerRef" class="absolute inset-0 cursor-ew-resize touch-none" @mousedown.stop="onMouseDown"
       @touchstart.stop="onTouchStart" @touchmove.stop="onTouchMove" @touchend.stop="onTouchEnd">
-      <img :src="beforeImageUrl" alt="Projeto Antes" class="absolute inset-0 w-full h-full object-cover z-0" />
-      <img :src="afterImageUrl" alt="Projeto Depois"
+      <NuxtImg :src="beforeImageUrl" alt="Projeto Antes" class="absolute inset-0 w-full h-full object-cover z-0" />
+      <NuxtImg :src="afterImageUrl" alt="Projeto Depois"
         class="absolute inset-0 w-full h-full object-cover z-10 transition-all duration-75"
         :style="{ clipPath: `inset(0 0 0 ${sliderPercentage}%)` }" />
 

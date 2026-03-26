@@ -2,17 +2,28 @@
 import { ref } from 'vue'
 import type { FAQSection } from '~~/shared/types/sections'
 
-defineProps<{
+const props = defineProps<{
   section: FAQSection
 }>()
 
-// Controla qual aba está aberta. Inicia com 0 para o primeiro item já vir aberto.
 const openIndex = ref<number | null>(0)
 
-// Alterna entre abrir e fechar a aba clicada
 const toggle = (index: number) => {
   openIndex.value = openIndex.value === index ? null : index
 }
+
+useSchemaOrg([
+  defineWebPage({
+    '@type': 'FAQPage',
+    name: () => props.section.title
+  }),
+  ...props.section.questions.map(faq =>
+    defineQuestion({
+      name: faq.question,
+      acceptedAnswer: faq.answer
+    })
+  )
+])
 </script>
 
 <template>

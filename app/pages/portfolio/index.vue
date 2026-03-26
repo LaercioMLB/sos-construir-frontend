@@ -25,7 +25,7 @@ const breadcrumbItems: BreadcrumbItem[] = [
 const activeCardId = ref<number | string | null>(null)
 
 useSeoMeta({
-  title: 'Portfolio | Nossos Projetos - SOS Construir',
+  title: 'Portfolio | Nossos Projetos',
   description:
     'Confira centenas de projetos entregues em Foz do Iguaçu. Construções, reformas, acabamentos e muito mais.',
 })

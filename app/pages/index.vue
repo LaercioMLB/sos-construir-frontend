@@ -4,7 +4,7 @@ import servicesData from '~/data/services.json'
 import type { Service } from '~~/shared/types/service'
 
 const meta: Meta = {
-  title: 'SOS Construir | Construção e Reforma em Foz do Iguaçu',
+  title: 'Construção e Reforma em Foz do Iguaçu',
   description:
     'Mais de 10 anos resolvendo obras e reformas em Foz do Iguaçu. Eletricista, encanador, pedreiro, energia solar e mais de 20 serviços com garantia, materiais de qualidade e zero dor de cabeça.',
   keywords:
